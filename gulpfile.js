@@ -12,5 +12,8 @@ var elixir = require('laravel-elixir');
  */
 
 elixir(function(mix) {
-    mix.sass('app.scss');
+	mix.sass('app.scss', './public/media/css/all.min.css');
+
+
+	mix.scripts(['vendor/chosen-select.js'], 'public/media/js/chosen-select.js');
 });

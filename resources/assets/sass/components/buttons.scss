@@ -1,0 +1,15 @@
+.btn-naked
+{
+	background: none;
+	border: none;
+	color: inherit;
+
+	&:active { box-shadow: none; }
+
+	&:active:focus,	&:focus { outline: none; }
+}
+
+.btn-highlight
+{
+	&:hover { color: #666; }
+}
