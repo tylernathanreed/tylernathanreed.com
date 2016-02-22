@@ -5,7 +5,6 @@
 @endsection
 
 @section('head')
-	<link rel="stylesheet" href="/media/css/resume.css">
 
 	<script>
 		function resizeLabels()
@@ -48,7 +47,7 @@
 		<div class="row">
 			<div class="col-md-12">
 				<center>
-					<h1>Tyler Reed</h1>
+					<h1 class="heading-balanced">Tyler Reed</h1>
 				</center>
 			</div>
 		</div>
@@ -75,7 +74,7 @@
 			</center>
 		</div>
 
-		<hr>
+		<hr class="hr">
 
 		<!-- Objective & Strengths -->
 		<div class="row">
@@ -103,9 +102,9 @@
 			<!-- Skills -->
 			<div class="col-md-6 col-sm-6">
 				<center>
-					<hr>
+					<hr class="hr">
 					<h2>Skills</h2>
-					<hr>
+					<hr class="hr">
 				</center>
 
 				<div class="row">
@@ -115,63 +114,142 @@
 
 						<u>Proficient:</u>
 						<div class="row">
-							<div class="col-md-3 col-sm-3 col-xs-7 text-small">C/C++</div>
-							<div class="col-md-3 col-sm-3 col-xs-5"><span class="label label-success label-as-badge">5 Years</span></div>
+							@include('components.resume.skill', array(
+								'skill' => [
+									'name' 	=> 'C/C++',
+									'years' => 6
+								]
+							))
 
-							<div class="col-md-3 col-sm-3 col-xs-7 text-small">C#/.Net</div>
-							<div class="col-md-3 col-sm-3 col-xs-5"><span class="label label-primary label-as-badge">3 Years</span></div>
+							@include('components.resume.skill', array(
+								'skill' => [
+									'name' 	=> 'C#/.Net',
+									'years' => 3
+								]
+							))
 						</div>
 						<div class="row">
-							<div class="col-md-3 col-sm-3 col-xs-7 text-small">Java</div>
-							<div class="col-md-3 col-sm-3 col-xs-5"><span class="label label-primary label-as-badge">4 Years</span></div>
+							@include('components.resume.skill', array(
+								'skill' => [
+									'name' 	=> 'Java',
+									'years' => 5
+								]
+							))
 
-							<div class="col-md-3 col-sm-3 col-xs-7 text-small">PHP</div>
-							<div class="col-md-3 col-sm-3 col-xs-5"><span class="label label-primary label-as-badge">3 Years</span></div>
+							@include('components.resume.skill', array(
+								'skill' => [
+									'name' 	=> 'PHP',
+									'years' => 5
+								]
+							))
 						</div>
 						<div class="row">
-							<div class="col-md-3 col-sm-3 col-xs-7 text-small">SQL</div>
-							<div class="col-md-3 col-sm-3 col-xs-5"><span class="label label-primary label-as-badge">3 Years</span></div>
+							@include('components.resume.skill', array(
+								'skill' => [
+									'name' 	=> 'SQL',
+									'years' => 4
+								]
+							))
 
-							<div class="col-md-3 col-sm-3 col-xs-7 text-small">GML</div>
-							<div class="col-md-3 col-sm-3 col-xs-5"><span class="label label-success label-as-badge">7 Years</span></div>
+							@include('components.resume.skill', array(
+								'skill' => [
+									'name' 	=> 'GML',
+									'years' => 8
+								]
+							))
 						</div>
 						<div class="row">
-							<div class="col-md-3 col-sm-3 col-xs-7 text-small one-line">HTML 4/5</div>
-							<div class="col-md-3 col-sm-3 col-xs-5"><span class="label label-success label-as-badge">8 Years</span></div>
+							@include('components.resume.skill', array(
+								'skill' => [
+									'name' 	=> 'HTML 4/5',
+									'years' => 9
+								]
+							))
 
-							<div class="col-md-3 col-sm-3 col-xs-7 text-small one-line">CSS 2/3</div>
-							<div class="col-md-3 col-sm-3 col-xs-5"><span class="label label-success label-as-badge">7 Years</span></div>
+							@include('components.resume.skill', array(
+								'skill' => [
+									'name' 	=> 'CSS 2/3',
+									'years' => 8
+								]
+							))
+						</div>
+						<div class="row">
+							@include('components.resume.skill', array(
+								'skill' => [
+									'name' 	=> 'JavaScript',
+									'years' => 4
+								]
+							))
+
+							@include('components.resume.skill', array(
+								'skill' => [
+									'name' 	=> 'jQuery',
+									'years' => 3
+								]
+							))
 						</div>
 
 						<br>
 						<u>Used:</u>
 						<div class="row">
-							<div class="col-md-3 col-sm-3 col-xs-7 text-small">JavaScript</div>
-							<div class="col-md-3 col-sm-3 col-xs-5"><span class="label label-primary label-as-badge">3 Years</span></div>
+							@include('components.resume.skill', array(
+								'skill' => [
+									'name' 	=> 'Bootstrap',
+									'years' => 3
+								]
+							))
 
-							<div class="col-md-3 col-sm-3 col-xs-7 text-small">Bootstrap</div>
-							<div class="col-md-3 col-sm-3 col-xs-5"><span class="label label-danger label-as-badge">1 Year</span></div>
+							@include('components.resume.skill', array(
+								'skill' => [
+									'name' 	=> 'JSON',
+									'years' => 4
+								]
+							))
 						</div>
 						<div class="row">
-							<div class="col-md-3 col-sm-3 col-xs-7 text-small">jQuery</div>
-							<div class="col-md-3 col-sm-3 col-xs-5"><span class="label label-danger label-as-badge">1 Year</span></div>
+							@include('components.resume.skill', array(
+								'skill' => [
+									'name' 	=> 'Laravel 4/5',
+									'years' => 3
+								]
+							))
 
-							<div class="col-md-3 col-sm-3 col-xs-7 text-small">JSON</div>
-							<div class="col-md-3 col-sm-3 col-xs-5"><span class="label label-primary label-as-badge">3 Years</span></div>
+							@include('components.resume.skill', array(
+								'skill' => [
+									'name' 	=> 'MVC',
+									'years' => 3
+								]
+							))
 						</div>
 						<div class="row">
-							<div class="col-md-3 col-sm-3 col-xs-7 text-small">RESTful</div>
-							<div class="col-md-3 col-sm-3 col-xs-5"><span class="label label-danger label-as-badge">1 Year</span></div>
+							@include('components.resume.skill', array(
+								'skill' => [
+									'name' 	=> 'RESTful',
+									'years' => 3
+								]
+							))
 
-							<div class="col-md-3 col-sm-3 col-xs-7 text-small">VBA</div>
-							<div class="col-md-3 col-sm-3 col-xs-5"><span class="label label-primary label-as-badge">4 Years</span></div>
+							@include('components.resume.skill', array(
+								'skill' => [
+									'name' 	=> 'VBA',
+									'years' => 3
+								]
+							))
 						</div>
 						<div class="row">
-							<div class="col-md-3 col-sm-3 col-xs-7 text-small one-line">Drupal 7</div>
- 							<div class="col-md-3 col-sm-3 col-xs-5"><span class="label label-danger label-as-badge">1 Year</span></div>
+							@include('components.resume.skill', array(
+								'skill' => [
+									'name' 	=> 'Drupal 7',
+									'years' => 2
+								]
+							))
 
-							<div class="col-md-3 col-sm-3 col-xs-7 text-small one-line">Solr 4</div>
- 							<div class="col-md-3 col-sm-3 col-xs-5"><span class="label label-danger label-as-badge">1 Year</span></div>
+							@include('components.resume.skill', array(
+								'skill' => [
+									'name' 	=> 'Solr 4',
+									'years' => 1
+								]
+							))
 						</div>
 						<br>
 					</div>
@@ -181,42 +259,75 @@
 						<h3>Development Tools</h3>
 						<u>IDEs / Text Editors:</u>
 						<div class="row">
-							<div class="col-md-3 col-sm-3 col-xs-7 text-small">Notepad</div>
-							<div class="col-md-3 col-sm-3 col-xs-5"><span class="label label-success label-as-badge">9 Years</span></div>
+							@include('components.resume.skill', array(
+								'skill' => [
+									'name' 	=> 'Notepad',
+									'years' => 10
+								]
+							))
 
-							<div class="col-md-3 col-sm-3 col-xs-7 text-small">Notepad++</div>
-							<div class="col-md-3 col-sm-3 col-xs-5"><span class="label label-success label-as-badge">5 Years</span></div>
+							@include('components.resume.skill', array(
+								'skill' => [
+									'name' 	=> 'Notepad++',
+									'years' => 6
+								]
+							))
 						</div>
 						<div class="row">
-							<div class="col-md-3 col-sm-3 col-xs-7 text-small">Sublime</div>
-							<div class="col-md-3 col-sm-3 col-xs-5"><span class="label label-warning label-as-badge">2 Years</span></div>
+							@include('components.resume.skill', array(
+								'skill' => [
+									'name' 	=> 'Sublime',
+									'years' => 4
+								]
+							))
 
-							<div class="col-md-3 col-sm-3 col-xs-7 text-small">Vim</div>
-							<div class="col-md-3 col-sm-3 col-xs-5"><span class="label label-primary label-as-badge">3 Years</span></div>
+							@include('components.resume.skill', array(
+								'skill' => [
+									'name' 	=> 'Vim',
+									'years' => 4
+								]
+							))
 						</div>
 						<div class="row">
-							<div class="col-md-3 col-sm-3 col-xs-7 text-small one-line">VS 2008+</div>
-							<div class="col-md-3 col-sm-3 col-xs-5"><span class="label label-success label-as-badge">5 Years</span></div>
+							@include('components.resume.skill', array(
+								'skill' => [
+									'name' 	=> 'VS 2008+',
+									'years' => 5
+								]
+							))
 
-							<div class="col-md-3 col-sm-3 col-xs-7 text-small">Eclipse</div>
-							<div class="col-md-3 col-sm-3 col-xs-5"><span class="label label-success label-as-badge">5 Years</span></div>
+							@include('components.resume.skill', array(
+								'skill' => [
+									'name' 	=> 'Eclipse',
+									'years' => 5
+								]
+							))
 						</div>
 						<div class="row">
-							<div class="col-md-3 col-sm-3 col-xs-7 text-small">Netbeans</div>
-							<div class="col-md-3 col-sm-3 col-xs-5"><span class="label label-warning label-as-badge">2 Years</span></div>
+							@include('components.resume.skill', array(
+								'skill' => [
+									'name' 	=> 'Netbeans',
+									'years' => 2
+								]
+							))
 
-							<div class="col-md-3 col-sm-3 col-xs-7 text-small one-line">GM: Studio</div>
-							<div class="col-md-3 col-sm-3 col-xs-5"><span class="label label-success label-as-badge">7 Years</span></div>
+							@include('components.resume.skill', array(
+								'skill' => [
+									'name' 	=> 'GM: Studio',
+									'years' => 8
+								]
+							))
 						</div>
+						<br>
 
 						<u>Software Tools:</u>
 						<div class="row">
 							<div class="col-md-6 col-sm-6 col-xs-6 text-small one-line">SQL Server 2008+</div>
-							<div class="col-md-3 col-sm-3 col-xs-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-1"><span class="label label-primary label-as-badge">3 Years</span></div>
+							<div class="col-md-3 col-sm-3 col-xs-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-1"><span class="label label-warning label-as-badge">3 Years</span></div>
 						</div>
 						<div class="row">
 							<div class="col-md-6 col-sm-6 col-xs-6 text-small">PHPMyAdmin</div>
-							<div class="col-md-3 col-sm-3 col-xs-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-1"><span class="label label-primary label-as-badge">4 Years</span></div>
+							<div class="col-md-3 col-sm-3 col-xs-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-1"><span class="label label-primary label-as-badge">5 Years</span></div>
 						</div>
 						<div class="row">
 							<div class="col-md-6 col-sm-6 col-xs-6 text-small one-line">Dreamweaver CS3+</div>
@@ -224,11 +335,11 @@
 						</div>
 						<div class="row">
 							<div class="col-md-6 col-sm-6 col-xs-6 text-small">WAMP</div>
-							<div class="col-md-3 col-sm-3 col-xs-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-1"><span class="label label-primary label-as-badge">4 Years</span></div>
+							<div class="col-md-3 col-sm-3 col-xs-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-1"><span class="label label-primary label-as-badge">5 Years</span></div>
 						</div>
 						<div class="row">
 							<div class="col-md-6 col-sm-6 col-xs-6 text-small one-line">Git &amp; Source Tree</div>
-							<div class="col-md-3 col-sm-3 col-xs-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-1"><span class="label label-primary label-as-badge">4 Years</span></div>
+							<div class="col-md-3 col-sm-3 col-xs-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-1"><span class="label label-primary label-as-badge">5 Years</span></div>
 						</div>
 					</div>
 				</div>
@@ -237,9 +348,9 @@
 			<!-- Education -->
 			<div class="col-md-6 col-sm-6">
 				<center>
-					<hr>
+					<hr class="hr">
 					<h2>Education</h2>
-					<hr>
+					<hr class="hr">
 				</center>
 
 				<div class="row">
@@ -269,9 +380,9 @@
 			<!-- Internships -->
 			<div class="col-md-6 col-sm-6">
 				<center>
-					<hr>
+					<hr class="hr">
 					<h2>Internships</h2>
-					<hr>
+					<hr class="hr">
 				</center>
 
 				<div class="row">
@@ -280,10 +391,9 @@
 						<p>
 							Contract Programmer | Backend Designer<br>
 						</p>
-						<hr class="break-small">
 						<b>Work Experience:</b>
 						<span>Tasked with replacing an analog paper system with a digital one. The implementation yeilded a mobile-ready website using the Laravel 4 framework backed with an agnostic database.</span><br>
-						<span class="text-small">Fall 2014</span><br>
+						<small>Fall 2014</small><br>
 						<p></p>
 					</div>
 				</div>
@@ -292,9 +402,9 @@
 			<!-- Certifications -->
 			<div class="col-md-6 col-sm-6">
 				<center>
-					<hr>
+					<hr class="hr">
 					<h2 style="">Certifications</h2>
-					<hr>
+					<hr class="hr">
 				</center>
 
 				<div class="row">
@@ -302,7 +412,7 @@
 						<h3>Microsoft Technology Associate</h3>
 						<p>
 							Given for the ability to understand and explain fundamental concepts of Software Development<br>
-							<span class="text-small">Summer 2014</span><br>
+							<small>Summer 2014</small><br>
 						</p>
 					</div>
 				</div>
@@ -314,9 +424,9 @@
 			<!-- Work Experience -->
 			<div class="col-md-6 col-sm-6">
 				<center>
-					<hr>
+					<hr class="hr">
 					<h2>Work Experience</h2>
-					<hr>
+					<hr class="hr">
 				</center>
 
 				<div class="row">
@@ -326,10 +436,9 @@
 						<p>
 							Game Design/Development Teaching Assistant<br>
 						</p>
-						<hr class="break-small">
 						<b>Work Experience:</b>
 						Taught High School Students how to program and design games using Game Maker Software.<br>
-						<span class="text-small">Summer 2013</span><br>
+						<small>Summer 2013</small><br>
 						<p></p>
 					</div>
 
@@ -339,10 +448,9 @@
 						<p>
 							Game Design/Development Teacher<br>
 						</p>
-						<hr class="break-small">
 						<b>Work Experience:</b>
 						Taught K-12 Students how to program and design games using Game Maker Software. Created the curriculum.<br>
-						<span class="text-small">Summer 2014</span><br>
+						<small>Summer 2014</small><br>
 						<p></p>
 					</div>
 
@@ -352,10 +460,9 @@
 						<p>
 							Private Tutor for Game Maker: Studio and/or other Computer Science topics<br>
 						</p>
-						<hr class="break-small">
 						<b>Work Experience:</b>
 						Taught Students various Computer Science concepts by using a goal-oriented curriculum that was dynamically adjusted for each student's needs.<br>
-						<span class="text-small">Fall 2014 - Spring 2015</span><br>
+						<small>Fall 2014 - Spring 2015</small><br>
 						<p></p>
 					</div>
 	
@@ -365,10 +472,9 @@
 						<p>
 							Backend Drupal Developer for Solr Search &amp; Full-Stack Web Developer<br>
 						</p>
-						<hr class="break-small">
 						<b>Work Experience:</b>
 						Learned the Drupal 7 Framework and Apache Solr Search. Learned to work in a professional environment with deadlines that effect real people. Also built <a href="http://churchdiscipleship.org">churchdiscipleship.org</a> from scratch using the Laravel 5.2 Framework as the sole programmer.<br>
-						<span class="text-small">Spring 2015 - Current</span><br>
+						<small>Spring 2015 - Current</small><br>
 					</div>
 				</div>
 			</div>
@@ -376,9 +482,9 @@
 			<!-- Activities -->
 			<div class="col-md-6 col-sm-6">
 				<center>
-					<hr>
+					<hr class="hr">
 					<h2>Activities</h2>
-					<hr>
+					<hr class="hr">
 				</center>
 
 				<div class="row">
@@ -388,7 +494,7 @@
 						<p>
 							<b>Learning Experience:</b>
 							Learned Agile and Peer Programming, as well as how to use Source Control tools such as GitHub. Community members (self included) program/modify games using a wide spectrum of languages and tools.<br>
-							<span class="text-small">2009 - Present</span><br>
+							<small>2009 - Present</small><br>
 						</p>
 					</div>
 
@@ -398,8 +504,8 @@
 						<p>
 							<b>Learning Experience:</b>
 							Worked with students who had learning disabilities. Played, tested, and created various board games. Learning Gaming Mechanics, Game Design, and how to communicate effectively.<br>
-							<span class="text-small">2010-2012</span><br>
-							<span class="text-small">100+ Hours of Volunteer Work</span><br>
+							<small>2010-2012</small><br>
+							<small>100+ Hours of Volunteer Work</small><br>
 						</p>
 					</div>
 
@@ -409,8 +515,8 @@
 						<p>
 							<b>Learning Experience:</b>
 								Worked in large groups to help construct homes for those in need. Learned the value of teamwork. Basic project planning and outlining were observed.<br>
-							<span class="text-small">2009-2011</span><br>
-							<span class="text-small">60 Hours of Volunteer Work</span><br>
+							<small>2009-2011</small><br>
+							<small>60 Hours of Volunteer Work</small><br>
 						</p>
 					</div>
 				</div>
@@ -422,9 +528,9 @@
 			<!-- Academic Projects -->
 			<div class="col-md-6 col-sm-6">
 				<center>
-					<hr>
+					<hr class="hr">
 					<h2>Academic Projects</h2>
-					<hr>
+					<hr class="hr">
 				</center>
 
 				<div class="row">
@@ -433,7 +539,7 @@
 						<h3><a href="https://github.com/tylernathanreed/Academic-Projects/tree/master/Java/Constraint%20Satisfaction">Java | Constraint Satisfaction</a></h3>
 						<p>
 							Determines a solution to a generalized Constraint Satisfaction Problem <i>(Sudoku, Map Coloring, etc.)</i>. Given Constraint and Domain Files, the problem is solved using various heuristics and consistency procedures.<br>
-							<span class="text-small">Spring 2014</span><br>
+							<small>Spring 2014</small><br>
 						</p>
 					</div>
 
@@ -442,7 +548,7 @@
 						<h3><a href="https://github.com/tylernathanreed/Academic-Projects/tree/master/Java/Knowledge%20Representation">Java | Knowledge Representation</a></h3>
 						<p>
 							Derives new information from a predefined set of information represented as Clauses. The program accepts an initial Knowledge Base with a Test Case, and derives whether or not the cased is true. Takes a Multi-Threaded approach to utilize the Independent nature of the Resolution Rule.<br>
-							<span class="text-small">Spring 2014</span><br>
+							<small>Spring 2014</small><br>
 						</p>
 					</div>
 
@@ -451,7 +557,7 @@
 						<h3><a href="https://github.com/tylernathanreed/Academic-Projects/tree/master/C%20%26%20C%2B%2B/Internet%20Simulation">C++ | Internet Simulation w/ OSI Layers</a></h3>
 						<p>
 							Simulates a simple Network by having a Process corresponding to a Node in the Network using files as network channels. The project was structured to realistically match an actual Network where Nodes use different OSI Layers communicate.<br>
-							<span class="text-small">Spring 2014</span><br>
+							<small>Spring 2014</small><br>
 						</p>
 					</div>
 
@@ -460,7 +566,7 @@
 						<h3><a href="https://github.com/tylernathanreed/Academic-Projects/tree/master/C%23%20%26%20.NET">C#/.NET | Contact Mananger</a></h3>
 						<p>
 							This interface allowed a User to keep track of various Contact Information by storing data in a SQL Database. The User could add, modify, and delete Contacts, Addresses, Phone Numbers, and many other attributes using stored procedures.<br>
-							<span class="text-small">Spring 2013</span><br>
+							<small>Spring 2013</small><br>
 						</p>
 					</div>
 				</div>
@@ -469,9 +575,9 @@
 			<!-- Personal Projects -->
 			<div class="col-md-6 col-sm-6">
 				<center>
-					<hr>
+					<hr class="hr">
 					<h2>Personal Projects</h2>
-					<hr>
+					<hr class="hr">
 				</center>
 
 				<div class="row">
@@ -480,7 +586,7 @@
 						<h3><a href="http://steamcommunity.com/sharedfiles/filedetails/?id=101220664">Game of Life Variation</a></h3>
 						<p>
 							This variation of John Conway's Game of Life added a color mechanic in which the next generation of cells took an average color scheme from the parent cells. This gave the patterns of the game more depth.<br>
-							<span class="text-small">2012 - 2013</span><br>
+							<small>2012 - 2013</small><br>
 						</p>
 					</div>
 
@@ -489,7 +595,7 @@
 						<h3><a href="http://steamcommunity.com/sharedfiles/filedetails/?id=131654659">Physics Sandbox</a></h3>
 						<p>
 							This Sandbox style gadget tested the my knowledge in Physics by implementing Rectangular, Elliptical, and Polygonal collision in a 2-D Environment. Various forces such as Friction, Gravity, and Restitution were applied.<br>
-							<span class="text-small">2012 - 2013</span><br>
+							<small>2012 - 2013</small><br>
 					</p></div>
 
 					<!-- Roadblock Game "Gravitron" -->
@@ -497,7 +603,7 @@
 						<h3><a href="https://dl.dropboxusercontent.com/u/22054931/Games/gravitron.exe">Roadblock Game "Gravitron"</a></h3>
 						<p>
 							Designed to exploit the puzzle mechanics of Roadblock themed games. Currently features 50 Levels, storing them in an encrypted binary format (100 Levels is about 40 KB). Users may create, load, and save their own levels.<br>
-							<span class="text-small">2010 - Present</span><br>
+							<small>2010 - Present</small><br>
 						</p>
 					</div>
 
@@ -506,7 +612,7 @@
 						<h3>Pac-man Recreation</h3>
 						<p>
 							Redesigned the original Pac-man Arcade Game using the original logic found within the code. This was done to see what measures developers had to take when process time and memory were extremely limited.<br>
-							<span class="text-small">2014 - Present</span><br>
+							<small>2014 - Present</small><br>
 						</p>
 					</div>
 				</div>
@@ -517,7 +623,7 @@
 		<footer>
 			<div class="row">
 				<div class="col-md-12">
-					<hr>
+					<hr class="hr">
 					<center>
 						References available upon request
 					</center>
