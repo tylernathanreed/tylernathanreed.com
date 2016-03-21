@@ -57,17 +57,17 @@ Route::group(['middleware' => 'web'], function()
 		// Password Reset Routes
 		Route::get('password/reset/{token?}', array(
 			'as' 	=> 'auth.reset',
-			'uses' 	=> 'Auth\AuthController@showResetForm'
+			'uses' 	=> 'Auth\PasswordController@showResetForm'
 		));
 
 		Route::post('password/reset', array(
 			'as' 	=> 'auth.reset.submit',
-			'uses' 	=> 'Auth\AuthController@reset'
+			'uses' 	=> 'Auth\PasswordController@reset'
 		));
 
 		Route::post('password/email', array(
 			'as' 	=> 'auth.email',
-			'uses' 	=> 'Auth\AuthController@sendResetLinkEmail'
+			'uses' 	=> 'Auth\PasswordController@postEmail'
 		));
 	});
 
