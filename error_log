@@ -1,0 +1,75 @@
+[19-Feb-2016 00:39:22 UTC] PHP Warning:  require(/home/tylernathanreed/public_html/tylernathanreed.com/bootstrap/../vendor/autoload.php): failed to open stream: No such file or directory in /home/tylernathanreed/public_html/tylernathanreed.com/bootstrap/autoload.php on line 17
+[19-Feb-2016 00:39:22 UTC] PHP Stack trace:
+[19-Feb-2016 00:39:26 UTC] PHP   1. {main}() /home/tylernathanreed/public_html/tylernathanreed.com/artisan:0
+[19-Feb-2016 00:39:26 UTC] PHP   2. require() /home/tylernathanreed/public_html/tylernathanreed.com/artisan:16
+[19-Feb-2016 00:39:26 UTC] PHP Fatal error:  require(): Failed opening required '/home/tylernathanreed/public_html/tylernathanreed.com/bootstrap/../vendor/autoload.php' (include_path='.:/opt/alt/php55/usr/share/pear:/opt/alt/php55/usr/share/php') in /home/tylernathanreed/public_html/tylernathanreed.com/bootstrap/autoload.php on line 17
+[19-Feb-2016 00:39:26 UTC] PHP Stack trace:
+[19-Feb-2016 00:39:26 UTC] PHP   1. {main}() /home/tylernathanreed/public_html/tylernathanreed.com/artisan:0
+[19-Feb-2016 00:39:26 UTC] PHP   2. require() /home/tylernathanreed/public_html/tylernathanreed.com/artisan:16
+[21-Feb-2016 22:34:22 UTC] PHP Fatal error:  Class 'Reed\Flash\FlashServiceProvider' not found in /home/tylernathanreed/public_html/tylernathanreed.com/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 146
+[21-Feb-2016 22:34:22 UTC] PHP Stack trace:
+[21-Feb-2016 22:34:22 UTC] PHP   1. {main}() /home/tylernathanreed/public_html/tylernathanreed.com/artisan:0
+[21-Feb-2016 22:34:22 UTC] PHP   2. Illuminate\Foundation\Console\Kernel->handle() /home/tylernathanreed/public_html/tylernathanreed.com/artisan:36
+[21-Feb-2016 22:34:22 UTC] PHP   3. Illuminate\Foundation\Console\Kernel->bootstrap() /home/tylernathanreed/public_html/tylernathanreed.com/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php:105
+[21-Feb-2016 22:34:22 UTC] PHP   4. Illuminate\Foundation\Application->bootstrapWith() /home/tylernathanreed/public_html/tylernathanreed.com/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php:208
+[21-Feb-2016 22:34:22 UTC] PHP   5. Illuminate\Foundation\Bootstrap\RegisterProviders->bootstrap() /home/tylernathanreed/public_html/tylernathanreed.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php:203
+[21-Feb-2016 22:34:22 UTC] PHP   6. Illuminate\Foundation\Application->registerConfiguredProviders() /home/tylernathanreed/public_html/tylernathanreed.com/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php:17
+[21-Feb-2016 22:34:22 UTC] PHP   7. Illuminate\Foundation\ProviderRepository->load() /home/tylernathanreed/public_html/tylernathanreed.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php:507
+[21-Feb-2016 22:34:22 UTC] PHP   8. Illuminate\Foundation\ProviderRepository->compileManifest() /home/tylernathanreed/public_html/tylernathanreed.com/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:60
+[21-Feb-2016 22:34:22 UTC] PHP   9. Illuminate\Foundation\ProviderRepository->createProvider() /home/tylernathanreed/public_html/tylernathanreed.com/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:114
+[21-Feb-2016 22:34:35 UTC] PHP Fatal error:  Class 'Reed\Flash\FlashServiceProvider' not found in /home/tylernathanreed/public_html/tylernathanreed.com/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 146
+[21-Feb-2016 22:34:35 UTC] PHP Stack trace:
+[21-Feb-2016 22:34:35 UTC] PHP   1. {main}() /home/tylernathanreed/public_html/tylernathanreed.com/artisan:0
+[21-Feb-2016 22:34:35 UTC] PHP   2. Illuminate\Foundation\Console\Kernel->handle() /home/tylernathanreed/public_html/tylernathanreed.com/artisan:36
+[21-Feb-2016 22:34:35 UTC] PHP   3. Illuminate\Foundation\Console\Kernel->bootstrap() /home/tylernathanreed/public_html/tylernathanreed.com/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php:105
+[21-Feb-2016 22:34:35 UTC] PHP   4. Illuminate\Foundation\Application->bootstrapWith() /home/tylernathanreed/public_html/tylernathanreed.com/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php:208
+[21-Feb-2016 22:34:35 UTC] PHP   5. Illuminate\Foundation\Bootstrap\RegisterProviders->bootstrap() /home/tylernathanreed/public_html/tylernathanreed.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php:203
+[21-Feb-2016 22:34:35 UTC] PHP   6. Illuminate\Foundation\Application->registerConfiguredProviders() /home/tylernathanreed/public_html/tylernathanreed.com/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php:17
+[21-Feb-2016 22:34:35 UTC] PHP   7. Illuminate\Foundation\ProviderRepository->load() /home/tylernathanreed/public_html/tylernathanreed.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php:507
+[21-Feb-2016 22:34:35 UTC] PHP   8. Illuminate\Foundation\ProviderRepository->compileManifest() /home/tylernathanreed/public_html/tylernathanreed.com/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:60
+[21-Feb-2016 22:34:35 UTC] PHP   9. Illuminate\Foundation\ProviderRepository->createProvider() /home/tylernathanreed/public_html/tylernathanreed.com/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:114
+[14-Apr-2016 20:13:05 UTC] PHP Fatal error:  Class 'Collective\Html\HtmlServiceProvider' not found in /home/tylernathanreed/public_html/tylernathanreed.com/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 146
+[14-Apr-2016 20:13:05 UTC] PHP Stack trace:
+[14-Apr-2016 20:13:05 UTC] PHP   1. {main}() /home/tylernathanreed/public_html/tylernathanreed.com/artisan:0
+[14-Apr-2016 20:13:05 UTC] PHP   2. Illuminate\Foundation\Console\Kernel->handle() /home/tylernathanreed/public_html/tylernathanreed.com/artisan:36
+[14-Apr-2016 20:13:05 UTC] PHP   3. Illuminate\Foundation\Console\Kernel->bootstrap() /home/tylernathanreed/public_html/tylernathanreed.com/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php:105
+[14-Apr-2016 20:13:05 UTC] PHP   4. Illuminate\Foundation\Application->bootstrapWith() /home/tylernathanreed/public_html/tylernathanreed.com/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php:208
+[14-Apr-2016 20:13:05 UTC] PHP   5. Illuminate\Foundation\Bootstrap\RegisterProviders->bootstrap() /home/tylernathanreed/public_html/tylernathanreed.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php:203
+[14-Apr-2016 20:13:05 UTC] PHP   6. Illuminate\Foundation\Application->registerConfiguredProviders() /home/tylernathanreed/public_html/tylernathanreed.com/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php:17
+[14-Apr-2016 20:13:05 UTC] PHP   7. Illuminate\Foundation\ProviderRepository->load() /home/tylernathanreed/public_html/tylernathanreed.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php:507
+[14-Apr-2016 20:13:05 UTC] PHP   8. Illuminate\Foundation\ProviderRepository->compileManifest() /home/tylernathanreed/public_html/tylernathanreed.com/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:60
+[14-Apr-2016 20:13:09 UTC] PHP   9. Illuminate\Foundation\ProviderRepository->createProvider() /home/tylernathanreed/public_html/tylernathanreed.com/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:114
+[14-Apr-2016 20:13:31 UTC] PHP Fatal error:  Class 'Collective\Html\HtmlServiceProvider' not found in /home/tylernathanreed/public_html/tylernathanreed.com/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 146
+[14-Apr-2016 20:13:31 UTC] PHP Stack trace:
+[14-Apr-2016 20:13:34 UTC] PHP   1. {main}() /home/tylernathanreed/public_html/tylernathanreed.com/artisan:0
+[14-Apr-2016 20:13:34 UTC] PHP   2. Illuminate\Foundation\Console\Kernel->handle() /home/tylernathanreed/public_html/tylernathanreed.com/artisan:36
+[14-Apr-2016 20:13:34 UTC] PHP   3. Illuminate\Foundation\Console\Kernel->bootstrap() /home/tylernathanreed/public_html/tylernathanreed.com/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php:105
+[14-Apr-2016 20:13:34 UTC] PHP   4. Illuminate\Foundation\Application->bootstrapWith() /home/tylernathanreed/public_html/tylernathanreed.com/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php:208
+[14-Apr-2016 20:13:34 UTC] PHP   5. Illuminate\Foundation\Bootstrap\RegisterProviders->bootstrap() /home/tylernathanreed/public_html/tylernathanreed.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php:203
+[14-Apr-2016 20:13:34 UTC] PHP   6. Illuminate\Foundation\Application->registerConfiguredProviders() /home/tylernathanreed/public_html/tylernathanreed.com/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php:17
+[14-Apr-2016 20:13:34 UTC] PHP   7. Illuminate\Foundation\ProviderRepository->load() /home/tylernathanreed/public_html/tylernathanreed.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php:507
+[14-Apr-2016 20:13:34 UTC] PHP   8. Illuminate\Foundation\ProviderRepository->compileManifest() /home/tylernathanreed/public_html/tylernathanreed.com/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:60
+[14-Apr-2016 20:13:34 UTC] PHP   9. Illuminate\Foundation\ProviderRepository->createProvider() /home/tylernathanreed/public_html/tylernathanreed.com/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:114
+[14-Apr-2016 20:14:37 UTC] PHP Parse error:  syntax error, unexpected '<<' (T_SL) in /home/tylernathanreed/public_html/tylernathanreed.com/database/seeds/DatabaseSeeder.php on line 17
+[14-Apr-2016 20:14:37 UTC] PHP Stack trace:
+[14-Apr-2016 20:14:37 UTC] PHP   1. {main}() /home/tylernathanreed/public_html/tylernathanreed.com/artisan:0
+[14-Apr-2016 20:14:37 UTC] PHP   2. Illuminate\Foundation\Console\Kernel->handle() /home/tylernathanreed/public_html/tylernathanreed.com/artisan:36
+[14-Apr-2016 20:14:37 UTC] PHP   3. Symfony\Component\Console\Application->run() /home/tylernathanreed/public_html/tylernathanreed.com/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php:107
+[14-Apr-2016 20:14:37 UTC] PHP   4. Symfony\Component\Console\Application->doRun() /home/tylernathanreed/public_html/tylernathanreed.com/vendor/symfony/console/Application.php:117
+[14-Apr-2016 20:14:37 UTC] PHP   5. Symfony\Component\Console\Application->doRunCommand() /home/tylernathanreed/public_html/tylernathanreed.com/vendor/symfony/console/Application.php:186
+[14-Apr-2016 20:14:37 UTC] PHP   6. Illuminate\Console\Command->run() /home/tylernathanreed/public_html/tylernathanreed.com/vendor/symfony/console/Application.php:791
+[14-Apr-2016 20:14:37 UTC] PHP   7. Symfony\Component\Console\Command\Command->run() /home/tylernathanreed/public_html/tylernathanreed.com/vendor/laravel/framework/src/Illuminate/Console/Command.php:155
+[14-Apr-2016 20:14:37 UTC] PHP   8. Illuminate\Console\Command->execute() /home/tylernathanreed/public_html/tylernathanreed.com/vendor/symfony/console/Command/Command.php:256
+[14-Apr-2016 20:14:37 UTC] PHP   9. Illuminate\Container\Container->call() /home/tylernathanreed/public_html/tylernathanreed.com/vendor/laravel/framework/src/Illuminate/Console/Command.php:169
+[14-Apr-2016 20:14:37 UTC] PHP  10. call_user_func_array:{/home/tylernathanreed/public_html/tylernathanreed.com/bootstrap/cache/compiled.php:1232}() /home/tylernathanreed/public_html/tylernathanreed.com/bootstrap/cache/compiled.php:1232
+[14-Apr-2016 20:14:37 UTC] PHP  11. Illuminate\Database\Console\Seeds\SeedCommand->fire() /home/tylernathanreed/public_html/tylernathanreed.com/bootstrap/cache/compiled.php:1232
+[14-Apr-2016 20:14:37 UTC] PHP  12. Illuminate\Database\Eloquent\Model::unguarded() /home/tylernathanreed/public_html/tylernathanreed.com/vendor/laravel/framework/src/Illuminate/Database/Console/Seeds/SeedCommand.php:64
+[14-Apr-2016 20:14:37 UTC] PHP  13. Illuminate\Database\Console\Seeds\SeedCommand->Illuminate\Database\Console\Seeds\{closure}() /home/tylernathanreed/public_html/tylernathanreed.com/bootstrap/cache/compiled.php:10924
+[14-Apr-2016 20:14:37 UTC] PHP  14. Illuminate\Database\Console\Seeds\SeedCommand->getSeeder() /home/tylernathanreed/public_html/tylernathanreed.com/vendor/laravel/framework/src/Illuminate/Database/Console/Seeds/SeedCommand.php:63
+[14-Apr-2016 20:14:37 UTC] PHP  15. Illuminate\Foundation\Application->make() /home/tylernathanreed/public_html/tylernathanreed.com/vendor/laravel/framework/src/Illuminate/Database/Console/Seeds/SeedCommand.php:74
+[14-Apr-2016 20:14:37 UTC] PHP  16. Illuminate\Container\Container->make() /home/tylernathanreed/public_html/tylernathanreed.com/bootstrap/cache/compiled.php:1837
+[14-Apr-2016 20:14:37 UTC] PHP  17. Illuminate\Container\Container->build() /home/tylernathanreed/public_html/tylernathanreed.com/bootstrap/cache/compiled.php:1287
+[14-Apr-2016 20:14:37 UTC] PHP  18. ReflectionClass->__construct() /home/tylernathanreed/public_html/tylernathanreed.com/bootstrap/cache/compiled.php:1333
+[14-Apr-2016 20:14:37 UTC] PHP  19. spl_autoload_call() /home/tylernathanreed/public_html/tylernathanreed.com/bootstrap/cache/compiled.php:1333
+[14-Apr-2016 20:14:37 UTC] PHP  20. Composer\Autoload\ClassLoader->loadClass() /home/tylernathanreed/public_html/tylernathanreed.com/bootstrap/cache/compiled.php:1333
+[14-Apr-2016 20:14:37 UTC] PHP  21. Composer\Autoload\includeFile() /home/tylernathanreed/public_html/tylernathanreed.com/vendor/composer/ClassLoader.php:301
