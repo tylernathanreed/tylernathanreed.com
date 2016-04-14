@@ -5,9 +5,12 @@ namespace App\Providers;
 use Illuminate\Contracts\Auth\Access\Gate as GateContract;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
 
-use Schema;
-
 use App\Models\Permission;
+use App\Models\User;
+
+use Auth;
+use Flash;
+use Schema;
 
 class AuthServiceProvider extends ServiceProvider
 {
@@ -31,6 +34,8 @@ class AuthServiceProvider extends ServiceProvider
 		parent::registerPolicies($gate);
 
 		$this->registerPermissions($gate);
+		$this->registerBeforeCallbacks($gate);
+		$this->registerAfterCallbacks($gate);
 	}
 
 	/////////////////
@@ -38,6 +43,8 @@ class AuthServiceProvider extends ServiceProvider
 	/////////////////
 	/**
 	 * Registers all Permissions for the Site.
+	 *
+	 * @param  GateContract  $gate  The Gate Authorizor.
 	 *
 	 * @return void
 	 */
@@ -52,6 +59,44 @@ class AuthServiceProvider extends ServiceProvider
 				return $user->is($permission->roles);
 			});
 		}
+	}
+
+	/**
+	 * Registers all of the Callbacks that are called before each
+	 * Permission is checked for Authorization.
+	 *
+	 * @param  GateContract  $gate  The Gate Authorizor.
+	 *
+	 * @return void
+	 */
+	public function registerBeforeCallbacks(GateContract $gate)
+	{
+		/**
+		 * If the Site only contains a Single User, then that User
+		 * is assumed to have full access to the Site. This is
+		 * useful for first-time and early site planning.
+		 *
+		 * @param  \App\Models\User  $user       The User being checked for Authorization.
+		 * @param  string            $ability    The Name of the Ability being checked for Authorization.
+		 * @param  array|null        $arguments  The Arguments being passed in.
+		 *
+		 * @return true|void
+		 */
+		$gate->before(function($user, $ability, $arguments)
+		{
+			// Check for Single User on the Site
+			if(Auth::check() && User::count() == 1)
+				return true;
+		});
+	}
+
+	public function registerAfterCallbacks(GateContract $gate)
+	{
+		$gate->after(function($user, $ability, $arguments, $result) use ($gate)
+		{
+			if(!$gate->has($ability))
+				Flash::warning('Unregistered Ability Checked: ' . $ability);
+		});
 	}
 
 	/////////////////

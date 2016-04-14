@@ -2,12 +2,20 @@
 @import "vendor/chosen-select";
 @import "vendor/chosen-select-bootstrap";
 
+// Variables & Mixins
+@import 'variables/variables';
+@import "mixins/mixins";
+
 // Components
 @import "components/buttons";
 @import "components/headers";
 @import "components/horizontal-rules";
 @import "components/labels";
+@import "components/flex";
+@import "components/modals";
+@import "components/skills";
 
 // Utilities
 @import "utilities/alignment";
 @import "utilities/display";
+@import "utilities/padding";

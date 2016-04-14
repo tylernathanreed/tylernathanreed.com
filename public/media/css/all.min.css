@@ -643,49 +643,61 @@ select.form-control + .chosen-container-multi .chosen-results li.result-selected
   background-color: white;
 }
 
-.btn-naked {
+/**
+ * Modals
+ */
+
+.btn-naked,
+.btn-bare {
   background: none;
   border: none;
   color: inherit;
 }
 
-.btn-naked:active {
+.btn-naked:active,
+.btn-bare:active {
   box-shadow: none;
 }
 
 .btn-naked:active:focus,
-.btn-naked:focus {
+.btn-naked:focus,
+.btn-bare:active:focus,
+.btn-bare:focus {
   outline: none;
+}
+
+.btn-bare {
+  padding: 0;
 }
 
 .btn-highlight:hover {
   color: #666;
 }
 
-h1 a,
-h1 a:hover,
-h1 a:focus,
-h1 a:visited,
-h2 a,
-h2 a:hover,
-h2 a:focus,
-h2 a:visited,
-h3 a,
-h3 a:hover,
-h3 a:focus,
-h3 a:visited,
-h4 a,
-h4 a:hover,
-h4 a:focus,
-h4 a:visited,
-h5 a,
-h5 a:hover,
-h5 a:focus,
-h5 a:visited,
-h6 a,
-h6 a:hover,
-h6 a:focus,
-h6 a:visited {
+h1:not([role=link]) a,
+h1:not([role=link]) a:hover,
+h1:not([role=link]) a:focus,
+h1:not([role=link]) a:visited,
+h2:not([role=link]) a,
+h2:not([role=link]) a:hover,
+h2:not([role=link]) a:focus,
+h2:not([role=link]) a:visited,
+h3:not([role=link]) a,
+h3:not([role=link]) a:hover,
+h3:not([role=link]) a:focus,
+h3:not([role=link]) a:visited,
+h4:not([role=link]) a,
+h4:not([role=link]) a:hover,
+h4:not([role=link]) a:focus,
+h4:not([role=link]) a:visited,
+h5:not([role=link]) a,
+h5:not([role=link]) a:hover,
+h5:not([role=link]) a:focus,
+h5:not([role=link]) a:visited,
+h6:not([role=link]) a,
+h6:not([role=link]) a:hover,
+h6:not([role=link]) a:focus,
+h6:not([role=link]) a:visited {
   color: inherit;
 }
 
@@ -702,6 +714,280 @@ h6 a:visited {
   padding-left: 0;
 }
 
+.container-flex {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.container-flex.--space-between {
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.container-flex.--column {
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  /* Add Vertical Spacing between Elements */
+}
+
+.container-flex.--column > * {
+  margin-bottom: 5px;
+}
+
+.container-flex.--column > *:last-child {
+  margin-bottom: 0;
+}
+
+.flex-1 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.modal-default .modal-content {
+  border-color: #ddd;
+}
+
+.modal-default .modal-content > .modal-header {
+  color: #333333;
+  background-color: #EEE;
+  border-color: #ddd;
+}
+
+.modal-default .modal-content > .modal-header > .close {
+  color: inherit;
+  opacity: 1;
+  text-shadow: none;
+}
+
+.modal-default .modal-content > .modal-header > .close:hover {
+  opacity: 0.75;
+}
+
+.modal-default .modal-content > .modal-header + .modal-collapse > .modal-body {
+  border-top-color: #ddd;
+}
+
+.modal-default .modal-content > .modal-header .badge {
+  color: #EEE;
+  background-color: #333333;
+}
+
+.modal-default .modal-content > .modal-footer + .modal-collapse > .modal-body {
+  border-bottom-color: #ddd;
+}
+
+.modal-primary .modal-content {
+  border-color: #337ab7;
+}
+
+.modal-primary .modal-content > .modal-header {
+  color: #fff;
+  background-color: #337ab7;
+  border-color: #337ab7;
+}
+
+.modal-primary .modal-content > .modal-header > .close {
+  color: inherit;
+  opacity: 1;
+  text-shadow: none;
+}
+
+.modal-primary .modal-content > .modal-header > .close:hover {
+  opacity: 0.75;
+}
+
+.modal-primary .modal-content > .modal-header + .modal-collapse > .modal-body {
+  border-top-color: #337ab7;
+}
+
+.modal-primary .modal-content > .modal-header .badge {
+  color: #337ab7;
+  background-color: #fff;
+}
+
+.modal-primary .modal-content > .modal-footer + .modal-collapse > .modal-body {
+  border-bottom-color: #337ab7;
+}
+
+.modal-success .modal-content {
+  border-color: #d6e9c6;
+}
+
+.modal-success .modal-content > .modal-header {
+  color: #3c763d;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+}
+
+.modal-success .modal-content > .modal-header > .close {
+  color: inherit;
+  opacity: 1;
+  text-shadow: none;
+}
+
+.modal-success .modal-content > .modal-header > .close:hover {
+  opacity: 0.75;
+}
+
+.modal-success .modal-content > .modal-header + .modal-collapse > .modal-body {
+  border-top-color: #d6e9c6;
+}
+
+.modal-success .modal-content > .modal-header .badge {
+  color: #dff0d8;
+  background-color: #3c763d;
+}
+
+.modal-success .modal-content > .modal-footer + .modal-collapse > .modal-body {
+  border-bottom-color: #d6e9c6;
+}
+
+.modal-info .modal-content {
+  border-color: #bce8f1;
+}
+
+.modal-info .modal-content > .modal-header {
+  color: #31708f;
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+}
+
+.modal-info .modal-content > .modal-header > .close {
+  color: inherit;
+  opacity: 1;
+  text-shadow: none;
+}
+
+.modal-info .modal-content > .modal-header > .close:hover {
+  opacity: 0.75;
+}
+
+.modal-info .modal-content > .modal-header + .modal-collapse > .modal-body {
+  border-top-color: #bce8f1;
+}
+
+.modal-info .modal-content > .modal-header .badge {
+  color: #d9edf7;
+  background-color: #31708f;
+}
+
+.modal-info .modal-content > .modal-footer + .modal-collapse > .modal-body {
+  border-bottom-color: #bce8f1;
+}
+
+.modal-warning .modal-content {
+  border-color: #f7e1b5;
+}
+
+.modal-warning .modal-content > .modal-header {
+  color: #8a6d3b;
+  background-color: #faf2cc;
+  border-color: #f7e1b5;
+}
+
+.modal-warning .modal-content > .modal-header > .close {
+  color: inherit;
+  opacity: 1;
+  text-shadow: none;
+}
+
+.modal-warning .modal-content > .modal-header > .close:hover {
+  opacity: 0.75;
+}
+
+.modal-warning .modal-content > .modal-header + .modal-collapse > .modal-body {
+  border-top-color: #f7e1b5;
+}
+
+.modal-warning .modal-content > .modal-header .badge {
+  color: #faf2cc;
+  background-color: #8a6d3b;
+}
+
+.modal-warning .modal-content > .modal-footer + .modal-collapse > .modal-body {
+  border-bottom-color: #f7e1b5;
+}
+
+.modal-danger .modal-content {
+  border-color: #ebccd1;
+}
+
+.modal-danger .modal-content > .modal-header {
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #ebccd1;
+}
+
+.modal-danger .modal-content > .modal-header > .close {
+  color: inherit;
+  opacity: 1;
+  text-shadow: none;
+}
+
+.modal-danger .modal-content > .modal-header > .close:hover {
+  opacity: 0.75;
+}
+
+.modal-danger .modal-content > .modal-header + .modal-collapse > .modal-body {
+  border-top-color: #ebccd1;
+}
+
+.modal-danger .modal-content > .modal-header .badge {
+  color: #f2dede;
+  background-color: #a94442;
+}
+
+.modal-danger .modal-content > .modal-footer + .modal-collapse > .modal-body {
+  border-bottom-color: #ebccd1;
+}
+
+.skill {
+  border: none !important;
+  font-weight: normal;
+}
+
+.skill-default {
+  color: #333;
+  background-color: #fff;
+}
+
+.skill-primary {
+  color: #fff;
+  background-color: #337ab7;
+}
+
+.skill-success {
+  color: #fff;
+  background-color: #5cb85c;
+}
+
+.skill-info {
+  color: #fff;
+  background-color: #5bc0de;
+}
+
+.skill-warning {
+  color: #fff;
+  background-color: #f0ad4e;
+}
+
+.skill-danger {
+  color: #fff;
+  background-color: #d9534f;
+}
+
+.skills {
+  max-width: 400px;
+  margin: auto;
+}
+
 .align-left {
   text-align: left;
 }
@@ -714,14 +1000,88 @@ h6 a:visited {
   text-align: center;
 }
 
-.block {
+.--block {
   display: block;
 }
 
-.inline {
+.--inline {
   display: inline;
 }
 
-.inline-block {
+.--inline-block {
   display: inline-block;
+}
+
+.--bold {
+  font-weight: bold;
+}
+
+.--full-width {
+  width: 100%;
+}
+
+.--faded {
+  color: #888;
+}
+
+.--centered {
+  text-align: center;
+}
+
+.--margin-auto {
+  margin: auto;
+}
+
+.--no-margin {
+  margin: 0;
+}
+
+.--no-margin-top {
+  margin-top: 0 !important;
+}
+
+.--no-margin-bottom {
+  margin-bottom: 0 !important;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+@media (min-width: 992px) {
+  .--no-margin-top-md {
+    margin-top: 0 !important;
+  }
+
+  .--no-margin-bottom-md {
+    margin-bottom: 0 !important;
+  }
+}
+
+.--padding-top,
+.--padding-vertical,
+.--padding {
+  padding-top: 5px;
+}
+
+.--padding-left,
+.--padding-horizontal,
+.--padding {
+  padding-left: 5px;
+}
+
+.--padding-bottom,
+.--padding-vertical,
+.--padding {
+  padding-bottom: 5px;
+}
+
+.--padding-right,
+.--padding-horizontal,
+.--padding {
+  padding-right: 5px;
+}
+
+.--padding-none {
+  padding: 0;
 }

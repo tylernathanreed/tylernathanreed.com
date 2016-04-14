@@ -16,4 +16,5 @@ elixir(function(mix) {
 
 
 	mix.scripts(['vendor/chosen-select.js'], 'public/media/js/chosen-select.js');
+	mix.scripts(['jquery-extensions.js'], 'public/media/js/forms.js');
 });

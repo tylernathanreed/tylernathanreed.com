@@ -1,4 +1,5 @@
-.btn-naked
+.btn-naked,
+.btn-bare
 {
 	background: none;
 	border: none;
@@ -7,6 +8,11 @@
 	&:active { box-shadow: none; }
 
 	&:active:focus,	&:focus { outline: none; }
+}
+
+.btn-bare
+{
+	padding: 0;
 }
 
 .btn-highlight

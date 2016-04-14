@@ -80,7 +80,7 @@ class RolesController extends Controller
 		$role->permissions()->sync($permissions);
 
 		// Determine the Users selected for the Role
-		$users = Permission::whereIn('email', $request->users)->get()->pluck('id')->toArray();
+		$users = User::whereIn('email', $request->users)->get()->pluck('id')->toArray();
 
 		// Synchronize the Users associated with the Role
 		$role->users()->sync($users);

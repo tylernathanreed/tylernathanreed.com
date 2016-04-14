@@ -13,8 +13,14 @@ trait Sluggable
 	 */
 	public function makeSlug($collection = [])
 	{
+		debug('Generating Slug');
+		debug($this);
+
 		// Intialize the Slug
-		$initial = str_slug($this->sluggable);
+		$initial = $this->getInitialSlug();
+
+		debug(' -> Initial Slug: ' . $initial);
+		debug(' -> Current Slug: ' . $this->slug);
 
 		// Check for Unchanged Slug
 		if($this->slug == $initial)
@@ -23,63 +29,27 @@ trait Sluggable
 		// Determine the Highlist Slug Value
 		$slug = $this->getHighestSlug($initial, $collection);
 
+		debug(' -> Highest Slug: ' . $slug);
+
 		// Assign the Slug
 		$this->slug = is_null($slug) ? $initial : $initial . '-' . ($slug + 1);
 
+		debug('New Slug: ' . $this->slug);
+
 		return $this->slug;
-	}
-
-	///////////////////////////
-	//* Attribute Overrides *//
-	///////////////////////////
-	/**
-	 * Returns the Slug Attribute that defines the actual Slug used to
-	 * uniquely identify this Object.
-	 *
-	 * @return string
-	 */
-	public function getSlugAttribute($value)
-	{
-		return isset($this->attributes[$this->getSlugAttributeName()]) ? $this->attributes[$this->getSlugAttributeName()] : null;
-	}
-
-	/**
-	 * Sets the Slug Attribute.
-	 *
-	 * @return void
-	 */
-	public function setSlugAttribute($value)
-	{
-		$this->attributes[$this->getSlugAttributeName()] = $value;
-	}
-
-	/**
-	 * Returns the Sluggable Attribute that is used to generate the Slug
-	 * for this Object.
-	 *
-	 * @return string
-	 */
-	public function getSluggableAttribute($value)
-	{
-		return $this->attributes[$this->getSluggableAttributeName()];
 	}
 
 	/////////////////
 	//* Accessors *//
 	/////////////////
 	/**
-	 * Returns the Name of the Slug Attribute.
+	 * Returns the Initial Slug.
 	 *
 	 * @return string
 	 */
-	public function getSlugAttributeName()
+	public function getInitialSlug()
 	{
-		// Check for Trait Override
-		if(property_exists($this, 'slugAttribute'))
-			return $this->slugAttribute;
-
-		// Return the Default Attribute
-		return 'slug';
+		return str_slug($this->attributes[$this->getSluggable()]);
 	}
 
 	/**
@@ -87,11 +57,11 @@ trait Sluggable
 	 *
 	 * @return string
 	 */
-	public function getSluggableAttributeName()
+	public function getSluggable()
 	{
 		// Check for Trait Override
-		if(property_exists($this, 'sluggableAttribute'))
-			return $this->sluggableAttribute;
+		if(property_exists($this, 'sluggable'))
+			return $this->sluggable;
 
 		// Return the Default Attribute
 		return 'name';
@@ -160,7 +130,7 @@ trait Sluggable
 	 */
 	public function scopeWithSlug($query, $slug)
 	{
-		$query->where($this->getSlugAttributeName(), $slug);
+		$query->where('slug', $slug);
 	}
 
 	/**
@@ -173,6 +143,6 @@ trait Sluggable
 	 */
 	public function scopeWithSimilarSlug($query, $slug)
 	{
-		$query->whereRaw($this->getSlugAttributeName() . " RLIKE '^{$slug}(-[0-9]+)?$'");
+		$query->whereRaw('slug' . " RLIKE '^{$slug}(-[0-9]+)?$'");
 	}
 }

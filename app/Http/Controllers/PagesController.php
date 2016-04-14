@@ -13,7 +13,7 @@ class PagesController extends Controller
 	/**
 	 * Serves the Home Page to the User.
 	 *
-	 * @return Response:
+	 * @return Response
 	 */
 	public function home()
 	{
@@ -23,10 +23,30 @@ class PagesController extends Controller
 	/**
 	 * Serves the Resume Page to the User.
 	 *
-	 * @return Response:
+	 * @return Response
 	 */
 	public function resume()
 	{
 		return view('pages.resume');
+	}
+
+	/**
+	 * Serves the Test Page to the User.
+	 *
+	 * @return Response
+	 */
+	public function test()
+	{
+		return view('pages.test');
+	}
+
+	/**
+	 * Serves the Modal Page to the User.
+	 *
+	 * @return Response
+	 */
+	public function modal()
+	{
+		return view('pages.modal');
 	}
 }

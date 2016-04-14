@@ -14,6 +14,7 @@
 
 Route::group(['middleware' => 'web'], function()
 {
+	// Generic Pages
 	Route::get('/', array(
 		'as' 	=> 'pages.home',
 		'uses' 	=> 'PagesController@home'
@@ -23,6 +24,17 @@ Route::group(['middleware' => 'web'], function()
 		'as' 	=> 'pages.resume',
 		'uses' 	=> 'PagesController@resume'
 	));
+
+	Route::get('/test', array(
+		'as' 	=> 'pages.test',
+		'uses' 	=> 'PagesController@test'
+	));
+
+	Route::get('/modal', array(
+		'as' 	=> 'pages.modal',
+		'uses' 	=> 'PagesController@modal'
+	));
+
 
 	// Authentication Routes
 	Route::group(['prefix' => 'auth'], function()
@@ -110,8 +122,30 @@ Route::group(['middleware' => 'web'], function()
 		)
 	));
 
-	Route::get('/dashboard', array(
-		'as' 	=> 'dashboard',
-		'uses' 	=> 'DashboardController@index'
+	// Dashboard Routes
+	Route::group(['prefix' => 'dashboard'], function()
+	{
+		Route::get('/', array(
+			'as' 	=> 'dashboard',
+			'uses' 	=> 'DashboardController@index'
+		));
+
+		Route::get('settings', array(
+			'as' 	=> 'dashboard.settings',
+			'uses' 	=> 'DashboardController@settings'
+		));
+	});
+
+	// Menu Routes
+	Route::resource('menus', 'MenusController', array(
+		'names' => array(
+			'index' 	=> 'menus.index',
+			'create' 	=> 'menus.create',
+			'store' 	=> 'menus.store',
+			'show' 		=> 'menus.show',
+			'edit' 		=> 'menus.edit',
+			'update' 	=> 'menus.update',
+			'destroy' 	=> 'menus.destroy'
+		)
 	));
 });

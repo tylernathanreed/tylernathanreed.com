@@ -18,8 +18,6 @@ class BladeServiceProvider extends ServiceProvider
 	public function boot()
 	{
 		// Compile all Directives
-		$this->compileContinue();
-		$this->compileBreak();
 		$this->compileIfEmpty();
 		$this->compileIfNotEmpty();
 		$this->compileOptional();
@@ -35,34 +33,6 @@ class BladeServiceProvider extends ServiceProvider
 	public function register()
 	{
 		//
-	}
-
-	/**
-	 * Add @continue for Loops.
-	 *
-	 * @return void
-	 */
-	private function compileContinue()
-	{
-		// Add @continue for Loops
-		Blade::directive('continue', function($expression)
-		{
-			return '<?php continue; ?>';
-		});
-	}
-
-	/**
-	 * Add @break for Loops.
-	 *
-	 * @return void
-	 */
-	private function compileBreak()
-	{
-		// Add @break for Loops
-		Blade::directive('break', function($expression)
-		{
-			return '<?php break; ?>';
-		});
 	}
 
 	/**

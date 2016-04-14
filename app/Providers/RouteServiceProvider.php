@@ -24,6 +24,7 @@ class RouteServiceProvider extends ServiceProvider
 	 */
 	protected $bindings = array(
 		\App\Models\Article::class 		=> ['articles' 		=> 'slug'],
+		\App\Models\Menu::class 		=> ['menus' 		=> 'slug'],
 		\App\Models\Role::class 		=> ['roles' 		=> 'slug'],
 		\App\Models\Permission::class 	=> ['permissions' 	=> 'slug']
 	);
