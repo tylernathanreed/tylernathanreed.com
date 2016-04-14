@@ -40,5 +40,10 @@ class PermissionsTableSeeder extends Seeder
 			'display' 		=> 'Manage Articles',
 			'description' 	=> 'Allows the User Manage Articles.'
 		]);
+
+		Permission::updateOrCreate(['name' => 'manage-menus'], [
+			'display' 		=> 'Manage Menus',
+			'description' 	=> 'Allows the User Manage Menus.'
+		]);
 	}
 }
