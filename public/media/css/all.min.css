@@ -701,6 +701,15 @@ h6:not([role=link]) a:visited {
   color: inherit;
 }
 
+h1 .heading-balanced,
+h2 .heading-balanced,
+h3 .heading-balanced,
+h4 .heading-balanced,
+h5 .heading-balanced,
+h6 .heading-balanced {
+  margin-top: 10px;
+}
+
 .hr {
   border-color: #DDD;
 }
