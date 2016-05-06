@@ -153,6 +153,7 @@ return [
 		Reed\Flash\FlashServiceProvider::class,
 		Barryvdh\Debugbar\ServiceProvider::class,
 		Collective\Html\HtmlServiceProvider::class,
+		Conner\Tagging\Providers\TaggingServiceProvider::class,
 
 		/*
 		 * Application Service Providers...

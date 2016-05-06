@@ -15,7 +15,7 @@
 						<a class="btn btn-sm btn-naked btn-highlight" href="{{ route('permissions.edit', $permission->slug) }}">
 							<i class="glyphicon glyphicon-pencil"></i>
 						</a>
-						<form method="POST" action="{{ route('permissions.destroy', $permission->slug) }}" class="inline-block">
+						<form method="POST" action="{{ route('permissions.destroy', $permission->slug) }}" class="--inline-block">
 							{{ csrf_field() }}
 							{{ method_field(method('permissions.destroy')) }}
 

@@ -8,23 +8,20 @@
 				<div class="panel panel-default">
 					<div class="panel-heading">Modal Test</div>
 
-					@include('partials.modal', [
-						'modal' => [
-							'title' => 'Edit Menu Item',
-							'fields' => [
-								'title' => [
-									'label' => 'Title',
-									'type' => 'text',
-									'class' => 'span-left',
-									'maxlength' => 255,
-									'placeholder' => 'The Menu Item Title...'
-								]
-							]
-						]
-					])
+					<div class="panel-body">
+						<button type="button" class="btn btn-primary btn-lg" href="{{ route('menus.items.create') }}" data-toggle="modal" data-target="#modal">
+							Launch demo modal
+						</button>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+
+@endsection
+
+@section('modal')
+
+	@include('partials.modal')
 
 @endsection

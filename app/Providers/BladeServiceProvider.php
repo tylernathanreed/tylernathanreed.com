@@ -37,6 +37,8 @@ class BladeServiceProvider extends ServiceProvider
 		$this->compileSet();
 		$this->compileError();
 		$this->compileSwitch();
+		$this->compileScript();
+		$this->compileStylesheet();
 	}
 
 	///////////////////////
@@ -188,6 +190,42 @@ class BladeServiceProvider extends ServiceProvider
 		Blade::directive('default', function($expression)
 		{
 			return "<?php default: ?>";
+		});
+	}
+
+	/**
+	 * Add @script for <script> Libraries.
+	 *
+	 * @return void
+	 */
+	private function compileScript()
+	{
+		// Add @script for <script> Libraries.
+		Blade::directive('script', function($expression)
+		{
+			// Strip Open and Close Parenthesis
+			if(Str::startsWith($expression, '('))
+				$expression = substr($expression, 1, -1);
+
+			return "<script src={$expression}></script>";
+		});
+	}
+
+	/**
+	 * Add @stylesheet for <link> Stylesheets.
+	 *
+	 * @return void
+	 */
+	private function compileStylesheet()
+	{
+		// Add @stylesheet for Form Errors
+		Blade::directive('stylesheet', function($expression)
+		{
+			// Strip Open and Close Parenthesis
+			if(Str::startsWith($expression, '('))
+				$expression = substr($expression, 1, -1);
+
+			return "<link href={$expression} rel=\"stylesheet\" type=\"text/css\">";
 		});
 	}
 }

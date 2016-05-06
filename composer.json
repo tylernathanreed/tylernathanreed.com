@@ -9,7 +9,8 @@
         "laravel/framework": "5.2.*",
         "reed/flash": "dev-master",
         "barryvdh/laravel-debugbar": "^2.2",
-        "laravelcollective/html": "5.2.*"
+        "laravelcollective/html": "5.2.*",
+        "rtconner/laravel-tagging": "~2.1"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

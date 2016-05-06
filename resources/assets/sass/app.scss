@@ -7,13 +7,7 @@
 @import "mixins/mixins";
 
 // Components
-@import "components/buttons";
-@import "components/headers";
-@import "components/horizontal-rules";
-@import "components/labels";
-@import "components/flex";
-@import "components/modals";
-@import "components/skills";
+@import 'components/components';
 
 // Utilities
 @import "utilities/alignment";

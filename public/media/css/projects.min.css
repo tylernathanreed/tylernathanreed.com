@@ -1,0 +1,91 @@
+#game-of-life #game {
+  width: 640px;
+  margin: 0px auto;
+}
+
+#game-of-life #game .wrapper {
+  background: #000;
+  width: 640px;
+  height: 480px;
+}
+
+#game-of-life #game .canvas {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+
+#game-of-life .btn.active {
+  background: #5998CE;
+}
+
+.navbar-game {
+  background-color: #F8F8F8;
+  border-color: #888;
+  margin-bottom: 0;
+  border-radius: 0;
+  min-height: 0;
+}
+
+.navbar-game .navbar-right {
+  margin-right: 0;
+}
+
+.navbar-flex {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  border-width: 1px;
+  border-style: solid;
+  padding: 3px;
+}
+
+.navbar-flex .navbar-left,
+.navbar-flex .navbar-right {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-flex .navbar-left {
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+}
+
+.navbar-flex .navbar-left li:nth-child(n+2) {
+  margin-left: 3px;
+}
+
+.navbar-flex .navbar-right {
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+}
+
+.navbar-top {
+  border-bottom: none;
+}

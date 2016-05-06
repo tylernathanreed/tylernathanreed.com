@@ -15,7 +15,7 @@
 						<a class="btn btn-sm btn-naked btn-highlight" href="{{ route('roles.edit', $role->slug) }}">
 							<i class="glyphicon glyphicon-pencil"></i>
 						</a>
-						<form method="POST" action="{{ route('roles.destroy', $role->slug) }}" class="inline-block">
+						<form method="POST" action="{{ route('roles.destroy', $role->slug) }}" class="--inline-block">
 							{{ csrf_field() }}
 							{{ method_field(method('roles.destroy')) }}
 

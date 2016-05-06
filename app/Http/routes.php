@@ -35,10 +35,12 @@ Route::group(['middleware' => 'web'], function()
 		'uses' 	=> 'PagesController@modal'
 	));
 
+	Route::get('/sliders', function() {
+		return view('pages.sliders');
+	});
 
 	// Authentication Routes
-	Route::group(['prefix' => 'auth'], function()
-	{
+	Route::group(['prefix' => 'auth'], function() {
 		// Login and Logout Routes
 		Route::get('login', array(
 			'as' 	=> 'auth.login',
@@ -83,6 +85,14 @@ Route::group(['middleware' => 'web'], function()
 		));
 	});
 
+	// Project Routes
+	Route::group(['prefix' => 'projects'], function() {
+		Route::get('game-of-life', array(
+			'as' 	=> 'projects.game-of-life',
+			'uses' 	=> 'ProjectsController@gameOfLife'
+		));
+	});
+
 	// Article Routes
 	Route::resource('articles', 'ArticlesController', array(
 		'names' => array(
@@ -122,6 +132,19 @@ Route::group(['middleware' => 'web'], function()
 		)
 	));
 
+	// Tag Routes
+	Route::resource('tags', 'TagsController', array(
+		'names' => array(
+			'index' 	=> 'tags.index',
+			'create' 	=> 'tags.create',
+			'store' 	=> 'tags.store',
+			'show' 		=> 'tags.show',
+			'edit' 		=> 'tags.edit',
+			'update' 	=> 'tags.update',
+			'destroy' 	=> 'tags.destroy'
+		)
+	));
+
 	// Dashboard Routes
 	Route::group(['prefix' => 'dashboard'], function()
 	{
@@ -147,5 +170,32 @@ Route::group(['middleware' => 'web'], function()
 			'update' 	=> 'menus.update',
 			'destroy' 	=> 'menus.destroy'
 		)
+	));
+
+	// Transaction Routes
+	Route::resource('transactions', 'TransactionsController', array(
+		'names' => array(
+			'index' 	=> 'transactions.index',
+			'create' 	=> 'transactions.create',
+			'store' 	=> 'transactions.store',
+			'show' 		=> 'transactions.show',
+			'edit' 		=> 'transactions.edit',
+			'update' 	=> 'transactions.update',
+			'destroy' 	=> 'transactions.destroy'
+		)
+	));
+
+	Route::get('menu-items/create', array(
+		'as' => 'menus.items.create',
+		function() {
+			$permissions = \App\Models\Permission::all()->keyBy('name')->map(function($item, $key) { return $item->display; })->toArray();
+
+			return view('models.menus.items.create', compact('permissions'));
+		}
+	));
+
+	Route::get('csv', array(
+		'as' => 'csv.read',
+		'uses' => 'CSVController@read'
 	));
 });

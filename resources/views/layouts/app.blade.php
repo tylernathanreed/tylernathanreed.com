@@ -35,15 +35,17 @@
 
 		@yield('content')
 
-		<div id="tail" style="display: none;">
+		<div id="tail">
 			<!-- Scripts -->
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
 			<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
-			<div class="templates" style="display: none;">
+			<div class="templates" style="display: none">
 				@yield('templates')
 			</div>
+
+			@yield('modal')
 
 			@yield('tail')
 		</div> <!-- </tail> -->

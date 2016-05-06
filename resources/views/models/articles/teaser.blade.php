@@ -12,7 +12,7 @@
 							<a class="btn btn-sm btn-naked btn-highlight" href="{{ route('articles.edit', $article->slug) }}">
 								<i class="glyphicon glyphicon-pencil"></i>
 							</a>
-							<form method="POST" action="{{ route('articles.destroy', $article->slug) }}" class="inline-block">
+							<form method="POST" action="{{ route('articles.destroy', $article->slug) }}" class="--inline-block">
 								{{ csrf_field() }}
 								{{ method_field(method('articles.destroy')) }}
 

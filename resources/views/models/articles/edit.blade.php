@@ -11,7 +11,7 @@
 				<div class="col-md-10 col-md-offset-1">
 					<div class="panel panel-default">
 						<div class="panel-heading">
-								<input type="text" name="title" placeholder="Enter Title Here..." class="form-control" value="{{ old('title', $article->title) }}">
+							<input type="text" name="title" placeholder="Enter Title Here..." class="form-control" value="{{ old('title', $article->title) }}">
 						</div>
 
 						<div class="panel-body">

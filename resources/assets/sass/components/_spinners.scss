@@ -1,0 +1,17 @@
+.spinner { text-align: center; }
+.spinner:after {
+	content: '';
+	display: inline-block;
+	border: 10px solid rgba(128, 128, 128, 0.2);
+	border-bottom-color: rgba(128, 128, 128, 0.5);
+	animation: spin 0.75s infinite linear;
+
+	border-radius: 50%;
+	width: 64px;
+	height: 64px;
+}
+
+@keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}

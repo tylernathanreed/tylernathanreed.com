@@ -674,6 +674,42 @@ select.form-control + .chosen-container-multi .chosen-results li.result-selected
   color: #666;
 }
 
+.container-flex {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.container-flex.--space-between {
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.container-flex.--column {
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  /* Add Vertical Spacing between Elements */
+}
+
+.container-flex.--column > * {
+  margin-bottom: 5px;
+}
+
+.container-flex.--column > *:last-child {
+  margin-bottom: 0;
+}
+
+.flex-1 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
 h1:not([role=link]) a,
 h1:not([role=link]) a:hover,
 h1:not([role=link]) a:focus,
@@ -723,40 +759,23 @@ h6 .heading-balanced {
   padding-left: 0;
 }
 
-.container-flex {
+.list-group-hover .list-group-item:hover {
+  background: #EEE;
+}
+
+.list-group-item-actions {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.container-flex.--space-between {
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-.container-flex.--column {
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  /* Add Vertical Spacing between Elements */
-}
-
-.container-flex.--column > * {
-  margin-bottom: 5px;
-}
-
-.container-flex.--column > *:last-child {
-  margin-bottom: 0;
-}
-
-.flex-1 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  float: right;
+  height: 100%;
+  padding-right: 15px;
 }
 
 .modal-default .modal-content {
@@ -957,6 +976,11 @@ h6 .heading-balanced {
   border-bottom-color: #ebccd1;
 }
 
+.panel-heading > *,
+.panel-title > * {
+  margin-bottom: 0;
+}
+
 .skill {
   border: none !important;
   font-weight: normal;
@@ -995,6 +1019,46 @@ h6 .heading-balanced {
 .skills {
   max-width: 400px;
   margin: auto;
+}
+
+.spinner {
+  text-align: center;
+}
+
+.spinner:after {
+  content: '';
+  display: inline-block;
+  border: 10px solid rgba(128, 128, 128, 0.2);
+  border-bottom-color: rgba(128, 128, 128, 0.5);
+  -webkit-animation: spin 0.75s infinite linear;
+  animation: spin 0.75s infinite linear;
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }
 
 .align-left {

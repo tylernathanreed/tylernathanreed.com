@@ -1,0 +1,22 @@
+.list-group-hover
+{
+	.list-group-item:hover
+	{
+		background: #EEE;
+	}
+}
+
+.list-group-item-actions
+{
+	display: flex;
+	align-items: center;
+
+	position: absolute;
+	top: 0;
+	right: 0;
+	float: right;
+
+	height: 100%;
+
+	padding-right: 15px;
+}
