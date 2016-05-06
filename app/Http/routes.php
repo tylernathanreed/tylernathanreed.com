@@ -17,7 +17,7 @@ Route::group(['middleware' => 'web'], function()
 	// Generic Pages
 	Route::get('/', array(
 		'as' 	=> 'pages.home',
-		'uses' 	=> 'PagesController@home'
+		'uses' 	=> 'PagesController@resume'
 	));
 
 	Route::get('/resume', array(
