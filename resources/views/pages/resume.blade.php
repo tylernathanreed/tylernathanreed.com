@@ -176,7 +176,7 @@
 					'title' => 'University of Texas at Dallas',
 					'link' => 'http://www.utdallas.edu/',
 					'content' => 'Bachelors in Computer Science',
-					'meta' => 'Awarded: Summer 2015'
+					'meta' => 'Awarded: August 2015'
 				]) !!}
 
 				{!! Form::paragraph([
@@ -190,7 +190,7 @@
 					'title' => 'Microsoft Technology Associate',
 					'link' => 'https://www.microsoft.com/en-us/learning/mta-certification.aspx',
 					'content' => 'Given for the ability to understand and explain fundamental concepts of Software Development.',
-					'meta' => 'Awarded: Summer 2014'
+					'meta' => 'Awarded: June 2014'
 				]) !!}
 			</div>
 		</section>
@@ -201,19 +201,19 @@
 
 			<div class="row">
 				{!! Form::paragraph([
-					'title' => 'Epimed International',
-					'subtitle' => 'Contract Programmer | Backend Designer',
-					'link' => 'http://www.epimedpain.com/',
-					'content' => 'Replaced an analog paper system with a digital one. The implementation yielded a mobile-ready application using the Laravel 4 framework.',
-					'meta' => 'Fall 2014'
-				]) !!}
-
-				{!! Form::paragraph([
 					'title' => 'Bible.org',
 					'subtitle' => 'Full-Stack Web Developer',
 					'link' => 'http://www.bible.org/',
 					'content' => 'Built a custom site from scratch using the Laravel 5.2 Framework. Used a mobile-first design, and operated using TDD.',
-					'meta' => 'Spring 2015 - Current'
+					'meta' => 'Spring 2015 - <b>Current</b>'
+				]) !!}
+
+				{!! Form::paragraph([
+					'title' => 'Epimed International',
+					'subtitle' => 'Contract Programmer | Backend Designer',
+					'link' => 'http://www.epimedpain.com/',
+					'content' => 'Replaced an analog paper system with a digital one. The implementation yielded a mobile-ready application using the Laravel 4 framework.',
+					'meta' => 'September 2014 - December 2014'
 				]) !!}
 
 				{!! Form::paragraph([
@@ -221,7 +221,7 @@
 					'subtitle' => 'Game Design Professor',
 					'link' => 'http://www.utdallas.edu/k12/summer/',
 					'content' => 'Taught K-12 Students how to program and design games using Game Maker Software. Created the curriculum.',
-					'meta' => 'Summer 2013 - Summer 2014'
+					'meta' => 'June 2013 - August, June 2014 - August 2014'
 				]) !!}
 
 				{!! Form::paragraph([
@@ -229,7 +229,7 @@
 					'subtitle' => 'Private Tutor for GM: Studio and other CS topics',
 					'link' => 'https://www.yoyogames.com/studio',
 					'content' => 'Taught Students various CS concepts by using a goal-oriented curriculum that was dynamically adjusted for each student\'s needs.',
-					'meta' => 'Fall 2014 - Spring 2015'
+					'meta' => 'August 2014 - January 2015'
 				]) !!}
 			</div>
 		</section>
@@ -243,41 +243,41 @@
 					'title' => 'Laravel | Personal Website',
 					'link' => 'http://www.tylernathanreed.com/',
 					'content' => 'My personal website, home to all of my various projects, packages, and other programming toys. Always uses latest software and principals.',
-					'meta' => 'Fall 2014 - Current'
+					'meta' => 'November 2014 - Current'
 				]) !!}
 
 				{!! Form::paragraph([
 					'title' => 'C++ | Internet Simulation w/ OSI Layers',
 					'link' => 'https://github.com/tylernathanreed/Academic-Projects/tree/master/C%20%26%20C%2B%2B/Internet%20Simulation',
 					'content' => 'Simulates a network by having files as network channels. Realistically matches an actual network where nodes use different OSI Layers.',
-					'meta' => 'Spring 2014'
+					'meta' => 'May 2014'
 				]) !!}
 
 				{!! Form::paragraph([
 					'title' => 'Java | Constraint Satisfaction',
 					'link' => 'https://github.com/tylernathanreed/Academic-Projects/tree/master/Java/Constraint%20Satisfaction',
 					'content' => 'Solves a generalized Constraint Satisfaction Problem. The problem is solved using various heuristics and consistency procedures.',
-					'meta' => 'Spring 2014'
+					'meta' => 'February 2014 - March 2014'
 				]) !!}
 
 				{!! Form::paragraph([
 					'title' => 'C# | Contact Manager',
 					'link' => 'https://github.com/tylernathanreed/Academic-Projects/tree/master/C%23%20%26%20.NET',
 					'content' => 'Kept track of various contacts by storing data in a SQL Database. Stored procedures were used to manage addresses, phone numbers, etc.',
-					'meta' => 'Spring 2013'
+					'meta' => 'September 2013 - December 2013'
 				]) !!}
 
 				{!! Form::paragraph([
 					'title' => 'GML | Physics Sandbox',
 					'link' => 'http://steamcommunity.com/sharedfiles/filedetails/?id=131654659',
 					'content' => 'A sandbox-style gadget implementing Box2D physics. Included concave mesh collision handling and kinematic forces.',
-					'meta' => '2012 - 2013'
+					'meta' => 'November 2012 -  April 2013'
 				]) !!}
 
 				{!! Form::paragraph([
 					'title' => 'JS | Game Engine',
 					'content' => 'A 2D Canvas driven HTML5 platform providing object-based instances with an event-driven framework.',
-					'meta' => '2016 - Current'
+					'meta' => 'March 2016 - <b>Current</b>'
 				]) !!}
 			</div>
 		</section>
@@ -289,15 +289,15 @@
 			<div class="row">
 				{!! Form::paragraph([
 					'title' => 'Community Moderator',
-					'content' => 'Learned Agile-Programming, Version Control Systems, and programed games using a wide spectrum of languages and tools.',
-					'meta' => 'Fall 2014 - Current'
+					'content' => 'Learned Agile-Programming, Version Control Systems, and programmed games using a wide spectrum of languages and tools.',
+					'meta' => 'August 2014 - <b>Current</b>'
 				]) !!}
 
 				{!! Form::paragraph([
 					'title' => 'Habitat for Humanity',
 					'link' => 'http://www.habitat.org/',
 					'content' => 'Worked in large groups to construct homes for those in need. Learned the value of teamwork. Project planning was observed.',
-					'meta' => '2010 - 2012',
+					'meta' => 'August 2010 - May 2012',
 					'aside' => '60 Hours of Volunteer Work'
 				]) !!}
 			</div>

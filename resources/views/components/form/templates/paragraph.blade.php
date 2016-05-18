@@ -23,7 +23,7 @@
 
 		@if(isset($meta))
 			<small class="paragraph-meta">
-				<span>{{ $meta }}</span>
+				<span>{!! $meta !!}</span>
 
 				@if(isset($aside))
 					<span class="pull-right">
