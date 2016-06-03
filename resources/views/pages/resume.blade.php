@@ -312,7 +312,10 @@
 			</div>
 			<br>
 			<div class="row">
-				<div class="col-md-12 --centered">
+				<div class="col-md-6 --centered">
+					<a target="_blank" href="//bit.ly/treed-resume" class="btn btn-primary btn-lg">View on Google Docs</a>
+				</div>
+				<div class="col-md-6 --centered">
 					<a target="_blank" href="\media\pdf\Resume - Tyler Reed.pdf" class="btn btn-primary btn-lg">Download as PDF</a>
 				</div>
 			</div>
