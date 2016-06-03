@@ -1,0 +1,28 @@
+// No Margin
+.--no-margin,
+.--no-margin-top,
+.--no-margin-vertical
+{
+	margin-top: 0;
+}
+
+.--no-margin,
+.--no-margin-bottom,
+.--no-margin-vertical
+{
+	margin-bottom: 0;
+}
+
+.--no-margin,
+.--no-margin-left,
+.--no-margin-horizontal
+{
+	margin-left: 0;
+}
+
+.--no-margin,
+.--no-margin-right,
+.--no-margin-horizontal
+{
+	margin-right: 0;
+}

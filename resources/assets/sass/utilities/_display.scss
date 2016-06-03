@@ -1,0 +1,24 @@
+.--block { display: block; }
+.--inline { display: inline; }
+.--inline-block { display: inline-block; }
+
+.--bold { font-weight: bold; }
+
+.--full-width { width: 100%; }
+
+.--faded { color: #888; }
+
+.--centered { text-align: center; }
+
+.--margin-auto { margin: auto; }
+
+.--no-margin { margin: 0; }
+.--no-margin-top { margin-top: 0 !important; }
+.--no-margin-bottom { margin-bottom: 0 !important; }
+
+p:last-child { margin-bottom: 0; }
+
+@media (min-width: $screen-md-min) {
+	.--no-margin-top-md { margin-top: 0 !important; }
+	.--no-margin-bottom-md { margin-bottom: 0 !important; }
+}

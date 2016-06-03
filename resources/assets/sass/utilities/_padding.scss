@@ -1,0 +1,59 @@
+// No Padding
+.--no-padding,
+.--no-padding-top,
+.--no-padding-vertical
+{
+	padding-top: 0;
+}
+
+.--no-padding,
+.--no-padding-bottom,
+.--no-padding-vertical
+{
+	padding-bottom: 0;
+}
+
+.--no-padding,
+.--no-padding-left,
+.--no-padding-horizontal
+{
+	padding-left: 0;
+}
+
+.--no-padding,
+.--no-padding-right,
+.--no-padding-horizontal
+{
+	padding-right: 0;
+}
+
+// Small Padding
+.--padding-top,
+.--padding-vertical,
+.--padding
+{
+	padding-top: 5px;
+}
+
+.--padding-left,
+.--padding-horizontal,
+.--padding
+{
+	padding-left: 5px;
+}
+
+.--padding-bottom,
+.--padding-vertical,
+.--padding
+{
+	padding-bottom: 5px;
+}
+
+.--padding-right,
+.--padding-horizontal,
+.--padding
+{
+	padding-right: 5px;
+}
+
+.--padding-none { padding: 0; }
