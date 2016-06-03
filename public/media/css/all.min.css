@@ -778,6 +778,11 @@ h6 .heading-balanced {
   padding-right: 15px;
 }
 
+.list-naked {
+  list-style: none;
+  padding-left: 0;
+}
+
 .modal-default .modal-content {
   border-color: #ddd;
 }
@@ -1061,16 +1066,16 @@ h6 .heading-balanced {
   }
 }
 
-.align-left {
+.--center {
+  text-align: center;
+}
+
+.--left {
   text-align: left;
 }
 
-.align-right {
+.--right {
   text-align: right;
-}
-
-.align-center {
-  text-align: center;
 }
 
 .--block {
@@ -1129,6 +1134,64 @@ p:last-child {
   .--no-margin-bottom-md {
     margin-bottom: 0 !important;
   }
+}
+
+ol.--padding-half,
+ul.--padding-half {
+  padding-left: 20px;
+}
+
+ol.--list-style-none,
+ul.--list-style-none {
+  list-style: none;
+}
+
+.--no-margin,
+.--no-margin-top,
+.--no-margin-vertical {
+  margin-top: 0;
+}
+
+.--no-margin,
+.--no-margin-bottom,
+.--no-margin-vertical {
+  margin-bottom: 0;
+}
+
+.--no-margin,
+.--no-margin-left,
+.--no-margin-horizontal {
+  margin-left: 0;
+}
+
+.--no-margin,
+.--no-margin-right,
+.--no-margin-horizontal {
+  margin-right: 0;
+}
+
+.--no-padding,
+.--no-padding-top,
+.--no-padding-vertical {
+  padding-top: 0;
+}
+
+.--no-padding,
+.--no-padding-bottom,
+.--no-padding-vertical {
+  padding-bottom: 0;
+}
+
+.--no-padding,
+.--no-padding-left,
+.--no-padding-horizontal {
+  padding-left: 0;
+}
+
+.--no-padding,
+.--no-padding-right,
+.--no-padding-horizontal {
+  padding-right: 0;
 }
 
 .--padding-top,
