@@ -39,6 +39,10 @@ Route::group(['middleware' => 'web'], function()
 		return view('pages.sliders');
 	});
 
+	Route::get('/skills', function() {
+		return view('models.skills.show');
+	});
+
 	// Authentication Routes
 	Route::group(['prefix' => 'auth'], function() {
 		// Login and Logout Routes
@@ -93,58 +97,6 @@ Route::group(['middleware' => 'web'], function()
 		));
 	});
 
-	// Article Routes
-	Route::resource('articles', 'ArticlesController', array(
-		'names' => array(
-			'index' 	=> 'articles.index',
-			'create' 	=> 'articles.create',
-			'store' 	=> 'articles.store',
-			'show' 		=> 'articles.show',
-			'edit' 		=> 'articles.edit',
-			'update' 	=> 'articles.update',
-			'destroy' 	=> 'articles.destroy'
-		)
-	));
-
-	// Role Routes
-	Route::resource('roles', 'RolesController', array(
-		'names' => array(
-			'index' 	=> 'roles.index',
-			'create' 	=> 'roles.create',
-			'store' 	=> 'roles.store',
-			'show' 		=> 'roles.show',
-			'edit' 		=> 'roles.edit',
-			'update' 	=> 'roles.update',
-			'destroy' 	=> 'roles.destroy'
-		)
-	));
-
-	// Permission Routes
-	Route::resource('permissions', 'PermissionsController', array(
-		'names' => array(
-			'index' 	=> 'permissions.index',
-			'create' 	=> 'permissions.create',
-			'store' 	=> 'permissions.store',
-			'show' 		=> 'permissions.show',
-			'edit' 		=> 'permissions.edit',
-			'update' 	=> 'permissions.update',
-			'destroy' 	=> 'permissions.destroy'
-		)
-	));
-
-	// Tag Routes
-	Route::resource('tags', 'TagsController', array(
-		'names' => array(
-			'index' 	=> 'tags.index',
-			'create' 	=> 'tags.create',
-			'store' 	=> 'tags.store',
-			'show' 		=> 'tags.show',
-			'edit' 		=> 'tags.edit',
-			'update' 	=> 'tags.update',
-			'destroy' 	=> 'tags.destroy'
-		)
-	));
-
 	// Dashboard Routes
 	Route::group(['prefix' => 'dashboard'], function()
 	{
@@ -159,43 +111,101 @@ Route::group(['middleware' => 'web'], function()
 		));
 	});
 
-	// Menu Routes
-	Route::resource('menus', 'MenusController', array(
-		'names' => array(
-			'index' 	=> 'menus.index',
-			'create' 	=> 'menus.create',
-			'store' 	=> 'menus.store',
-			'show' 		=> 'menus.show',
-			'edit' 		=> 'menus.edit',
-			'update' 	=> 'menus.update',
-			'destroy' 	=> 'menus.destroy'
-		)
-	));
+	/*
+	|--------------------------------------------------------------------------
+	| Models Namespace
+	|--------------------------------------------------------------------------
+	|
+	| All Routes that handle Controllers associated with Models are registered
+	| here. Every Controller referenced is under the 'Models' Namespace. It
+	| should be noticed that this Route Group does not provide a prefix.
+	|
+	*/
+	Route::group(['namespace' => 'Models'], function() {
 
-	// Transaction Routes
-	Route::resource('transactions', 'TransactionsController', array(
-		'names' => array(
-			'index' 	=> 'transactions.index',
-			'create' 	=> 'transactions.create',
-			'store' 	=> 'transactions.store',
-			'show' 		=> 'transactions.show',
-			'edit' 		=> 'transactions.edit',
-			'update' 	=> 'transactions.update',
-			'destroy' 	=> 'transactions.destroy'
-		)
-	));
+		// Article Routes
+		Route::resource('articles', 'ArticlesController', array(
+			'names' => array(
+				'index' 	=> 'articles.index',
+				'create' 	=> 'articles.create',
+				'store' 	=> 'articles.store',
+				'show' 		=> 'articles.show',
+				'edit' 		=> 'articles.edit',
+				'update' 	=> 'articles.update',
+				'destroy' 	=> 'articles.destroy'
+			)
+		));
 
-	Route::get('menu-items/create', array(
-		'as' => 'menus.items.create',
-		function() {
-			$permissions = \App\Models\Permission::all()->keyBy('name')->map(function($item, $key) { return $item->display; })->toArray();
+		// Card Routes
+		Route::group(['prefix' => 'cards'], function() {
 
-			return view('models.menus.items.create', compact('permissions'));
-		}
-	));
+			Route::get('/', array(
+				'as' 	=> 'cards.index',
+				'uses' 	=> 'CardsController@index'
+			));
 
-	Route::get('csv', array(
-		'as' => 'csv.read',
-		'uses' => 'CSVController@read'
-	));
+			Route::get('/{sport}', array(
+				'as' 	=> 'cards.sport',
+				'uses' 	=> 'CardsController@sport'
+			));
+
+			Route::get('/{sport}/create', array(
+				'as' 	=> 'cards.create',
+				'uses' 	=> 'CardsController@create'
+			));
+
+		});
+
+		// Role Routes
+		Route::resource('roles', 'RolesController', array(
+			'names' => array(
+				'index' 	=> 'roles.index',
+				'create' 	=> 'roles.create',
+				'store' 	=> 'roles.store',
+				'show' 		=> 'roles.show',
+				'edit' 		=> 'roles.edit',
+				'update' 	=> 'roles.update',
+				'destroy' 	=> 'roles.destroy'
+			)
+		));
+
+		// Permission Routes
+		Route::resource('permissions', 'PermissionsController', array(
+			'names' => array(
+				'index' 	=> 'permissions.index',
+				'create' 	=> 'permissions.create',
+				'store' 	=> 'permissions.store',
+				'show' 		=> 'permissions.show',
+				'edit' 		=> 'permissions.edit',
+				'update' 	=> 'permissions.update',
+				'destroy' 	=> 'permissions.destroy'
+			)
+		));
+
+		// Tag Routes
+		Route::resource('tags', 'TagsController', array(
+			'names' => array(
+				'index' 	=> 'tags.index',
+				'create' 	=> 'tags.create',
+				'store' 	=> 'tags.store',
+				'show' 		=> 'tags.show',
+				'edit' 		=> 'tags.edit',
+				'update' 	=> 'tags.update',
+				'destroy' 	=> 'tags.destroy'
+			)
+		));
+
+		// Transaction Routes
+		Route::resource('transactions', 'TransactionsController', array(
+			'names' => array(
+				'index' 	=> 'transactions.index',
+				'create' 	=> 'transactions.create',
+				'store' 	=> 'transactions.store',
+				'show' 		=> 'transactions.show',
+				'edit' 		=> 'transactions.edit',
+				'update' 	=> 'transactions.update',
+				'destroy' 	=> 'transactions.destroy'
+			)
+		));
+	});
 });

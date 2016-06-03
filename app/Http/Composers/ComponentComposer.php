@@ -16,6 +16,5 @@ class ComponentComposer
 	 */
 	public function compose(View $view)
 	{
-		$view->with('mainMenuLeft', Menu::where('slug', 'main-menu-left')->first());
 	}
 }
