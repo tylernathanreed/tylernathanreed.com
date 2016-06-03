@@ -29,7 +29,7 @@
 	</head>
 
 	<body id="app-layout">
-		@include('partials.header')
+		@include('partials.header.header')
 
 		@include('reed/flash::flashes')
 
