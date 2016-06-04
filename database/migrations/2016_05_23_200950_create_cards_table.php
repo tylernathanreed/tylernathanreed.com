@@ -17,8 +17,10 @@ class CreateCardsTable extends Migration
 			// Identification
 			$table->increments('id');
 			$table->string('sport', 12)->index();
+			$table->string('slug', 90)->unique();
 
 			// Card Attributes
+			$table->string('manufacturer', 16)->index();
 			$table->smallInteger('number')->unsigned()->index();
 			$table->smallInteger('year')->unsigned()->index();
 			$table->boolean('rookie')->default(false)->index();
@@ -31,6 +33,7 @@ class CreateCardsTable extends Migration
 
 			// Other Attributes
 			$table->text('description')->nullable();
+			$table->smallInteger('count')->unsigned()->default(0);
 
 			// Revision Tracking
 			$table->timestamps();
