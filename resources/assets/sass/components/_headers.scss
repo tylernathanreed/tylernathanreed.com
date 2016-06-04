@@ -6,3 +6,22 @@ h1, h2, h3, h4, h5, h6
 
 	.heading-balanced { margin-top: 10px; }
 }
+
+.content-header
+{
+	display: flex;
+	flex-wrap: wrap;
+
+	.actions {
+		.action {
+			margin-bottom: 10px;
+		}
+	}
+}
+
+.content-heading
+{
+	margin-top: 0;
+	flex: 1;
+	white-space: nowrap;
+}
