@@ -4,11 +4,11 @@
 
 	<div class="container">
 		<div class="row">
-			<div class="col-md-8 col-md-offset-2">
-				<div class="panel panel-default">
+			<div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+				<div class="panel panel-{{ isset($form['class']) ? $form['class'] : 'default' }}">
 					<div class="panel-heading">{{ $form['heading'] }}</div>
-					<div class="panel-body">
 
+					<div class="panel-body">
 						@if(isset($form['route']))
 							<?php $form['link'] = route($form['route'], isset($form['params']) ? $form['params'] : []); ?>
 						@endif
@@ -25,10 +25,10 @@
 							@yield('content.form')
 
 						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+					</div> <!-- </panel-body> -->
+				</div> <!-- </panel> -->
+			</div> <!-- </col> -->
+		</div> <!-- </row> -->
+	</div> <!-- </container> -->
 
 @endsection
