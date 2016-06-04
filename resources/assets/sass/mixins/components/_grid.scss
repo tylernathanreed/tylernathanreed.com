@@ -1,0 +1,6 @@
+@mixin grid-clearfix($size)
+{
+	&.col-#{$size}-3:nth-child(4n+1) { clear: both }
+	&.col-#{$size}-4:nth-child(3n+1) { clear: both }
+	&.col-#{$size}-6:nth-child(2n+1) { clear: both }
+}

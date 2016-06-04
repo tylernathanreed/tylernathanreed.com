@@ -22,3 +22,26 @@ p:last-child { margin-bottom: 0; }
 	.--no-margin-top-md { margin-top: 0 !important; }
 	.--no-margin-bottom-md { margin-bottom: 0 !important; }
 }
+
+.--clear-fix {
+
+	@media (max-width: $screen-xs-max)
+	{
+		@include grid-clearfix(xs);
+	}
+
+	@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max)
+	{
+		@include grid-clearfix(sm);
+	}
+
+	@media (min-width: $screen-md-min) and (max-width: $screen-md-max)
+	{
+		@include grid-clearfix(md);
+	}
+
+	@media (min-width: $screen-lg-min)
+	{
+		@include grid-clearfix(lg);
+	}
+}
