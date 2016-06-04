@@ -1,0 +1,26 @@
+.radio-group
+{
+	display: flex;
+}
+
+.radio-group-item
+{
+	display: flex;
+	flex: 1;
+	align-items: center;
+
+	input[type=radio] {
+		display: inline-block;
+
+		&.form-control {
+			width: 24px;
+			height: 24px;
+		}
+	}
+
+	label {
+		margin-bottom: 0;
+		margin-left: 5px;
+	}
+}
+
