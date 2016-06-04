@@ -5,7 +5,7 @@ if(!function_exists('method'))
 	/**
 	 * Returns the Method associated with the given Route.
 	 *
-	 * @param  string  $name  The Name of the Route
+	 * @paramstring$nameThe Name of the Route
 	 *
 	 * @return string
 	 */
@@ -50,8 +50,8 @@ if(!function_exists('val'))
 	 * Returns the Form Value for the specified Field, giving precedence to
 	 * Old Form values over Model Values.
 	 *
-	 * @param  string  $field  The Name of the Field
-	 * @param  Model   $model  The Model for the Form
+	 * @paramstring$fieldThe Name of the Field
+	 * @paramModel $modelThe Model for the Form
 	 *
 	 * @return string
 	 */
