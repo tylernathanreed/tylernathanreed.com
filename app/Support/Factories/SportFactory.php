@@ -12,8 +12,46 @@ namespace App\Support\Factories;
 | therefore the Concrete Child Class provides all of the data.
 |
 */
-abstract class SportFactory extends Responsive
+abstract class SportFactory
 {
+	/**
+	 * The Manufacturers that create Sports Cards.
+	 *
+	 * @var array
+	 */
+	public $manufacturers = [
+		'Action Packed',
+		'Bowman Gum',
+		'Donruss',
+		'Fleer',
+		'Futera',
+		'Leaf',
+		'O-Pee-Chee',
+		'Panini',
+		'Pinnacle',
+		'Press Pass',
+		'Pro Set',
+		'Razor',
+		'SkyBox',
+		'Topps',
+		'Upper Deck'
+	];
+
+	/**
+	 * Returns the Teams associated with this Sport.
+	 *
+	 * @return array
+	 */
+	public function manufacturers()
+	{
+		// Return the Teams Property, if it exists
+		if(property_exists($this, 'manufacturers'))
+			return $this->manufacturers;
+
+		// Return an empty Array
+		return [];
+	}
+
 	/**
 	 * Returns the Teams associated with this Sport.
 	 *
