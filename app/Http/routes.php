@@ -139,21 +139,53 @@ Route::group(['middleware' => 'web'], function()
 		// Card Routes
 		Route::group(['prefix' => 'cards'], function() {
 
+			// Index
 			Route::get('/', array(
 				'as' 	=> 'cards.index',
 				'uses' 	=> 'CardsController@index'
 			));
 
+			// Sport
 			Route::get('/{sport}', array(
 				'as' 	=> 'cards.sport',
 				'uses' 	=> 'CardsController@sport'
 			));
 
+			// Create
 			Route::get('/{sport}/create', array(
 				'as' 	=> 'cards.create',
 				'uses' 	=> 'CardsController@create'
 			));
 
+			// Store
+			Route::put('/{sport}', array(
+				'as' 	=> 'cards.store',
+				'uses' 	=> 'CardsController@store'
+			));
+
+			// Show
+			Route::get('/{sport}/{card}', array(
+				'as' 	=> 'cards.show',
+				'uses' 	=> 'CardsController@show'
+			));
+
+			// Edit
+			Route::get('/{sport}/{card}/edit', array(
+				'as' 	=> 'cards.edit',
+				'uses'  => 'CardsController@edit'
+			));
+
+			// Update
+			Route::patch('/{sport}/{card}', array(
+				'as' 	=> 'cards.update',
+				'uses' 	=> 'CardsController@update'
+			));
+
+			// Destroy
+			Route::delete('/{sport}/{card}', array(
+				'as' 	=> 'cards.destroy',
+				'uses' 	=> 'CardsController@destroy'
+			));
 		});
 
 		// Role Routes
