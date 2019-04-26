@@ -340,7 +340,7 @@
 					<a target="_blank" href="http://bit.ly/treed-resume-2019" class="btn btn-blue btn-lg">View on Google Docs</a>
 				</div>
 				<div class="col-md-6 text-center mt-6 md:mt-0">
-					<a target="_blank" href="{{ asset('storage/Resume - 2019.pdf') }}" class="btn btn-blue btn-lg">Download as PDF</a>
+					<a target="_blank" href="{{ url('files/Resume - 2019.pdf') }}" class="btn btn-blue btn-lg">Download as PDF</a>
 				</div>
 			</div>
 		</footer>
