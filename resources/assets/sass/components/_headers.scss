@@ -1,8 +1,0 @@
-h1, h2, h3, h4, h5, h6
-{
-	&:not([role=link]) {
-		a, a:hover, a:focus, a:visited { color: inherit; }
-	}
-
-	.heading-balanced { margin-top: 10px; }
-}

@@ -1,0 +1,19 @@
+// Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: config('screens.sm'),
+  md: config('screens.md'),
+  lg: config('screens.lg'),
+  xl: config('screens.xl')
+) !default;
+
+// Grid columns
+//
+// Set the number of columns and specify the width of the gutters.
+
+$grid-columns: 12 !default;
+$grid-gutter-width: config('width.4') !default;

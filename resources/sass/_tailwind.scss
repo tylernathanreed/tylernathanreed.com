@@ -1,0 +1,19 @@
+/**
+ * This injects Tailwind's base styles.
+ */
+@tailwind preflight;
+
+/**
+ * This injects any component classes registered by plugins.
+ */
+@tailwind components;
+
+/**
+ * This injects all of Tailwind's utility classes.
+ */
+@tailwind utilities;
+
+/**
+ * This injects the responsive variations of each utility.
+ */
+@tailwind screens;

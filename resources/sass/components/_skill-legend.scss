@@ -1,0 +1,21 @@
+.skill-legend {
+	@apply .flex .text-sm .max-w-md .mx-auto .justify-around;
+}
+
+@screen md {
+	.skill-legend {
+		@apply .max-w-sm
+	}
+}
+
+.skill-legend-item {
+	@apply .px-3 .flex .items-center;
+}
+
+.skill-legend-key {
+	@apply .w-4 .h-4 .border .border-black;
+}
+
+.skill-legend-value {
+	@apply .pl-2;
+}
