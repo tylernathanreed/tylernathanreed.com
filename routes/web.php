@@ -11,6 +11,23 @@
 |
 */
 
-Route::get('/', function () {
-    return view('pages.resume');
-});
+Route::get('/', [
+	'as' => 'pages.index',
+	'uses' => 'PagesController@index'
+]);
+
+Route::get('resume', [
+	'as' => 'pages.resume',
+	'uses' => 'PagesController@resume'
+]);
+
+Auth::routes([
+	'register' => false,
+	'reset' => false,
+	'verify' => false
+]);
+
+Route::get('dashboard', [
+	'as' => 'dashboard.index',
+	'uses' => 'DashboardController@index'
+]);

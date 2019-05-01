@@ -13,4 +13,4 @@ require('laravel-mix-tailwind');
  */
 
 mix.sass('resources/sass/app.scss', 'public/css')
-   .tailwind();
+   .tailwind()

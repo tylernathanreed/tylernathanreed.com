@@ -1,7 +1,6 @@
 @import 'tailwind';
 @import 'variables';
-@import 'mixins';
-@import 'grid';
+@import 'vendor';
 
 html {
 	font-size: 14px;
@@ -37,20 +36,12 @@ hr {
 	@apply .h-px .bg-light;
 }
 
-.btn {
-	@apply .inline-block .px-3 .py-3 .mb-0 .font-normal .text-center .whitespace-no-wrap .align-middle .cursor-pointer .select-none .border-transparent .rounded;
-}
-
-.btn-blue {
-	@apply .text-white .bg-blue .border-blue;
-}
-
-.btn-lg {
-	@apply .px-4 .py-4 .text-lg;
-}
-
 .square {
 	@apply .w-4 .h-4;
+}
+
+.navbar-laravel {
+	@apply .shadow;
 }
 
 @import "components";

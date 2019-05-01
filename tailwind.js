@@ -59,6 +59,35 @@ let colors = {
 
 }
 
+/*
+|-------------------------------------------------------------------------------
+| Spacers
+|-------------------------------------------------------------------------------
+|
+| Spacers are used for sharing the same sizes across various widths, heights,
+| etc. in the full configuration below. You can add more entries to this
+| should you need more variation. However, this is based of defaults.
+|
+*/
+
+let spacers = {
+  '0': 'var(--spacer-0)',
+  'px': 'var(--spacer-px)',
+  '1': 'var(--spacer-1)',
+  '3/2': 'var(--spacer-3-2)',
+  '2': 'var(--spacer-2)',
+  '3': 'var(--spacer-3)',
+  '4': 'var(--spacer-4)',
+  '5': 'var(--spacer-5)',
+  '6': 'var(--spacer-6)',
+  '8': 'var(--spacer-8)',
+  '10': 'var(--spacer-10)',
+  '12': 'var(--spacer-12)',
+  '16': 'var(--spacer-16)',
+  '24': 'var(--spacer-24)',
+  '32': 'var(--spacer-32)'
+}
+
 module.exports = {
 
   /*
@@ -76,6 +105,18 @@ module.exports = {
 
   colors: colors,
 
+  /*
+  |-------------------------------------------------------------------------------
+  | Spacers
+  |-------------------------------------------------------------------------------
+  |
+  | This has no context within tailwind (other than the usefulness of it). But
+  | we may want to use this in our external css, so we will provide it here.
+  | Doing this allows the developer to use spacers via the config method.
+  |
+  */
+
+  spacers: spacers,
 
   /*
   |-----------------------------------------------------------------------------
@@ -97,10 +138,10 @@ module.exports = {
   */
 
   screens: {
-    // 'sm': '576px',
-    'md': '768px',
-    'lg': '992px',
-    // 'xl': '1200px',
+    // 'sm': 'var(--screen-sm)',
+    'md': '768px', //'var(--screen-md)',
+    'lg': '992px', //'var(--screen-lg)',
+    // 'xl': 'var(--screen-xl)',
   },
 
 
@@ -165,15 +206,15 @@ module.exports = {
   */
 
   textSizes: {
-    'xs': '.75rem',     // 12px
-    'sm': '.875rem',    // 14px
-    'base': '1rem',     // 16px
-    'lg': '1.125rem',   // 18px
-    'xl': '1.25rem',    // 20px
-    '2xl': '1.5rem',    // 24px
-    '3xl': '1.875rem',  // 30px
-    '4xl': '2.25rem',   // 36px
-    '5xl': '3rem',      // 48px
+    'xs': 'var(--text-size-xs)',
+    'sm': 'var(--text-size-sm)',
+    'base': 'var(--text-size-base)',
+    'lg': 'var(--text-size-lg)',
+    'xl': 'var(--text-size-xl)',
+    '2xl': 'var(--text-size-2xl)',
+    '3xl': 'var(--text-size-3xl)',
+    '4xl': 'var(--text-size-4xl)',
+    '5xl': 'var(--text-size-5xl)'
   },
 
 
@@ -193,15 +234,11 @@ module.exports = {
   */
 
   fontWeights: {
-    'hairline': 100,
-    'thin': 200,
-    'light': 300,
-    'normal': 400,
-    'medium': 500,
-    'semibold': 600,
-    'bold': 700,
-    'extrabold': 800,
-    'black': 900,
+    'lighter': 'var(--font-weight-lighter)',
+    'light': 'var(--font-weight-light)',
+    'normal': 'var(--font-weight-normal)',
+    'bold': 'var(--font-weight-bold)',
+    'bolder': 'var(--font-weight-bolder)',
   },
 
 
@@ -219,10 +256,11 @@ module.exports = {
   */
 
   leading: {
-    'none': 1,
-    'tight': 1.25,
-    'normal': 1.5,
-    'loose': 2,
+    'inherit': 'var(--leading-inherit)',
+    'none': 'var(--leading-none)',
+    'tight': 'var(--leading-tight)',
+    'normal': 'var(--leading-normal)',
+    'loose': 'var(--leading-loose)',
   },
 
 
@@ -316,11 +354,11 @@ module.exports = {
   */
 
   borderWidths: {
-    default: '1px',
-    '0': '0',
-    '2': '2px',
-    '4': '4px',
-    '8': '8px',
+    default: 'var(--border-width-default)',
+    '0': 'var(--border-width-0)',
+    '2': 'var(--border-width-2)',
+    '4': 'var(--border-width-4)',
+    '8': 'var(--border-width-8)',
   },
 
 
@@ -363,11 +401,11 @@ module.exports = {
   */
 
   borderRadius: {
-    'none': '0',
-    'sm': '.125rem',
-    default: '.25rem',
-    'lg': '.5rem',
-    'full': '9999px',
+    'none': 'var(--border-radius-none)',
+    'sm': 'var(--border-radius-sm)',
+    default: 'var(--border-radius-default)',
+    'lg': 'var(--border-radius-lg)',
+    'full': 'var(--border-radius-full)',
   },
 
 
@@ -394,19 +432,19 @@ module.exports = {
 
   width: {
     'auto': 'auto',
-    'px': '1px',
-    '1': '0.25rem',
-    '2': '0.5rem',
-    '3': '0.75rem',
-    '4': '1rem',
-    '5': '1.25rem',
-    '6': '1.5rem',
-    '8': '2rem',
-    '10': '2.5rem',
-    '12': '3rem',
-    '16': '4rem',
-    '24': '6rem',
-    '32': '8rem',
+    'px': spacers['px'],
+    '1': spacers['1'],
+    '2': spacers['2'],
+    '3': spacers['3'],
+    '4': spacers['4'],
+    '5': spacers['5'],
+    '6': spacers['6'],
+    '8': spacers['8'],
+    '10': spacers['10'],
+    '12': spacers['12'],
+    '16': spacers['16'],
+    '24': spacers['24'],
+    '32': spacers['32'],
     '1/2': '50%',
     '1/3': '33.33333%',
     '2/3': '66.66667%',
@@ -435,19 +473,19 @@ module.exports = {
 
   height: {
     'auto': 'auto',
-    'px': '1px',
-    '1': '0.25rem',
-    '2': '0.5rem',
-    '3': '0.75rem',
-    '4': '1rem',
-    '5': '1.25rem',
-    '6': '1.5rem',
-    '8': '2rem',
-    '10': '2.5rem',
-    '12': '3rem',
-    '16': '4rem',
-    '24': '6rem',
-    '32': '8rem',
+    'px': spacers['px'],
+    '1': spacers['1'],
+    '2': spacers['2'],
+    '3': spacers['3'],
+    '4': spacers['4'],
+    '5': spacers['5'],
+    '6': spacers['6'],
+    '8': spacers['8'],
+    '10': spacers['10'],
+    '12': spacers['12'],
+    '16': spacers['16'],
+    '24': spacers['24'],
+    '32': spacers['32'],
     'full': '100%',
     'screen': '100vh',
   },
@@ -564,18 +602,18 @@ module.exports = {
   */
 
   padding: {
-    'px': '1px',
-    '0': '0',
-    '1': '0.25rem',
-    '2': '0.5rem',
-    '3': '0.75rem',
-    '4': '1rem',
-    '5': '1.25rem',
-    '6': '1.5rem',
-    '8': '2rem',
-    '10': '2.5rem',
-    '12': '3rem',
-    '16': '4rem'
+    'px': spacers['px'],
+    '0': spacers['0'],
+    '1': spacers['1'],
+    '2': spacers['2'],
+    '3': spacers['3'],
+    '4': spacers['4'],
+    '5': spacers['5'],
+    '6': spacers['6'],
+    '8': spacers['8'],
+    '10': spacers['10'],
+    '12': spacers['12'],
+    '16': spacers['16']
   },
 
 
@@ -597,18 +635,17 @@ module.exports = {
 
   margin: {
     'auto': 'auto',
-    'px': '1px',
-    '0': '0',
-    '1': '0.25rem',
-    '2': '0.5rem',
-    '3': '0.75rem',
-    '4': '1rem',
-    '5': '1.25rem',
-    '6': '1.5rem',
-    '8': '2rem',
-    '10': '2.5rem',
-    '12': '3rem',
-    '16': '4rem'
+    'px': spacers['px'],
+    '0': spacers['0'],
+    '2': spacers['2'],
+    '3': spacers['3'],
+    '4': spacers['4'],
+    '5': spacers['5'],
+    '6': spacers['6'],
+    '8': spacers['8'],
+    '10': spacers['10'],
+    '12': spacers['12'],
+    '16': spacers['16']
   },
 
 
@@ -629,18 +666,18 @@ module.exports = {
   */
 
   negativeMargin: {
-    'px': '1px',
-    '0': '0',
-    '1': '0.25rem',
-    '2': '0.5rem',
-    '3': '0.75rem',
-    '4': '1rem',
-    '5': '1.25rem',
-    '6': '1.5rem',
-    '8': '2rem',
-    '10': '2.5rem',
-    '12': '3rem',
-    '16': '4rem'
+    'px': spacers['px'],
+    '0': spacers['0'],
+    '1': spacers['1'],
+    '2': spacers['2'],
+    '3': spacers['3'],
+    '4': spacers['4'],
+    '5': spacers['5'],
+    '6': spacers['6'],
+    '8': spacers['8'],
+    '10': spacers['10'],
+    '12': spacers['12'],
+    '16': spacers['16']
   },
 
 
