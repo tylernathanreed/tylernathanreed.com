@@ -16,7 +16,7 @@
 
                 @can('viewNova')
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ url('nova') }}">{{ __('Nova') }}</a>
+                        <a class="nav-link" href="{{ url(config('nova.path')) }}">{{ __('Nova') }}</a>
                     </li>
                 @endcan
             </ul>
