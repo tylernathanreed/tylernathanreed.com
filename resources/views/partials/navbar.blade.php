@@ -10,7 +10,15 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <!-- Left Side Of Navbar -->
             <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('pages.resume') }}">{{ __('Resume') }}</a>
+                </li>
 
+                @can('viewNova')
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url('nova') }}">{{ __('Nova') }}</a>
+                    </li>
+                @endcan
             </ul>
 
             <!-- Right Side Of Navbar -->
