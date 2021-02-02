@@ -35,4 +35,14 @@ class PagesController extends Controller
     {
         return view('pages.about');
     }
+
+    /**
+     * Displays the contact page.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function contact()
+    {
+        return view('pages.contact');
+    }
 }

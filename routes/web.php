@@ -26,6 +26,11 @@ Route::get('about', [
     'uses' => 'PagesController@about'
 ]);
 
+Route::get('contact', [
+    'as' => 'pages.contact',
+    'uses' => 'PagesController@contact'
+]);
+
 /*
 Auth::routes([
     'register' => false,

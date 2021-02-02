@@ -18,6 +18,10 @@
             <li class="nav-item ml-4">
                 <a class="nav-link" href="{{ route('pages.about') }}">{{ __('About') }}</a>
             </li>
+
+            <li class="nav-item ml-4">
+                <a class="nav-link" href="{{ route('pages.contact') }}">{{ __('Contact') }}</a>
+            </li>
         </ul>
     </div>
 </nav>
