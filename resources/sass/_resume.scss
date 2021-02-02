@@ -1,0 +1,32 @@
+.skill-legend {
+  display: flex;
+  font-size: .875rem;
+  max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-around;
+}
+
+@media (min-width: 768px) {
+  .skill-legend {
+    max-width: 30rem;
+  }
+}
+
+.skill-legend-item {
+  padding-left: .75rem;
+  padding-right: .75rem;
+  display: flex;
+  align-items: center;
+}
+
+.skill-legend-key {
+  width: 1rem;
+  height: 1rem;
+  border-width: 1px;
+  border-color: #333;
+}
+
+.skill-legend-value {
+  padding-left: .5rem;
+}

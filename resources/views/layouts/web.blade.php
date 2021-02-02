@@ -1,11 +1,12 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
     <head>
         <!-- Boilerplate -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="{{ config('app.description') }}">
+        <meta name="author" content="Tyler Reed"/>
+        <meta name="description" content="My personal website."/>
 
         <!-- Title -->
         <title>@yield('title', config('app.name', 'Laravel'))</title>
@@ -16,7 +17,7 @@
         @stack('head')
     </head>
 
-    <body>
+    <body{!! isset($body['class']) ? ' class="' . $body['class'] . '"' : '' !!}>
         @yield('body')
     </body>
 

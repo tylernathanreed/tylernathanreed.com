@@ -1,21 +1,33 @@
 .skill-legend {
-	@apply .flex .text-sm .max-w-md .mx-auto .justify-around;
+  display: flex;
+  font-size: .875rem;
+  max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-around;
 }
 
-@screen md {
-	.skill-legend {
-		@apply .max-w-sm
-	}
+@media (min-width: 768px) {
+  .skill-legend {
+    max-width: 30rem;
+  }
 }
 
 .skill-legend-item {
-	@apply .px-3 .flex .items-center;
+  padding-left: .75rem;
+  padding-right: .75rem;
+  display: flex;
+  align-items: center;
 }
 
 .skill-legend-key {
-	@apply .w-4 .h-4 .border .border-black;
+  width: 1rem;
+  height: 1rem;
+  border-width: 1px;
+  border-color: #333;
+  border-style: solid;
 }
 
 .skill-legend-value {
-	@apply .pl-2;
+  padding-left: .5rem;
 }

@@ -1,27 +1,38 @@
-@extends('layouts.web')
+@extends('layouts.web', [
+    'body' => [
+        'class' => 'bg-40 text-black min-h-full'
+    ]
+])
 
 @push('head')
 
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
 
     <!-- Fonts -->
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel='stylesheet' type='text/css'>
 
-	<!-- Styles -->
-	<link href="{{ mix('css/app.css') }}" rel="stylesheet">
+    <!-- Styles -->
+    <link href="{{ mix('css/app.css') }}" rel="stylesheet">
 
 @endpush
 
 @section('body')
 
-	<div id="app">
-		@yield('content')
-	</div>
+    <div id="app">
+        @yield('content')
+    </div>
 
-	<div id="tail">
-		@stack('tail')
-	</div>
+    <div id="tail">
+
+        <!-- Scripts -->
+        <script src="{{ asset('js/app.js') }}"></script>
+
+        @stack('tail')
+
+    </div>
 
 @endsection

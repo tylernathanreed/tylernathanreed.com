@@ -12,22 +12,29 @@
 */
 
 Route::get('/', [
-	'as' => 'pages.index',
-	'uses' => 'PagesController@index'
+    'as' => 'pages.index',
+    'uses' => 'PagesController@index'
 ]);
 
 Route::get('resume', [
-	'as' => 'pages.resume',
-	'uses' => 'PagesController@resume'
+    'as' => 'pages.resume',
+    'uses' => 'PagesController@resume'
 ]);
 
+Route::get('about', [
+    'as' => 'pages.about',
+    'uses' => 'PagesController@about'
+]);
+
+/*
 Auth::routes([
-	'register' => false,
-	'reset' => false,
-	'verify' => false
+    'register' => false,
+    'reset' => false,
+    'verify' => false
 ]);
 
 Route::get('dashboard', [
-	'as' => 'dashboard.index',
-	'uses' => 'DashboardController@index'
+    'as' => 'dashboard.index',
+    'uses' => 'DashboardController@index'
 ]);
+*/

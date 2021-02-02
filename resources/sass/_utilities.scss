@@ -1,0 +1,42 @@
+.shadow-md {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .12), 0 2px 4px 0 rgba(0, 0, 0, .08);
+}
+
+.leading-none {
+    line-height: 1;
+}
+
+.leading-tight {
+    line-height: 1.25;
+}
+
+.leading-normal {
+    line-height: 1.5;
+}
+
+.leading-loose {
+    line-height: 2;
+}
+
+.bg-blue { background-color: var(--blue); }
+.bg-cyan { background-color: var(--cyan); }
+.bg-gray { background-color: var(--gray); }
+.bg-green { background-color: var(--green); }
+.bg-indigo { background-color: var(--indigo); }
+.bg-orange { background-color: var(--orange); }
+.bg-pink { background-color: var(--pink); }
+.bg-purple { background-color: var(--purple); }
+.bg-red { background-color: var(--red); }
+.bg-yellow { background-color: var(--yellow); }
+
+.mb-6 {
+    margin-bottom: 1.5rem;
+}
+
+.mb-16 {
+    margin-bottom: 4rem;
+}
+
+.flex-1 {
+    flex: 1;
+}

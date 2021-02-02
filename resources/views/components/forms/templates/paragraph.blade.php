@@ -15,7 +15,7 @@
 		</h3>
 
 		@if(isset($subtitle))
-			<h4 class="text-gray">{{ $subtitle }}</h4>
+			<small class="text-gray">{{ $subtitle }}</small>
 		@endif
 
 		<p class="mt-2">

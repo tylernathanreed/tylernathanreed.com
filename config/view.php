@@ -33,4 +33,20 @@ return [
         realpath(storage_path('framework/views'))
     ),
 
+    /*
+    |--------------------------------------------------------------------------
+    | View Composers
+    |--------------------------------------------------------------------------
+    |
+    | View composers are classes that are called when a view is rendered.
+    | If you have data that you want to be bound to a view each time
+    | that view is rendered, a view composer can do this for you.
+    |
+    */
+
+    'composers' => [
+
+        \App\Http\View\Composers\AuthComposer::class
+
+    ]
 ];

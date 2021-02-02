@@ -1,47 +1,23 @@
-@import 'tailwind';
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Import variables
 @import 'variables';
-@import 'vendor';
 
-html {
-	font-size: 14px;
-	@apply .text-black;
-}
+// Import Bootstrap
+@import '~bootstrap/scss/bootstrap';
 
-h1 {
-	@apply .mb-3 .mt-6 .font-normal .text-4xl;
-}
+// Import Bootstrap overrides
+@import 'global';
+@import 'ecosystem';
+@import 'divider';
+@import 'buttons';
+@import 'navbar';
+@import 'masthead';
+@import 'portfolio';
+@import 'contact';
+@import 'footer';
+@import 'utilities';
 
-h2 {
-	@apply .font-normal .text-3xl .mb-6;
-}
-
-h3 {
-	@apply .font-normal .text-2xl;
-}
-
-h4 {
-	@apply .font-normal .text-sm;
-}
-
-a {
-	color: #337ab7;
-	text-decoration: none;
-}
-
-a:hover, a:focus {
-	text-decoration: underline;
-}
-
-hr {
-	@apply .h-px .bg-light;
-}
-
-.square {
-	@apply .w-4 .h-4;
-}
-
-.navbar-laravel {
-	@apply .shadow;
-}
-
-@import "components";
+// Import components
+@import 'components/skill-legend';

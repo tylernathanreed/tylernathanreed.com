@@ -1,7 +1,7 @@
 <!-- Skills -->
 <?php $legend = [
-	'blue' => [5, null],
-	'green' => [3, 4],
+	'blue' => [6, null],
+	'green' => [3, 5],
 	'yellow' => [1, 2],
 	'red' => [null, 0]
 ]; ?>
@@ -34,19 +34,19 @@
 }; ?>
 
 <section class="mb-6">
-	<h2 class="text-center">Skills</h2>
+	<h2 class="text-center">Programming Skills</h2>
 
 	<div class="row">
 		@foreach($groups as $name => $skills)
 			<div class="col-md-6">
 				<h3 class="text-center mb-3">{{ $name }}</h3>
 
-				<table class="text-center mx-auto mb-4 w-full table-fixed">
+				<table class="text-center mx-auto mb-4 w-100 table-fixed">
 					<tbody>
 						@foreach(array_chunk($skills, 4, true) as $chunk)
 							<tr>
 								@foreach($chunk as $skill => $year)
-									<?php $age = max(date('Y') - $year, 0); ?>
+									<?php $age = max(date('Y') - $year, 0) + (carbon()->gt('6/1') ? 1 : 0); ?>
 									<?php $color = $calc($age); ?>
 									<td class="bg-{{ $color }} text-white py-1">{{ $skill }}</td>
 								@endforeach

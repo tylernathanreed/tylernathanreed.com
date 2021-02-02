@@ -25,4 +25,14 @@ class PagesController extends Controller
     {
         return view('pages.resume');
     }
+
+    /**
+     * Displays the about page.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function about()
+    {
+        return view('pages.about');
+    }
 }
