@@ -11091,7 +11091,13 @@ small {
 
 .site-nav .navbar-brand {
   color: #fff;
-  font-size: 1.75em;
+  font-size: 1.5em;
+}
+
+@media (min-width: 992px) {
+  .site-nav .navbar-brand {
+    font-size: 1.75em;
+  }
 }
 
 .site-nav .navbar-nav {

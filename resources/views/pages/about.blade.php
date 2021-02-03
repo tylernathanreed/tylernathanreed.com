@@ -19,13 +19,13 @@
             </div>
 
             <!-- Jumbotron Content -->
-            <div class="d-flex align-items-center w-100">
+            <div class="d-flex flex-column flex-sm-row align-items-center w-100">
 
                 <!-- Jumbotron Avatar Image -->
                 <img class="masthead-avatar mr-4" src="{{ url('images/avatar.png') }}" alt="Avatar">
 
                 <!-- Jumbotron Subheading -->
-                <div class="flex-1 masthead-subheading font-weight-light mb-0 ml-4">
+                <div class="flex-1 masthead-subheading font-weight-light mb-0 ml-4 mt-4 mt-sm-0">
                     The great qualities of a software developer are not limited to programming.
                     Programming is a lifestyle for me, and I've learned a number of lessons over the years that apply to more than just code.
                 </div>
@@ -161,7 +161,7 @@
                                     <small class="text-muted text-xs">{{ $info['description'] }}</small>
                                 </div>
                                 @if(!empty($info['thumbnail']))
-                                    <div class="portfolio-item-icon">
+                                    <div class="portfolio-item-icon d-none d-sm-block">
                                         <img class="img-fluid" src="{{ $info['thumbnail'] }}" alt="thumbnail" />
                                     </div>
                                 @endif
