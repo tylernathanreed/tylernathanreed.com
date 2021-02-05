@@ -11114,6 +11114,15 @@ small {
   text-decoration: underline;
 }
 
+.site-nav .navbar-toggler {
+  border: 1px solid white;
+  padding: 0.5rem 0.75rem;
+}
+
+.site-nav .navbar-toggler:hover {
+  opacity: 0.5;
+}
+
 .masthead {
   padding-top: calc(6rem + 74px);
   padding-bottom: 6rem;

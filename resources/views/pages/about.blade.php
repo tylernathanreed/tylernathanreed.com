@@ -205,14 +205,14 @@
 
     @component('components.portfolio-modal', ['key' => 'righteous', 'source' => $qualities])
         <p>
-            The term "righteous" isn't limited to just religous context;
+            The term "righteous" isn't limited to just religious context;
             being righteous can also mean "being just or rightful".
             Under this context, I strive to always be correct.
         </p>
 
         <p>
             Now this doesn't mean that I think I'm always right.
-            In fact, I'm often estastic when I'm proven wrong, as it means I've learned something.
+            In fact, I'm often ecstatic when I'm proven wrong, as it means I've learned something.
             But this does mean that I'm willing to put my opinion out there, and I have justification to stand my ground.
         </p>
 
@@ -299,9 +299,9 @@
             environment is treating everyone fairly.
         </p>
         <p>
-            Smaller examples of this include being mindful of religous holidays, or knowing
+            Smaller examples of this include being mindful of religious holidays, or knowing
             the dietary restrictions of my coworkers when ordering lunch (there's actually been more
-            than one occation where multiple coworkers couldn't eat the food that management
+            than one occasion where multiple coworkers couldn't eat the food that management
             brought in during lunch to keep us working).
         </p>
         <p>
@@ -317,7 +317,7 @@
     @component('components.portfolio-modal', ['key' => 'solid', 'source' => $practices])
         <p>
             A lot of programmers claim to know and follow the SOLID principles, but I've learned that many of those claims are false.
-            Several programmers I've trained initially throught that they knew these principles, but they failed to describe them correctly,
+            Several programmers I've trained initially thought that they knew these principles, but they failed to describe them correctly,
             they failed to identify them correctly, and they failed to implement them correctly.
         </p>
         <p>
@@ -349,7 +349,7 @@
             <br><br>
             Whether it's models, views, controllers, or another complex class, I often see developers needing to stand up functionality
             that is similar to existing functionality. Their first approach is typically to copy the entire class or architecture,
-            then proceed to paste and rename it under a different namespace or classname, and lastly make the small handful of changes that
+            then proceed to paste and rename it under a different namespace or class name, and lastly make the small handful of changes that
             they needed.
             <br><br>
             This results in having two strikingly similar processes, but they don't actually <i>share</i> this functionality
@@ -447,7 +447,7 @@
 
     @component('components.portfolio-modal', ['key' => 'tire', 'source' => $practices])
         <p>
-            The importantance of technical communication is best summed up by this comic:
+            The importance of technical communication is best summed up by this comic:
             <img src="{{ url('images/tireswing_full.png') }}" class="w-100"/>
         </p>
         <p>
