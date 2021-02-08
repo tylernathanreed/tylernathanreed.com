@@ -108,7 +108,7 @@
 
         @slot('slot2')
             @component('components.banner-button', [
-                'link' => 'https://startbootstrap.com/theme/freelancer/',
+                'link' => route('pages.contact'),
                 'button' => '<i class="fas fa-phone-alt mr-2"></i> Get in Touch'
             ])
                 If you have any questions, don't hesisitate to reach out to me!
