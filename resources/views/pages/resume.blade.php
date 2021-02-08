@@ -153,7 +153,7 @@
                     ]) !!}
 
                     {!! Form::paragraph([
-                        'title' => 'Richland Colliegiate High School',
+                        'title' => 'Richland Collegiate High School',
                         'link' => 'http://richlandcollege.edu/rchs/',
                         'content' => 'Associates in Science',
                         'footer' => '<b>Courses:</b> C/C++',
