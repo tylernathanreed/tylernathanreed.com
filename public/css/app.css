@@ -11162,7 +11162,6 @@ small {
 }
 
 .portfolio .portfolio-item {
-  cursor: pointer;
   position: relative;
   display: block;
   border-radius: 0.25rem;
@@ -11175,6 +11174,7 @@ small {
 }
 
 .portfolio .portfolio-item .portfolio-item-caption {
+  cursor: pointer;
   position: absolute;
   top: 0;
   left: 0;

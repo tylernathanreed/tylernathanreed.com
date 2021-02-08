@@ -3,7 +3,6 @@
 
     .portfolio-item {
 
-        cursor: pointer;
         position: relative;
         display: block;
         border-radius: $border-radius;
@@ -15,6 +14,7 @@
         }
 
         .portfolio-item-caption {
+            cursor: pointer;
             position: absolute;
             top: 0;
             left: 0;

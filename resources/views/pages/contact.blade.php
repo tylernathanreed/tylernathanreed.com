@@ -26,9 +26,6 @@
                 @foreach($contacts as $key => $info)
                     <div class="col-md-6 col-lg-4 mb-5">
                         <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolio-modal-{{ $key }}">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white">Read More</div>
-                            </div>
                             <div class="d-flex align-items-center p-2">
                                 <div class="portfolio-item-icon {{ $info['icon'] }} bg-{{ $info['color'] }} text-white p-2"></div>
                                 <div class="ml-3 mr-3">
