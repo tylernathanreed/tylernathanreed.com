@@ -16,7 +16,7 @@
 
         <!-- Right Side Of Navbar -->
         <div id="navbar-toggle" class="collapse navbar-collapse">
-            <ul class="navbar-nav ml-auto mt-2 mt-sm-0">
+            <ul class="navbar-nav ml-auto mt-2 mt-md-0">
                 <li class="nav-item ml-4">
                     <a class="nav-link" href="{{ route('pages.resume') }}">{{ __('Resume') }}</a>
                 </li>

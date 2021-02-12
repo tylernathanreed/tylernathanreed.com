@@ -11106,12 +11106,21 @@ small {
 
 .site-nav .navbar-nav li.nav-item > a.nav-link {
   color: #fff;
+  font-size: 1.5rem;
+  line-height: 1.65;
 }
 
 .site-nav .navbar-nav li.nav-item > a.nav-link:hover,
 .site-nav .navbar-nav li.nav-item > a.nav-link:active,
 .site-nav .navbar-nav li.nav-item > a.nav-link:focus {
   text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .site-nav .navbar-nav li.nav-item > a.nav-link {
+    font-size: 1rem;
+    line-height: 1.15;
+  }
 }
 
 .site-nav .navbar-toggler {

@@ -29,6 +29,14 @@
                 text-decoration: underline;
             }
 
+            font-size: 1.5rem;
+            line-height: 1.65;
+
+            @include media-breakpoint-up(md) {
+                font-size: 1rem;
+                line-height: 1.15;
+            }
+
         }
 
     }
