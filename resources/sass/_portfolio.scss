@@ -54,30 +54,71 @@
     }
 
     .portfolio-modal-title {
-        font-size: 2.25rem;
-        line-height: 2rem;
+
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+
+        @include media-breakpoint-up(md) {
+            font-size: 2rem;
+            line-height: 2rem;
+        }
+
         @include media-breakpoint-up(lg) {
             font-size: 3rem;
-            line-height: 2.5rem;
+            line-height: 3rem;
         }
+
     }
 
     .portfolio-modal-icon {
-        width: 4.5rem;
-        height: 4.5rem;
+
         display: flex;
         align-items: center;
         justify-content: center;
+
+        width: 2rem;
+        height: 2rem;
+        padding: 0.25rem;
+
+        @include media-breakpoint-up(md) {
+            width: 3rem;
+            height: 3rem;
+            padding: 0.3rem;
+        }
+
+        @include media-breakpoint-up(lg) {
+            width: 4.5rem;
+            height: 4.5rem;
+            padding: 0;
+        }
+
     }
 
     .close {
+
         position: absolute;
         z-index: 1;
-        right: 1.5rem;
         top: 1rem;
-        font-size: 3rem;
-        line-height: 3rem;
         color: $primary;
         opacity: 1;
+
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        right: 1rem;
+
+        @include media-breakpoint-up(md) {
+            top: 1.25rem;
+            font-size: 2rem;
+            line-height: 2rem;
+            right: 1rem;
+        }
+
+        @include media-breakpoint-up(lg) {
+            top: 1.5rem;
+            font-size: 3rem;
+            line-height: 3rem;
+            right: 1.5rem;
+        }
+
     }
 }
