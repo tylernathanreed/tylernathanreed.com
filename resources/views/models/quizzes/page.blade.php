@@ -23,9 +23,10 @@
             <div class="d-flex flex-column flex-sm-row align-items-center w-100">
 
                 <!-- Jumbotron Avatar Image -->
-                <div class="masthead-avatar">
-                    <?php $icon = $quizTemplate->icon ?? 'far fa-question-circle'; ?>
-                    <div class="{{ $icon }} w-100 h-100" style="max-width: 100px; max-height: 100px"></div>
+                <?php $icon = $quizTemplate->icon ?? 'far fa-question-circle'; ?>
+
+                <div class="masthead-avatar d-sm-block d-none">
+                    <div class="{{ $icon }} w-100 h-100"></div>
                 </div>
 
                 <!-- Jumbotron Subheading -->

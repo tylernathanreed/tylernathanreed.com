@@ -1,1 +1,874 @@
-[{"name":"Comics","description":"See what you know about your favorite comic book heroes!","slug":"comics","icon":"fab fa-superpowers","color":"orange","questions":[{"type":"multiple_choice","prompt":{"incorrect":["Clark Kent","Barry Allen","Tony Stark"],"question":"Who is Batman?"},"answer_key":{"exact":"Bruce Wayne"},"points_available":"1","default_order":"1"},{"type":"multiple_choice","prompt":{"incorrect":["Stan Lee","Malcolm Wheeler-Nicholson","Robert Crumb"],"question":"Who is the creator of the comic series &quot;The Walking Dead&quot;?"},"answer_key":{"exact":"Robert Kirkman"},"points_available":"1","default_order":"2"},{"type":"multiple_choice","prompt":{"incorrect":["Thor","Wolverine","Hulk"],"question":"This Marvel superhero is often called &quot;The man without fear&quot;."},"answer_key":{"exact":"Daredevil"},"points_available":"1","default_order":"3"},{"type":"multiple_choice","prompt":{"incorrect":["Super Mario Brothers","Alex Kidd","Super Monkey Ball"],"question":"Which universe crossover was introduced in the &quot;Sonic the Hedgehog&quot; comic issue #247?"},"answer_key":{"exact":"Mega Man"},"points_available":"1","default_order":"4"},{"type":"multiple_choice","prompt":{"incorrect":["Bruce Wayne","Arthur Curry","John Jones"],"question":"What is the alter-ego of the DC comics character &quot;Superman&quot;?"},"answer_key":{"exact":"Clark Kent"},"points_available":"1","default_order":"5"},{"type":"multiple_choice","prompt":{"incorrect":["Rose","Ruby","Rachel"],"question":"What is the full first name of the babysitter in Calvin and Hobbes?"},"answer_key":{"exact":"Rosalyn"},"points_available":"1","default_order":"6"},{"type":"multiple_choice","prompt":{"incorrect":["Calvin Klein","Calvin Coolidge","Phillip Calvin McGraw"],"question":"The main six year old protagonist in Calvin and Hobbes is named after what theologian?"},"answer_key":{"exact":"John Calvin"},"points_available":"1","default_order":"7"},{"type":"multiple_choice","prompt":{"incorrect":["Becquerel","Doc Scratch","Halley"],"question":"In &quot;Homestuck&quot; what is Dave Strider&#039;s guardian?"},"answer_key":{"exact":"Bro"},"points_available":"1","default_order":"8"},{"type":"multiple_choice","prompt":{"incorrect":["Skaia","Prospit","The Medium"],"question":"In &quot;Homestuck&quot; the &quot;Kingdom of Darkness&quot; is also known as?"},"answer_key":{"exact":"Derse"},"points_available":"1","default_order":"9"},{"type":"multiple_choice","prompt":{"incorrect":["1932","1951","1936"],"question":"When was Marvel Comics founded?"},"answer_key":{"exact":"1939"},"points_available":"1","default_order":"10"}]},{"name":"Geography","description":"See how much you know about the world.","slug":"geography","icon":"fas fa-map-marker-alt","color":"red","questions":[{"type":"multiple_choice","prompt":{"incorrect":["San Juan","Port-au-Prince","Bridgetown"],"question":"What is the capital of Jamaica?"},"answer_key":{"exact":"Kingston"},"points_available":"1","default_order":"1"},{"type":"multiple_choice","prompt":{"incorrect":["Samara","Nizhny Novgorod","Omsk"],"question":"Which Russian oblast forms a border with Poland?"},"answer_key":{"exact":"Kaliningrad"},"points_available":"1","default_order":"2"},{"type":"multiple_choice","prompt":{"incorrect":["Denmark","Norway","Germany"],"question":"The land of Gotland is located in which European country?"},"answer_key":{"exact":"Sweden"},"points_available":"1","default_order":"3"},{"type":"multiple_choice","prompt":{"incorrect":["H&uuml;davendigar","S&ouml;\\u011f&uuml;t","Adrianople"],"question":"What name was historically used for the Turkish city currently known as Istanbul?"},"answer_key":{"exact":"Constantinople"},"points_available":"1","default_order":"4"},{"type":"multiple_choice","prompt":{"incorrect":["Oregon, Idaho, Nevada, Utah","Kansas, Oklahoma, Arkansas, Louisiana","South Dakota, Minnesota, Nebraska, Iowa"],"question":"What are the four corner states of the US?"},"answer_key":{"exact":"Utah, Colorado, Arizona, New Mexico"},"points_available":"1","default_order":"5"},{"type":"multiple_choice","prompt":{"incorrect":["Port of Antwerp","Port of Hamburg","Port of Amsterdam"],"question":"What is the busiest port in Europe?"},"answer_key":{"exact":"Port of Rotterdam"},"points_available":"1","default_order":"6"},{"type":"multiple_choice","prompt":{"incorrect":["England","North Ireland","Scotland"],"question":"Which UK country features a dragon on their flag?"},"answer_key":{"exact":"Wales"},"points_available":"1","default_order":"7"},{"type":"multiple_choice","prompt":{"incorrect":["Warsaw","Zakopane","Pozna\\u0144"],"question":"What is the Polish city known to Germans as Danzig?"},"answer_key":{"exact":"Gda\\u0144sk"},"points_available":"1","default_order":"8"},{"type":"multiple_choice","prompt":{"incorrect":["Chile and Argentina","Russia and China","India and Pakistan"],"question":"The longest shared border in the world can be found between which two nations?"},"answer_key":{"exact":"Canada and the United States"},"points_available":"1","default_order":"9"},{"type":"multiple_choice","prompt":{"incorrect":["San Marino","Vatican City","Lichtenstein"],"question":"Which small country is located between the borders of France and Spain?"},"answer_key":{"exact":"Andorra"},"points_available":"1","default_order":"10"}]},{"name":"True or False?","description":"It sounds easy, but is it?","slug":"true-or-false","icon":"fas fa-adjust","color":"dark","questions":[{"type":"true_false","prompt":{"question":"The HTML5 standard was published in 2014."},"answer_key":{"exact":"True"},"points_available":"1","default_order":"1"},{"type":"true_false","prompt":{"question":"French is an official language in Canada."},"answer_key":{"exact":"True"},"points_available":"1","default_order":"2"},{"type":"true_false","prompt":{"question":"The Xenomorph from the science fiction film &quot;Alien&quot; has acidic blood."},"answer_key":{"exact":"True"},"points_available":"1","default_order":"3"},{"type":"true_false","prompt":{"question":"Klingons respect their disabled comrades, and those who are old, injuried, and helpless."},"answer_key":{"exact":"False"},"points_available":"1","default_order":"4"},{"type":"true_false","prompt":{"question":"AMD created the first consumer 64-bit processor."},"answer_key":{"exact":"True"},"points_available":"1","default_order":"5"},{"type":"true_false","prompt":{"question":"The Windows ME operating system was released in the year 2000."},"answer_key":{"exact":"True"},"points_available":"1","default_order":"6"},{"type":"true_false","prompt":{"question":"In RuneScape, one must complete the &quot;Dragon Slayer&quot; quest before equipping Rune Platelegs."},"answer_key":{"exact":"False"},"points_available":"1","default_order":"7"},{"type":"true_false","prompt":{"question":"In &quot;To Love-Ru: Darkness&quot;, Yami reveals her real name is Eve."},"answer_key":{"exact":"True"},"points_available":"1","default_order":"8"},{"type":"true_false","prompt":{"question":"Haggis is traditionally ate on Burns Night."},"answer_key":{"exact":"True"},"points_available":"1","default_order":"9"},{"type":"true_false","prompt":{"question":"The Statue of Liberty&#039;s official name is &ldquo;Liberty Enlightening the World&rdquo;."},"answer_key":{"exact":"True"},"points_available":"1","default_order":"10"}]},{"name":"Laravel for Beginners","description":"Think you know Laravel? See if your knowledge is enough.","slug":"laravel-for-beginners","icon":"fab fa-laravel","color":"laravel","questions":[{"type":"multiple_choice","prompt":{"incorrect":["4","6","None"],"question":"The command \"php artisan make:controller PhotoController --resource\" will create a Controller class with how many methods?"},"answer_key":{"exact":"7"},"points_available":"1","default_order":"1"},{"type":"multiple_choice","prompt":{"incorrect":["name","remember_token","updated_at"],"question":"In the default Laravel \"users\" DB table migration, which field is not present?"},"answer_key":{"exact":"surname"},"points_available":"1","default_order":"2"},{"type":"multiple_choice","prompt":{"incorrect":["Will show \"Hello\"","Will show \"Hello steve\"","Will show \"Hello steve surname\""],"question":"Look at the code snippet. What would be the result of the URL \"\/people\/steve\/\"?","code":"Route::get('people\/{name}\/{surname?}', function ($name, $surname) {\n\treturn 'Hello ' . $name . ' ' . $surname;\n});"},"answer_key":{"exact":"Will throw an error"},"points_available":"1","default_order":"3"},{"type":"multiple_choice","prompt":{"incorrect":["A login form","A label for a required field","A submit button"],"question":"The Blade command \"@csrf\" generates what kind of HTML code?"},"answer_key":{"exact":"An input field with a hidden type"},"points_available":"1","default_order":"4"},{"type":"multiple_choice","prompt":{"incorrect":["php artisan migrate:seed","php artisan migrate:rollback","php artisan migrate --force"],"question":"What is the Laravel Artisan command to delete all of the DB tables and run migrations again from scratch?"},"answer_key":{"exact":"php artisan migrate:fresh"},"points_available":"1","default_order":"5"},{"type":"multiple_choice","prompt":{"incorrect":["Also an array","An error message string","Depends on parameters"],"question":"In Form Request classes that are used for validation, there are two methods. The method \"rules()\" should return an array. What should the \"authorize()\" method return?"},"answer_key":{"exact":"True or false"},"points_available":"1","default_order":"6"},{"type":"multiple_choice","prompt":{"incorrect":["view('products\/create')","view('products-create')","view('products_create')"],"question":"If you put a Blade file inside of a subfolder, which as \"resources\/views\/products\/create.blade.php\", what is the preferred approach to call it from a Controller?"},"answer_key":{"exact":"view('products.create')"},"points_available":"1","default_order":"7"},{"type":"multiple_choice","prompt":{"incorrect":["ADMIN_EMAIL","An empty string","Will throw an error"],"question":"Look at the code snippet from config\/emails.php. What would be the value of \"config('emails.admin_email')\" if no environment file is present on the server?","code":"return [\n\t'admin_email' => env('ADMIN_EMAIL', 'admin@example.com')\n];"},"answer_key":{"exact":"admin@example.com"},"points_available":"1","default_order":"8"},{"type":"multiple_choice","prompt":{"incorrect":["app\/Models\/","app\/Http\/Models\/","resources\/Models\/"],"question":"In Laravel 6, the command \"php artisan make:model\" generates a new Model file into which folder?"},"answer_key":{"exact":"app\/"},"points_available":"1","default_order":"9"},{"type":"multiple_choice","prompt":{"incorrect":["A string","A Config class instance","Anything you want"],"question":"If you want to create your own config file in the \"config\/\" folder, what should be the returned value inside of that file?"},"answer_key":{"exact":"An array"},"points_available":"1","default_order":"10"},{"type":"multiple_choice","prompt":{"incorrect":["if(auth())","if(auth()->exists())","if(session('auth')"],"question":"What is the preferred approach for checking if a user is logged in?"},"answer_key":{"exact":"if(auth()->check())"},"points_available":"1","default_order":"11"},{"type":"multiple_choice","prompt":{"incorrect":["1","None","You need to specify it as a parameter"],"question":"How many database fields are created with the \"$table->timestamps()\" function within a migration file?"},"answer_key":{"exact":"2"},"points_available":"1","default_order":"12"},{"type":"multiple_choice","prompt":{"incorrect":["$this","$index","item()"],"question":"Look at the Blade code snippet. What is hiding behind XXXXX?","code":"@foreach($users as $user)\n\t@if(XXXXX->first)\n\t\tThis is the first iteration.\n\t@endif\n@endforeach"},"answer_key":{"exact":"$loop"},"points_available":"1","default_order":"13"},{"type":"multiple_choice","prompt":{"incorrect":["php artisan migrate:fresh","php artisan migrate:rollback","php artisan migrate --seed"],"question":"If you try to run \"php artisan migrate\" in a production environment, Laravel will ask you to confirm the execution. What command can you use to bypass the confirmation?"},"answer_key":{"exact":"php artisan migrate --force"},"points_available":"1","default_order":"14"},{"type":"multiple_choice","prompt":{"incorrect":[", (Comma)","; (Semi-Colon)","* (Asterisk)"],"question":"If you want to have more than one validation rule for a field, such as \"required\" and \"min:6\", what should be the separator between them?"},"answer_key":{"exact":"| (Pipe)"},"points_available":"1","default_order":"15"},{"type":"multiple_choice","prompt":{"incorrect":["display","include","extend"],"question":"Within a Blade layout, the command \"@section('header')\" can be used in a child template to display the content in a specific section. What command in used the parent Blade template to indicate where the content should go?"},"answer_key":{"exact":"yield"},"points_available":"1","default_order":"16"},{"type":"multiple_choice","prompt":{"incorrect":[".env","config\\app.php","app\\Http\\Middleware"],"question":"If you create your own Middleware class, in which file do you need to register it?"},"answer_key":{"exact":"app\\Http\\Kernel.php"},"points_available":"1","default_order":"17"},{"type":"multiple_choice","prompt":{"incorrect":["addresses.id = companies.id","addresses.id = companies.address_id","addresses.company_id = companies.address_id"],"question":"Look at this Model code snippet. Which SQL comparison will be used in the relationship?","code":"class Address extends Model {\n\tfunction company() {\n\t\treturn $this->belongsTo(Company::class);\n\t}\n}"},"answer_key":{"exact":"addresses.company_id = companies.id"},"points_available":"1","default_order":"18"},{"type":"multiple_choice","prompt":{"incorrect":["user","guest","admin"],"question":"What is the name of the default Laravel Middleware to restrict only logged in users to access a page?"},"answer_key":{"exact":"auth"},"points_available":"1","default_order":"19"},{"type":"multiple_choice","prompt":{"incorrect":["Route::rules()","Route::prefix()","Route::collection()"],"question":"How do you specify a set of rules for a shared collection of routes?"},"answer_key":{"exact":"Route::group()"},"points_available":"1","default_order":"20"},{"type":"multiple_choice","prompt":{"incorrect":["url('admin\/photos\/create')","URL::action('AdminPhotosController@create')","action('AdminPhotosController@create')"],"question":"What is the preferred approach for referencing the route specified by the following code?","code":"Route::get('admin\/photos\/create', [\n\t'as' => 'admin.photos.create',\n\t'uses' => 'AdminPhotosController@create'\n]);"},"answer_key":{"exact":"route('admin.photos.create')"},"points_available":"1","default_order":"21"},{"type":"multiple_choice","prompt":{"incorrect":["Only the first (alphabetically) file that is not in the migrations DB table","Only the last (alphabetically) file that is not in the migrations DB table","All available files in that folder"],"question":"How many migration files from the \"database\/migrations\" folder are run when executing the \"php artisan migrate\" command?"},"answer_key":{"exact":"Only the ones that are not in the migrations DB table, ordered alphabetically"},"points_available":"1","default_order":"22"},{"type":"multiple_choice","prompt":{"incorrect":["Author::whereExists('books.chapters')->get()","Author::whereHas(['books', 'chapters'])->get()","Author::get('books.chapters')"],"question":"Let's say that Eloquent has the relationships \"Authors have many books\" and \"Books have many chapters\". What is the Eloquent expression to get authors with at least one book and with at least one chapter?"},"answer_key":{"exact":"Author::has('books.chapters')->get()"},"points_available":"1","default_order":"23"},{"type":"multiple_choice","prompt":{"incorrect":["$team->players()->attach","$team->players()->associate","Player::team()->create"],"question":"Look at the code snippet. You want to add a player to the team. What should be behind XXXXX?","code":"class Team extends Model {\n\tfunction players() {\n\t\treturn $this->hasMany('Player::class');\n\t}\n}\n$team = Team::find(1);\nXXXXX(['name' => 'John Doe']);"},"answer_key":{"exact":"$team->players()->create"},"points_available":"1","default_order":"24"},{"type":"multiple_choice","prompt":{"incorrect":["app\/Error.php","config\/errors.php","public\/exceptions.txt"],"question":"What is the default file location that Laravel stores logs in?"},"answer_key":{"exact":"storage\/logs\/laravel.log"},"points_available":"1","default_order":"25"}]}]
+[
+    {
+        "color": "orange",
+        "description": "See what you know about your favorite comic book heroes!",
+        "icon": "fab fa-superpowers",
+        "name": "Comics",
+        "questions": [
+            {
+                "answer_key": {
+                    "exact": "Bruce Wayne"
+                },
+                "default_order": "1",
+                "points_available": "1",
+                "prompt": {
+                    "incorrect": [
+                        "Clark Kent",
+                        "Barry Allen",
+                        "Tony Stark"
+                    ],
+                    "question": "Who is Batman?"
+                },
+                "type": "multiple_choice"
+            },
+            {
+                "answer_key": {
+                    "exact": "Robert Kirkman"
+                },
+                "default_order": "2",
+                "points_available": "1",
+                "prompt": {
+                    "incorrect": [
+                        "Stan Lee",
+                        "Malcolm Wheeler-Nicholson",
+                        "Robert Crumb"
+                    ],
+                    "question": "Who is the creator of the comic series &quot;The Walking Dead&quot;?"
+                },
+                "type": "multiple_choice"
+            },
+            {
+                "answer_key": {
+                    "exact": "Daredevil"
+                },
+                "default_order": "3",
+                "points_available": "1",
+                "prompt": {
+                    "incorrect": [
+                        "Thor",
+                        "Wolverine",
+                        "Hulk"
+                    ],
+                    "question": "This Marvel superhero is often called &quot;The man without fear&quot;."
+                },
+                "type": "multiple_choice"
+            },
+            {
+                "answer_key": {
+                    "exact": "Mega Man"
+                },
+                "default_order": "4",
+                "points_available": "1",
+                "prompt": {
+                    "incorrect": [
+                        "Super Mario Brothers",
+                        "Alex Kidd",
+                        "Super Monkey Ball"
+                    ],
+                    "question": "Which universe crossover was introduced in the &quot;Sonic the Hedgehog&quot; comic issue #247?"
+                },
+                "type": "multiple_choice"
+            },
+            {
+                "answer_key": {
+                    "exact": "Clark Kent"
+                },
+                "default_order": "5",
+                "points_available": "1",
+                "prompt": {
+                    "incorrect": [
+                        "Bruce Wayne",
+                        "Arthur Curry",
+                        "John Jones"
+                    ],
+                    "question": "What is the alter-ego of the DC comics character &quot;Superman&quot;?"
+                },
+                "type": "multiple_choice"
+            },
+            {
+                "answer_key": {
+                    "exact": "Rosalyn"
+                },
+                "default_order": "6",
+                "points_available": "1",
+                "prompt": {
+                    "incorrect": [
+                        "Rose",
+                        "Ruby",
+                        "Rachel"
+                    ],
+                    "question": "What is the full first name of the babysitter in Calvin and Hobbes?"
+                },
+                "type": "multiple_choice"
+            },
+            {
+                "answer_key": {
+                    "exact": "John Calvin"
+                },
+                "default_order": "7",
+                "points_available": "1",
+                "prompt": {
+                    "incorrect": [
+                        "Calvin Klein",
+                        "Calvin Coolidge",
+                        "Phillip Calvin McGraw"
+                    ],
+                    "question": "The main six year old protagonist in Calvin and Hobbes is named after what theologian?"
+                },
+                "type": "multiple_choice"
+            },
+            {
+                "answer_key": {
+                    "exact": "Bro"
+                },
+                "default_order": "8",
+                "points_available": "1",
+                "prompt": {
+                    "incorrect": [
+                        "Becquerel",
+                        "Doc Scratch",
+                        "Halley"
+                    ],
+                    "question": "In &quot;Homestuck&quot; what is Dave Strider&#039;s guardian?"
+                },
+                "type": "multiple_choice"
+            },
+            {
+                "answer_key": {
+                    "exact": "Derse"
+                },
+                "default_order": "9",
+                "points_available": "1",
+                "prompt": {
+                    "incorrect": [
+                        "Skaia",
+                        "Prospit",
+                        "The Medium"
+                    ],
+                    "question": "In &quot;Homestuck&quot; the &quot;Kingdom of Darkness&quot; is also known as?"
+                },
+                "type": "multiple_choice"
+            },
+            {
+                "answer_key": {
+                    "exact": "1939"
+                },
+                "default_order": "10",
+                "points_available": "1",
+                "prompt": {
+                    "incorrect": [
+                        "1932",
+                        "1951",
+                        "1936"
+                    ],
+                    "question": "When was Marvel Comics founded?"
+                },
+                "type": "multiple_choice"
+            }
+        ],
+        "slug": "comics"
+    },
+    {
+        "color": "red",
+        "description": "See how much you know about the world.",
+        "icon": "fas fa-map-marker-alt",
+        "name": "Geography",
+        "questions": [
+            {
+                "answer_key": {
+                    "exact": "Kingston"
+                },
+                "default_order": "1",
+                "points_available": "1",
+                "prompt": {
+                    "incorrect": [
+                        "San Juan",
+                        "Port-au-Prince",
+                        "Bridgetown"
+                    ],
+                    "question": "What is the capital of Jamaica?"
+                },
+                "type": "multiple_choice"
+            },
+            {
+                "answer_key": {
+                    "exact": "Kaliningrad"
+                },
+                "default_order": "2",
+                "points_available": "1",
+                "prompt": {
+                    "incorrect": [
+                        "Samara",
+                        "Nizhny Novgorod",
+                        "Omsk"
+                    ],
+                    "question": "Which Russian oblast forms a border with Poland?"
+                },
+                "type": "multiple_choice"
+            },
+            {
+                "answer_key": {
+                    "exact": "Sweden"
+                },
+                "default_order": "3",
+                "points_available": "1",
+                "prompt": {
+                    "incorrect": [
+                        "Denmark",
+                        "Norway",
+                        "Germany"
+                    ],
+                    "question": "The land of Gotland is located in which European country?"
+                },
+                "type": "multiple_choice"
+            },
+            {
+                "answer_key": {
+                    "exact": "Constantinople"
+                },
+                "default_order": "4",
+                "points_available": "1",
+                "prompt": {
+                    "incorrect": [
+                        "H&uuml;davendigar",
+                        "S&ouml;&#x011f;&uuml;t",
+                        "Adrianople"
+                    ],
+                    "question": "What name was historically used for the Turkish city currently known as Istanbul?"
+                },
+                "type": "multiple_choice"
+            },
+            {
+                "answer_key": {
+                    "exact": "Utah, Colorado, Arizona, New Mexico"
+                },
+                "default_order": "5",
+                "points_available": "1",
+                "prompt": {
+                    "incorrect": [
+                        "Oregon, Idaho, Nevada, Utah",
+                        "Kansas, Oklahoma, Arkansas, Louisiana",
+                        "South Dakota, Minnesota, Nebraska, Iowa"
+                    ],
+                    "question": "What are the four corner states of the US?"
+                },
+                "type": "multiple_choice"
+            },
+            {
+                "answer_key": {
+                    "exact": "Port of Rotterdam"
+                },
+                "default_order": "6",
+                "points_available": "1",
+                "prompt": {
+                    "incorrect": [
+                        "Port of Antwerp",
+                        "Port of Hamburg",
+                        "Port of Amsterdam"
+                    ],
+                    "question": "What is the busiest port in Europe?"
+                },
+                "type": "multiple_choice"
+            },
+            {
+                "answer_key": {
+                    "exact": "Wales"
+                },
+                "default_order": "7",
+                "points_available": "1",
+                "prompt": {
+                    "incorrect": [
+                        "England",
+                        "North Ireland",
+                        "Scotland"
+                    ],
+                    "question": "Which UK country features a dragon on their flag?"
+                },
+                "type": "multiple_choice"
+            },
+            {
+                "answer_key": {
+                    "exact": "Gda&#x0144;sk"
+                },
+                "default_order": "8",
+                "points_available": "1",
+                "prompt": {
+                    "incorrect": [
+                        "Warsaw",
+                        "Zakopane",
+                        "Pozna&#0144;"
+                    ],
+                    "question": "What is the Polish city known to Germans as Danzig?"
+                },
+                "type": "multiple_choice"
+            },
+            {
+                "answer_key": {
+                    "exact": "Canada and the United States"
+                },
+                "default_order": "9",
+                "points_available": "1",
+                "prompt": {
+                    "incorrect": [
+                        "Chile and Argentina",
+                        "Russia and China",
+                        "India and Pakistan"
+                    ],
+                    "question": "The longest shared border in the world can be found between which two nations?"
+                },
+                "type": "multiple_choice"
+            },
+            {
+                "answer_key": {
+                    "exact": "Andorra"
+                },
+                "default_order": "10",
+                "points_available": "1",
+                "prompt": {
+                    "incorrect": [
+                        "San Marino",
+                        "Vatican City",
+                        "Lichtenstein"
+                    ],
+                    "question": "Which small country is located between the borders of France and Spain?"
+                },
+                "type": "multiple_choice"
+            }
+        ],
+        "slug": "geography"
+    },
+    {
+        "color": "dark",
+        "description": "It sounds easy, but is it?",
+        "icon": "fas fa-adjust",
+        "name": "True or False?",
+        "questions": [
+            {
+                "answer_key": {
+                    "exact": "True"
+                },
+                "default_order": "1",
+                "points_available": "1",
+                "prompt": {
+                    "question": "The HTML5 standard was published in 2014."
+                },
+                "type": "true_false"
+            },
+            {
+                "answer_key": {
+                    "exact": "True"
+                },
+                "default_order": "2",
+                "points_available": "1",
+                "prompt": {
+                    "question": "French is an official language in Canada."
+                },
+                "type": "true_false"
+            },
+            {
+                "answer_key": {
+                    "exact": "True"
+                },
+                "default_order": "3",
+                "points_available": "1",
+                "prompt": {
+                    "question": "The Xenomorph from the science fiction film &quot;Alien&quot; has acidic blood."
+                },
+                "type": "true_false"
+            },
+            {
+                "answer_key": {
+                    "exact": "False"
+                },
+                "default_order": "4",
+                "points_available": "1",
+                "prompt": {
+                    "question": "Klingons respect their disabled comrades, and those who are old, injuried, and helpless."
+                },
+                "type": "true_false"
+            },
+            {
+                "answer_key": {
+                    "exact": "True"
+                },
+                "default_order": "5",
+                "points_available": "1",
+                "prompt": {
+                    "question": "AMD created the first consumer 64-bit processor."
+                },
+                "type": "true_false"
+            },
+            {
+                "answer_key": {
+                    "exact": "True"
+                },
+                "default_order": "6",
+                "points_available": "1",
+                "prompt": {
+                    "question": "The Windows ME operating system was released in the year 2000."
+                },
+                "type": "true_false"
+            },
+            {
+                "answer_key": {
+                    "exact": "False"
+                },
+                "default_order": "7",
+                "points_available": "1",
+                "prompt": {
+                    "question": "In RuneScape, one must complete the &quot;Dragon Slayer&quot; quest before equipping Rune Platelegs."
+                },
+                "type": "true_false"
+            },
+            {
+                "answer_key": {
+                    "exact": "True"
+                },
+                "default_order": "8",
+                "points_available": "1",
+                "prompt": {
+                    "question": "In &quot;To Love-Ru: Darkness&quot;, Yami reveals her real name is Eve."
+                },
+                "type": "true_false"
+            },
+            {
+                "answer_key": {
+                    "exact": "True"
+                },
+                "default_order": "9",
+                "points_available": "1",
+                "prompt": {
+                    "question": "Haggis is traditionally ate on Burns Night."
+                },
+                "type": "true_false"
+            },
+            {
+                "answer_key": {
+                    "exact": "True"
+                },
+                "default_order": "10",
+                "points_available": "1",
+                "prompt": {
+                    "question": "The Statue of Liberty&#039;s official name is &ldquo;Liberty Enlightening the World&rdquo;."
+                },
+                "type": "true_false"
+            }
+        ],
+        "slug": "true-or-false"
+    },
+    {
+        "color": "laravel",
+        "description": "Think you know Laravel? See if your knowledge is enough.",
+        "icon": "fab fa-laravel",
+        "name": "Laravel for Beginners",
+        "questions": [
+            {
+                "answer_key": {
+                    "exact": "7"
+                },
+                "default_order": "1",
+                "points_available": "1",
+                "prompt": {
+                    "incorrect": [
+                        "4",
+                        "6",
+                        "None"
+                    ],
+                    "question": "The command \"php artisan make:controller PhotoController --resource\" will create a Controller class with how many methods?"
+                },
+                "type": "multiple_choice"
+            },
+            {
+                "answer_key": {
+                    "exact": "surname"
+                },
+                "default_order": "2",
+                "points_available": "1",
+                "prompt": {
+                    "incorrect": [
+                        "name",
+                        "remember_token",
+                        "updated_at"
+                    ],
+                    "question": "In the default Laravel \"users\" DB table migration, which field is not present?"
+                },
+                "type": "multiple_choice"
+            },
+            {
+                "answer_key": {
+                    "exact": "Will throw an error"
+                },
+                "default_order": "3",
+                "points_available": "1",
+                "prompt": {
+                    "code": "Route::get('people/{name}/{surname?}', function ($name, $surname) {\n\treturn 'Hello ' . $name . ' ' . $surname;\n});",
+                    "incorrect": [
+                        "Will show \"Hello\"",
+                        "Will show \"Hello steve\"",
+                        "Will show \"Hello steve surname\""
+                    ],
+                    "question": "Look at the code snippet. What would be the result of the URL \"/people/steve/\"?"
+                },
+                "type": "multiple_choice"
+            },
+            {
+                "answer_key": {
+                    "exact": "An input field with a hidden type"
+                },
+                "default_order": "4",
+                "points_available": "1",
+                "prompt": {
+                    "incorrect": [
+                        "A login form",
+                        "A label for a required field",
+                        "A submit button"
+                    ],
+                    "question": "The Blade command \"@csrf\" generates what kind of HTML code?"
+                },
+                "type": "multiple_choice"
+            },
+            {
+                "answer_key": {
+                    "exact": "php artisan migrate:fresh"
+                },
+                "default_order": "5",
+                "points_available": "1",
+                "prompt": {
+                    "incorrect": [
+                        "php artisan migrate:seed",
+                        "php artisan migrate:rollback",
+                        "php artisan migrate --force"
+                    ],
+                    "question": "What is the Laravel Artisan command to delete all of the DB tables and run migrations again from scratch?"
+                },
+                "type": "multiple_choice"
+            },
+            {
+                "answer_key": {
+                    "exact": "True or false"
+                },
+                "default_order": "6",
+                "points_available": "1",
+                "prompt": {
+                    "incorrect": [
+                        "Also an array",
+                        "An error message string",
+                        "Depends on parameters"
+                    ],
+                    "question": "In Form Request classes that are used for validation, there are two methods. The method \"rules()\" should return an array. What should the \"authorize()\" method return?"
+                },
+                "type": "multiple_choice"
+            },
+            {
+                "answer_key": {
+                    "exact": "view('products.create')"
+                },
+                "default_order": "7",
+                "points_available": "1",
+                "prompt": {
+                    "incorrect": [
+                        "view('products/create')",
+                        "view('products-create')",
+                        "view('products_create')"
+                    ],
+                    "question": "If you put a Blade file inside of a subfolder, which as \"resources/views/products/create.blade.php\", what is the preferred approach to call it from a Controller?"
+                },
+                "type": "multiple_choice"
+            },
+            {
+                "answer_key": {
+                    "exact": "admin@example.com"
+                },
+                "default_order": "8",
+                "points_available": "1",
+                "prompt": {
+                    "code": "return [\n\t'admin_email' => env('ADMIN_EMAIL', 'admin@example.com')\n];",
+                    "incorrect": [
+                        "ADMIN_EMAIL",
+                        "An empty string",
+                        "Will throw an error"
+                    ],
+                    "question": "Look at the code snippet from config/emails.php. What would be the value of \"config('emails.admin_email')\" if no environment file is present on the server?"
+                },
+                "type": "multiple_choice"
+            },
+            {
+                "answer_key": {
+                    "exact": "app/"
+                },
+                "default_order": "9",
+                "points_available": "1",
+                "prompt": {
+                    "incorrect": [
+                        "app/Models/",
+                        "app/Http/Models/",
+                        "resources/Models/"
+                    ],
+                    "question": "In Laravel 6, the command \"php artisan make:model\" generates a new Model file into which folder?"
+                },
+                "type": "multiple_choice"
+            },
+            {
+                "answer_key": {
+                    "exact": "An array"
+                },
+                "default_order": "10",
+                "points_available": "1",
+                "prompt": {
+                    "incorrect": [
+                        "A string",
+                        "A Config class instance",
+                        "Anything you want"
+                    ],
+                    "question": "If you want to create your own config file in the \"config/\" folder, what should be the returned value inside of that file?"
+                },
+                "type": "multiple_choice"
+            },
+            {
+                "answer_key": {
+                    "exact": "if(auth()->check())"
+                },
+                "default_order": "11",
+                "points_available": "1",
+                "prompt": {
+                    "incorrect": [
+                        "if(auth())",
+                        "if(auth()->exists())",
+                        "if(session('auth')"
+                    ],
+                    "question": "What is the preferred approach for checking if a user is logged in?"
+                },
+                "type": "multiple_choice"
+            },
+            {
+                "answer_key": {
+                    "exact": "2"
+                },
+                "default_order": "12",
+                "points_available": "1",
+                "prompt": {
+                    "incorrect": [
+                        "1",
+                        "None",
+                        "You need to specify it as a parameter"
+                    ],
+                    "question": "How many database fields are created with the \"$table->timestamps()\" function within a migration file?"
+                },
+                "type": "multiple_choice"
+            },
+            {
+                "answer_key": {
+                    "exact": "$loop"
+                },
+                "default_order": "13",
+                "points_available": "1",
+                "prompt": {
+                    "code": "@foreach($users as $user)\n\t@if(XXXXX->first)\n\t\tThis is the first iteration.\n\t@endif\n@endforeach",
+                    "incorrect": [
+                        "$this",
+                        "$index",
+                        "item()"
+                    ],
+                    "question": "Look at the Blade code snippet. What is hiding behind XXXXX?"
+                },
+                "type": "multiple_choice"
+            },
+            {
+                "answer_key": {
+                    "exact": "php artisan migrate --force"
+                },
+                "default_order": "14",
+                "points_available": "1",
+                "prompt": {
+                    "incorrect": [
+                        "php artisan migrate:fresh",
+                        "php artisan migrate:rollback",
+                        "php artisan migrate --seed"
+                    ],
+                    "question": "If you try to run \"php artisan migrate\" in a production environment, Laravel will ask you to confirm the execution. What command can you use to bypass the confirmation?"
+                },
+                "type": "multiple_choice"
+            },
+            {
+                "answer_key": {
+                    "exact": "| (Pipe)"
+                },
+                "default_order": "15",
+                "points_available": "1",
+                "prompt": {
+                    "incorrect": [
+                        ", (Comma)",
+                        "; (Semi-Colon)",
+                        "* (Asterisk)"
+                    ],
+                    "question": "If you want to have more than one validation rule for a field, such as \"required\" and \"min:6\", what should be the separator between them?"
+                },
+                "type": "multiple_choice"
+            },
+            {
+                "answer_key": {
+                    "exact": "yield"
+                },
+                "default_order": "16",
+                "points_available": "1",
+                "prompt": {
+                    "incorrect": [
+                        "display",
+                        "include",
+                        "extend"
+                    ],
+                    "question": "Within a Blade layout, the command \"@section('header')\" can be used in a child template to display the content in a specific section. What command in used the parent Blade template to indicate where the content should go?"
+                },
+                "type": "multiple_choice"
+            },
+            {
+                "answer_key": {
+                    "exact": "app\\Http\\Kernel.php"
+                },
+                "default_order": "17",
+                "points_available": "1",
+                "prompt": {
+                    "incorrect": [
+                        ".env",
+                        "config\\app.php",
+                        "app\\Http\\Middleware"
+                    ],
+                    "question": "If you create your own Middleware class, in which file do you need to register it?"
+                },
+                "type": "multiple_choice"
+            },
+            {
+                "answer_key": {
+                    "exact": "addresses.company_id = companies.id"
+                },
+                "default_order": "18",
+                "points_available": "1",
+                "prompt": {
+                    "code": "class Address extends Model {\n\tfunction company() {\n\t\treturn $this->belongsTo(Company::class);\n\t}\n}",
+                    "incorrect": [
+                        "addresses.id = companies.id",
+                        "addresses.id = companies.address_id",
+                        "addresses.company_id = companies.address_id"
+                    ],
+                    "question": "Look at this Model code snippet. Which SQL comparison will be used in the relationship?"
+                },
+                "type": "multiple_choice"
+            },
+            {
+                "answer_key": {
+                    "exact": "auth"
+                },
+                "default_order": "19",
+                "points_available": "1",
+                "prompt": {
+                    "incorrect": [
+                        "user",
+                        "guest",
+                        "admin"
+                    ],
+                    "question": "What is the name of the default Laravel Middleware to restrict only logged in users to access a page?"
+                },
+                "type": "multiple_choice"
+            },
+            {
+                "answer_key": {
+                    "exact": "Route::group()"
+                },
+                "default_order": "20",
+                "points_available": "1",
+                "prompt": {
+                    "incorrect": [
+                        "Route::rules()",
+                        "Route::prefix()",
+                        "Route::collection()"
+                    ],
+                    "question": "How do you specify a set of rules for a shared collection of routes?"
+                },
+                "type": "multiple_choice"
+            },
+            {
+                "answer_key": {
+                    "exact": "route('admin.photos.create')"
+                },
+                "default_order": "21",
+                "points_available": "1",
+                "prompt": {
+                    "code": "Route::get('admin/photos/create', [\n\t'as' => 'admin.photos.create',\n\t'uses' => 'AdminPhotosController@create'\n]);",
+                    "incorrect": [
+                        "url('admin/photos/create')",
+                        "URL::action('AdminPhotosController@create')",
+                        "action('AdminPhotosController@create')"
+                    ],
+                    "question": "What is the preferred approach for referencing the route specified by the following code?"
+                },
+                "type": "multiple_choice"
+            },
+            {
+                "answer_key": {
+                    "exact": "Only the ones that are not in the migrations DB table, ordered alphabetically"
+                },
+                "default_order": "22",
+                "points_available": "1",
+                "prompt": {
+                    "incorrect": [
+                        "Only the first (alphabetically) file that is not in the migrations DB table",
+                        "Only the last (alphabetically) file that is not in the migrations DB table",
+                        "All available files in that folder"
+                    ],
+                    "question": "How many migration files from the \"database/migrations\" folder are run when executing the \"php artisan migrate\" command?"
+                },
+                "type": "multiple_choice"
+            },
+            {
+                "answer_key": {
+                    "exact": "Author::has('books.chapters')->get()"
+                },
+                "default_order": "23",
+                "points_available": "1",
+                "prompt": {
+                    "incorrect": [
+                        "Author::whereExists('books.chapters')->get()",
+                        "Author::whereHas(['books', 'chapters'])->get()",
+                        "Author::get('books.chapters')"
+                    ],
+                    "question": "Let's say that Eloquent has the relationships \"Authors have many books\" and \"Books have many chapters\". What is the Eloquent expression to get authors with at least one book and with at least one chapter?"
+                },
+                "type": "multiple_choice"
+            },
+            {
+                "answer_key": {
+                    "exact": "$team->players()->create"
+                },
+                "default_order": "24",
+                "points_available": "1",
+                "prompt": {
+                    "code": "class Team extends Model {\n\tfunction players() {\n\t\treturn $this->hasMany('Player::class');\n\t}\n}\n$team = Team::find(1);\nXXXXX(['name' => 'John Doe']);",
+                    "incorrect": [
+                        "$team->players()->attach",
+                        "$team->players()->associate",
+                        "Player::team()->create"
+                    ],
+                    "question": "Look at the code snippet. You want to add a player to the team. What should be behind XXXXX?"
+                },
+                "type": "multiple_choice"
+            },
+            {
+                "answer_key": {
+                    "exact": "storage/logs/laravel.log"
+                },
+                "default_order": "25",
+                "points_available": "1",
+                "prompt": {
+                    "incorrect": [
+                        "app/Error.php",
+                        "config/errors.php",
+                        "public/exceptions.txt"
+                    ],
+                    "question": "What is the default file location that Laravel stores logs in?"
+                },
+                "type": "multiple_choice"
+            }
+        ],
+        "slug": "laravel-for-beginners"
+    }
+]

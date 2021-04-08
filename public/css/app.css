@@ -11150,8 +11150,15 @@ small {
   font-size: 1.25rem;
 }
 
-.masthead .masthead-avatar {
-  width: 15rem;
+.masthead .masthead-avatar-lg {
+  max-width: 15rem;
+  max-height: 15rem;
+}
+
+.masthead .masthead-avatar,
+.masthead .masthead-avatar > svg {
+  max-width: 10rem;
+  max-height: 10rem;
 }
 
 @media (min-width: 992px) {
