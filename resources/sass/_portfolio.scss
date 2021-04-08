@@ -40,6 +40,38 @@
 
     }
 
+    .portfolio-item-lg {
+
+        position: relative;
+        display: block;
+        border-radius: $border-radius;
+        overflow: hidden;
+        border: 3px solid $secondary;
+        width: 100%;
+        font-size: 1.25rem;
+
+        .portfolio-item-icon {
+            width: 9rem;
+            height: 9rem;
+            min-width: 9rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @include media-breakpoint-down(md) {
+                width: 4.5rem;
+                height: 4.5rem;
+                min-width: 4.5rem;
+            }
+
+        }
+
+        @include media-breakpoint-down(md) {
+            font-size: inherit;
+        }
+
+    }
+
 }
 
 // Styling for the portfolio modals

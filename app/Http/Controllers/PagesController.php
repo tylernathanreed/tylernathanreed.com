@@ -17,16 +17,6 @@ class PagesController extends Controller
     }
 
     /**
-     * Displays the resume page.
-     *
-     * @return \Illuminate\Contracts\Support\Renderable
-     */
-    public function resume()
-    {
-        return view('pages.resume');
-    }
-
-    /**
      * Displays the about page.
      *
      * @return \Illuminate\Contracts\Support\Renderable
@@ -44,5 +34,25 @@ class PagesController extends Controller
     public function contact()
     {
         return view('pages.contact');
+    }
+
+    /**
+     * Displays the projects page.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function projects()
+    {
+        return view('pages.projects');
+    }
+
+    /**
+     * Displays the resume page.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function resume()
+    {
+        return view('pages.resume');
     }
 }

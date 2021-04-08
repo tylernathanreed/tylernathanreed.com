@@ -9,11 +9,15 @@
     "license": "MIT",
     "require": {
         "php": "^7.3",
+        "barryvdh/laravel-debugbar": "^3.5",
+        "doctrine/dbal": "^2.0",
         "fideloper/proxy": "^4.0",
+        "guzzlehttp/guzzle": "^7.3",
         "laravel/framework": "^6.0",
         "laravel/tinker": "^1.0",
-        "laravelcollective/html": "^6.0",
-        "reedware/carbon-helper": "^1.0"
+        "laravelcollective/html": "^6.2",
+        "reedware/carbon-helper": "^1.0",
+        "reedware/laravel-blueprints": "^1.0"
     },
     "require-dev": {
         "beyondcode/laravel-dump-server": "^1.0",

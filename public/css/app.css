@@ -2631,7 +2631,7 @@ textarea.form-control.is-invalid {
   padding: 0.375rem 0.75rem;
   font-size: 0.9rem;
   line-height: 1.6;
-  border-radius: 0.25rem;
+  border-radius: 9999px;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
@@ -3309,7 +3309,7 @@ fieldset:disabled a.btn {
   padding: 0.5rem 1rem;
   font-size: 1.125rem;
   line-height: 1.5;
-  border-radius: 0.3rem;
+  border-radius: 9999px;
 }
 
 .btn-sm,
@@ -3317,7 +3317,7 @@ fieldset:disabled a.btn {
   padding: 0.25rem 0.5rem;
   font-size: 0.7875rem;
   line-height: 1.5;
-  border-radius: 0.2rem;
+  border-radius: 9999px;
 }
 
 .btn-block {
@@ -4567,7 +4567,7 @@ input[type=button].btn-block {
   line-height: 1;
   background-color: transparent;
   border: 1px solid transparent;
-  border-radius: 0.25rem;
+  border-radius: 9999px;
 }
 
 .navbar-toggler:hover,
@@ -11209,6 +11209,39 @@ small {
   justify-content: center;
 }
 
+.portfolio .portfolio-item-lg {
+  position: relative;
+  display: block;
+  border-radius: 0.25rem;
+  overflow: hidden;
+  border: 3px solid #6c757d;
+  width: 100%;
+  font-size: 1.25rem;
+}
+
+.portfolio .portfolio-item-lg .portfolio-item-icon {
+  width: 9rem;
+  height: 9rem;
+  min-width: 9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 991.98px) {
+  .portfolio .portfolio-item-lg .portfolio-item-icon {
+    width: 4.5rem;
+    height: 4.5rem;
+    min-width: 4.5rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .portfolio .portfolio-item-lg {
+    font-size: inherit;
+  }
+}
+
 .portfolio-modal .portfolio-modal-heading {
   display: flex;
   align-items: center;
@@ -11354,6 +11387,10 @@ form .row:first-child .floating-label-form-group {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.08);
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .leading-none {
   line-height: 1;
 }
@@ -11410,6 +11447,25 @@ form .row:first-child .floating-label-form-group {
   background-color: var(--yellow);
 }
 
+.text-md {
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.list-none {
+  list-style: none;
+}
+
 .mb-6 {
   margin-bottom: 1.5rem;
 }
@@ -11420,6 +11476,14 @@ form .row:first-child .floating-label-form-group {
 
 .flex-1 {
   flex: 1;
+}
+
+.pin-b {
+  bottom: 0;
+}
+
+.pin-r {
+  right: 0;
 }
 
 .skill-legend {
