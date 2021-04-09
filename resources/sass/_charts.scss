@@ -1,0 +1,28 @@
+$chart-colors: (
+    'a': var(--primary),
+    'b': var(--success),
+    'c': var(--warning),
+    'd': var(--danger),
+    'e': var(--purple),
+    'f': var(--pink),
+    'g': var(--orange),
+    'h': var(--teal),
+    'i': var(--indigo),
+    'j': var(--dark),
+);
+
+@each $letter, $color in $chart-colors {
+
+    .ct-series-#{$letter} {
+
+        .ct-area, .ct-slice-donut-solid, .ct-slice-pie {
+            fill: $color !important;
+        }
+
+        .ct-bar {
+            stroke: $color !important;
+        }
+
+    }
+
+}

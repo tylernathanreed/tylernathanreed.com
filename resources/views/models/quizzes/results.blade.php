@@ -18,7 +18,7 @@
                 <div class="divider-custom-line"></div>
             </div>
 
-            <?php $percent = round($results['total_awarded'] / $results['total_available'] * 100); ?>
+            <?php $percent = $results['score']; ?>
 
             <h3 class="d-flex justify-content-between mb-4 w-100">
                 <div>Score: {{ $percent }}%</div>
@@ -48,9 +48,53 @@
                 </div>
             </div>
 
+            <h3 class="mb-4">Ratings</h3>
+
+            <section class="mb-4">
+                <style>
+                    #ratings.ct-series-a .ct-bar { stroke: var(--primary); }
+                </style>
+
+                <div id="ratings" class="ct-chart"></div>
+
+                <?php $labels = array_map(function($points) use ($results) {
+                    return round($points / $results['total_available'] * 100) . '%';
+                }, range(0, $results['total_available'])); ?>
+
+                <?php $breakdown = $quizTemplate->getRankingBreakdown(); ?>
+
+                @foreach($breakdown as $score => $count)
+                    <?php $otherScores[] = $score == $percent ? 0 : $count; ?>
+                    <?php $currentScore[] = $score != $percent ? 0 : $count; ?>
+                @endforeach
+
+                <script>
+                    let data = {
+                        labels: {!! json_encode($labels) !!},
+                        series: [
+                            {!! json_encode($otherScores) !!},
+                            {!! json_encode($currentScore) !!}
+                        ]
+                    };
+
+                    let options = {
+                        stackBars: true,
+                        axisY: {
+                            onlyInteger: true
+                        }
+                    };
+
+                    new Chartist.Bar('.ct-chart', data, options);
+                </script>
+
+                <div class="text-right">
+                    <small class="text-muted">Global Attempts: {{ array_sum($breakdown) }}</small>
+                </div>
+            </section>
+
             <h3 class="mb-4">Questions</h3>
 
-            <div class="mb-4">
+            <section class="mb-4">
                 @foreach($results['orders'] as $index => $order)
 
                     <?php $question = $results['questions'][$order]; ?>
@@ -75,7 +119,7 @@
                     </div>
 
                 @endforeach
-            </div>
+            </section>
 
             <div class="d-flex justify-content-between">
                 <a href="{{ route('quiz.index') }}" class="btn btn-lg btn-primary">
@@ -90,3 +134,8 @@
     </section>
 
 @endsection
+
+@push('head')
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+    <script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+@endpush

@@ -61,6 +61,12 @@ class QuizzesController extends Controller
         // Score the quiz
         $results = $quizTemplate->score($answers);
 
+        // Add the ranking
+        $quizTemplate->addRanking($results['score']);
+
+        // Include all rankings
+        $results['ranking'] = $quizTemplate->getRankingBreakdown();
+
         // Include the orders
         $results['orders'] = $request->orders;
 

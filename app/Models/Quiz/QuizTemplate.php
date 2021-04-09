@@ -74,9 +74,56 @@ class QuizTemplate extends Model
         // Include the totals
         $results['total_awarded'] = $totalAwarded;
         $results['total_available'] = $totalAvailable;
+        $results['score'] = round($totalAwarded / $totalAvailable * 100);
 
         // Return the results
         return $results;
+    }
+
+    /**
+     * Adds the specified score to the ranking for this quiz.
+     *
+     * @param  integer  $score
+     *
+     * @return \App\Models\Quiz\QuizRanking
+     */
+    public function addRanking($score)
+    {
+        // Determine the ranking
+        $ranking = $this->rankings()->firstOrNew(compact('score'), ['count' => 0]);
+
+        // Increase the count
+        $ranking->count++;
+
+        // Save the ranking
+        $this->rankings()->save($ranking);
+
+        // Return the ranking
+        return $ranking;
+    }
+
+    /**
+     * Returns the ranking breakdown for this quiz.
+     *
+     * @return array
+     */
+    public function getRankingBreakdown()
+    {
+        // Determine the maximum number of points
+        $available = $this->questions()->sum('points_available');
+
+        // Determine every possible score
+        $scores = array_map(function($points) use ($available) {
+            return round($points / $available * 100);
+        }, range(0, $available));
+
+        // Determine the existing rankings
+        $rankings = $this->rankings()->pluck('count', 'score')->all();
+
+        // Build a breakdown from the scores and rankings
+        return array_combine($scores, array_map(function($score) use ($rankings) {
+            return $rankings[$score] ?? 0;
+        }, $scores));
     }
 
     /**
@@ -87,5 +134,15 @@ class QuizTemplate extends Model
     public function questions()
     {
         return $this->hasMany(QuizQuestion::class, 'quiz_id');
+    }
+
+    /**
+     * Returns the rankings that belong to this quiz.
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function rankings()
+    {
+        return $this->hasMany(QuizRanking::class, 'quiz_id');
     }
 }

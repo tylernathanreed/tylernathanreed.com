@@ -11390,6 +11390,106 @@ form .row:first-child .floating-label-form-group {
   background-color: #545b62;
 }
 
+.ct-series-a .ct-area,
+.ct-series-a .ct-slice-donut-solid,
+.ct-series-a .ct-slice-pie {
+  fill: var(--primary) !important;
+}
+
+.ct-series-a .ct-bar {
+  stroke: var(--primary) !important;
+}
+
+.ct-series-b .ct-area,
+.ct-series-b .ct-slice-donut-solid,
+.ct-series-b .ct-slice-pie {
+  fill: var(--success) !important;
+}
+
+.ct-series-b .ct-bar {
+  stroke: var(--success) !important;
+}
+
+.ct-series-c .ct-area,
+.ct-series-c .ct-slice-donut-solid,
+.ct-series-c .ct-slice-pie {
+  fill: var(--warning) !important;
+}
+
+.ct-series-c .ct-bar {
+  stroke: var(--warning) !important;
+}
+
+.ct-series-d .ct-area,
+.ct-series-d .ct-slice-donut-solid,
+.ct-series-d .ct-slice-pie {
+  fill: var(--danger) !important;
+}
+
+.ct-series-d .ct-bar {
+  stroke: var(--danger) !important;
+}
+
+.ct-series-e .ct-area,
+.ct-series-e .ct-slice-donut-solid,
+.ct-series-e .ct-slice-pie {
+  fill: var(--purple) !important;
+}
+
+.ct-series-e .ct-bar {
+  stroke: var(--purple) !important;
+}
+
+.ct-series-f .ct-area,
+.ct-series-f .ct-slice-donut-solid,
+.ct-series-f .ct-slice-pie {
+  fill: var(--pink) !important;
+}
+
+.ct-series-f .ct-bar {
+  stroke: var(--pink) !important;
+}
+
+.ct-series-g .ct-area,
+.ct-series-g .ct-slice-donut-solid,
+.ct-series-g .ct-slice-pie {
+  fill: var(--orange) !important;
+}
+
+.ct-series-g .ct-bar {
+  stroke: var(--orange) !important;
+}
+
+.ct-series-h .ct-area,
+.ct-series-h .ct-slice-donut-solid,
+.ct-series-h .ct-slice-pie {
+  fill: var(--teal) !important;
+}
+
+.ct-series-h .ct-bar {
+  stroke: var(--teal) !important;
+}
+
+.ct-series-i .ct-area,
+.ct-series-i .ct-slice-donut-solid,
+.ct-series-i .ct-slice-pie {
+  fill: var(--indigo) !important;
+}
+
+.ct-series-i .ct-bar {
+  stroke: var(--indigo) !important;
+}
+
+.ct-series-j .ct-area,
+.ct-series-j .ct-slice-donut-solid,
+.ct-series-j .ct-slice-pie {
+  fill: var(--dark) !important;
+}
+
+.ct-series-j .ct-bar {
+  stroke: var(--dark) !important;
+}
+
 .shadow-md {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.08);
 }
