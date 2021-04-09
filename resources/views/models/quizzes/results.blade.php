@@ -50,21 +50,30 @@
 
             <h3 class="mb-4">Questions</h3>
 
-            <div class="row mb-4">
+            <div class="mb-4">
                 @foreach($results['orders'] as $index => $order)
-                    <div class="col-md-3">
-                        <?php $question = $results['questions'][$order]; ?>
-                        <strong>
-                            <span>#{{ $index + 1 }}</span>
 
-                            @if($question['status'] == 'correct')
-                                <span class="text-success">Correct</span>
-                            @else
-                                <span class="text-danger">Incorrect</span>
-                            @endif
-                        </strong>
-                        <span>({{ $question['awarded'] }} of {{ $question['available'] }})</span>
+                    <?php $question = $results['questions'][$order]; ?>
+
+                    <div class="mb-4">
+                        <div class="d-flex mb-1">
+                            <strong class="pr-1">{{ $index + 1 }}) </strong>
+                            <span class="flex-1">{!! $question['prompt'] !!}</span>
+                            <span class="pl-1 text-muted">({{ $question['awarded'] }} of {{ $question['available'] }})</span>
+                        </div>
+
+                        <ul class="ml-4">
+                            <li>
+                                <span>Your Answer: </span>
+                                <strong class="{{ $question['status'] == 'correct' ? 'text-success' : 'text-danger' }}">{{ $question['provided'] }}</strong>
+                            </li>
+                            <li>
+                                <span>Correct Answer: {{ $question['answer'] }}</span>
+                            </li>
+                        </ul>
+                        
                     </div>
+
                 @endforeach
             </div>
 

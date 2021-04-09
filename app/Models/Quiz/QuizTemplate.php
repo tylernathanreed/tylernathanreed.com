@@ -59,6 +59,7 @@ class QuizTemplate extends Model
             $results['questions'][$question->default_order] = [
                 'awarded' => $awarded,
                 'available' => $question->points_available,
+                'prompt' => $question->prompt['question'],
                 'provided' => $answer,
                 'answer' => $question->answer_key['exact'],
                 'status' => $question->points_available == $awarded ? 'correct' : 'incorrect',
