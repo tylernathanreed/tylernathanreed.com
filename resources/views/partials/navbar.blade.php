@@ -4,8 +4,8 @@
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    <img src="{{ url('images/brand_full.jpg') }}"/ alt="{{ config('app.name') }}" height="22" class="d-none d-sm-block"/>
-                    <img src="{{ url('images/brand_letter.jpg') }}"/ alt="{{ config('app.name') }}" height="22" class="d-block d-sm-none"/>
+                    <img src="{{ url('images/brand_full.webp') }}"/ alt="{{ config('app.name') }}" height="22" class="d-none d-sm-block"/>
+                    <img src="{{ url('images/brand_letter.webp') }}"/ alt="{{ config('app.name') }}" height="22" class="d-block d-sm-none"/>
                 </a>
             </li>
         </ul>
