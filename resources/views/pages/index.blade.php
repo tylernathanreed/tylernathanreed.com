@@ -9,7 +9,7 @@
         <div class="container d-flex align-items-center justify-content-center flex-column h-100">
 
             <!-- Masthead Avatar Image -->
-            <img class="masthead-avatar mb-5" src="{{ url('images/avatar.jpg') }}" alt="Avatar">
+            <img class="masthead-avatar mb-5" src="{{ url('images/avatar.png') }}" alt="Avatar">
 
             <!-- Masthead Heading -->
             <h1 class="masthead-heading mb-0">Tyler Nathan Reed</h1>

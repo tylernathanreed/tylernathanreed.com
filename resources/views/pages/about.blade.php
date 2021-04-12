@@ -22,7 +22,7 @@
             <div class="d-flex flex-column flex-sm-row align-items-center w-100">
 
                 <!-- Jumbotron Avatar Image -->
-                <img class="masthead-avatar-lg mr-4" src="{{ url('images/avatar.png') }}" alt="Avatar">
+                <img class="masthead-avatar-lg mr-4" src="{{ url('images/avatar.jpg') }}" alt="Avatar">
 
                 <!-- Jumbotron Subheading -->
                 <div class="flex-1 masthead-subheading font-weight-light mb-0 ml-4 mt-4 mt-sm-0">
