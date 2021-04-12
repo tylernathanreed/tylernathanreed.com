@@ -634,7 +634,7 @@
                     "incorrect": [
                         "if(auth())",
                         "if(auth()->exists())",
-                        "if(session('auth')"
+                        "if(session('auth'))"
                     ],
                     "question": "What is the preferred approach for checking if a user is logged in?"
                 },
