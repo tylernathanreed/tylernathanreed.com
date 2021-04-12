@@ -9,11 +9,11 @@
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="/favicon.ico"/>
 
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#3490dc">
+
     <!-- Font Awesome icons (free version)-->
     <script defer src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
-
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel='stylesheet' type='text/css'/>
 
     <!-- Styles -->
     <link href="{{ mix('css/app.css') }}" rel="stylesheet"/>

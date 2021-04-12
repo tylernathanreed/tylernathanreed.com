@@ -124,9 +124,9 @@
             Laravel is typically the first product people experience within the Laravel ecosystem, and I was no exception.
             In fact, the majority of products within the ecosystem didn't yet exist when I joined the fray, and Laravel was all that there was.
             I've used a number of PHP frameworks over the years, such as
-            <a href="https://kohanaframework.org/" target="_blank">Kohana</a>,
-            <a href="https://www.codeigniter.com/" target="_blank">Code Igniter</a>,
-            <a href="https://cakephp.org/" target="_blank">Cake PHP</a>, and others,
+            <a href="https://kohanaframework.org/" target="_blank" rel="noreferrer">Kohana</a>,
+            <a href="https://www.codeigniter.com/" target="_blank" rel="noreferrer">Code Igniter</a>,
+            <a href="https://cakephp.org/" target="_blank" rel="noreferrer">Cake PHP</a>, and others,
             but none of them had the quality of the Laravel framework.
         </p>
         <p>
@@ -144,8 +144,8 @@
         <p>
             I plan to continue to use Laravel for both recreational and profressional projects.
             Every now and then, I'll dabble with some other framework, even in other languages (such as
-            <a href="https://rubyonrails.org/" target="_blank">Ruby on Rails</a> and
-            <a href="https://www.djangoproject.com/" target="_blank">Django</a>),
+            <a href="https://rubyonrails.org/" target="_blank" rel="noreferrer">Ruby on Rails</a> and
+            <a href="https://www.djangoproject.com/" target="_blank" rel="noreferrer">Django</a>),
             just to stay open minded, but Laravel still proves to be the best framework out there.
         </p>
     @endcomponent
@@ -164,7 +164,7 @@
         <p>
             I've since built a number of Stateless APIs for a wide range of business scenarios, including SSO, data extraction, and PDF generation.
             Profressionally, I've used Lumen to create dedicated micro-services to slow the monolithic growth of a primary application.
-            But lately, with the introduction of <a href="https://vapor.laravel.com/">Laravel Vapor</a> (a Serverless PHP Platform),
+            But lately, with the introduction of <a href="https://vapor.laravel.com/" target="blank" rel="noreferrer">Laravel Vapor</a> (a Serverless PHP Platform),
             some of the Lumen applications I've built are now being converted into Laravel to make proper use of serverless deployment.
         </p>
     @endcomponent
@@ -174,7 +174,7 @@
             Nova was a dream come true for me.
             I've had to manually built several admin panels in the past, and having a framework that delivered this out of the box was magnificent.
             Even better, Nova also comes with a fully integrated front-end framework built on top of Vue.js,
-            which allows for responsiveness and faster page loads (as Nova behaves like a <a href="https://en.wikipedia.org/wiki/Single-page_application">SPA</a> under the hood).
+            which allows for responsiveness and faster page loads (as Nova behaves like a <a href="https://en.wikipedia.org/wiki/Single-page_application" target="blank" rel="noreferrer">SPA</a> under the hood).
         </p>
         <p>
             So far I've built two applications in Laravel Nova: one professional, and one recreational.
@@ -184,7 +184,7 @@
             There were several alternatives that we could have used to increase our response times, but Nova was a magic bullet for us.
         </p>
         <p>
-            My recreational project was called <a href="https://github.com/tylernathanreed/jira-nova" target="_blank">Jinora</a>,
+            My recreational project was called <a href="https://github.com/tylernathanreed/jira-nova" target="_blank" rel="noreferrer">Jinora</a>,
             and was something I built to get myself out of deadline hell when management was terrible at making commitments.
             Jinora integrated with Jira through its API, and persisted everything back into Jira.
             Jinora's database was actually just cached information from Jira, and we could pull incredible metrics from Jira that oddly weren't offered out of the box.
@@ -197,9 +197,9 @@
         <p>
             For years, most developers used jQuery and some sort of homebrew framework that was custom-built for the application at hand.
             However, once the rise of the JS frameworks started, solutions such as
-            <a href="https://angularjs.org/">Angular</a>,
-            <a href="https://reactjs.org/">React</a>, and
-            <a href="https://vuejs.org/">Vue</a> climbed in popularity.
+            <a href="https://angularjs.org/" target="_blank" rel="noreferrer">Angular</a>,
+            <a href="https://reactjs.org/" target="_blank" rel="noreferrer">React</a>, and
+            <a href="https://vuejs.org/" target="_blank" rel="noreferrer">Vue</a> climbed in popularity.
             I gave each of these an honest attempt, but found myself liking Vue the most.
             Given that Vue is popular within the Laravel community, it seems I came to the right conclusion.
         </p>

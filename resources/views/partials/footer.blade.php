@@ -24,10 +24,21 @@
             <!-- Footer Social Icons -->
             <div class="col-lg-4 mb-5 mb-lg-0 text-center">
                 <h4 class="text-uppercase mb-4">Around the Web</h4>
-                <a class="btn btn-outline-light btn-social mx-1" target="_blank" href="//www.github.com/tylernathanreed"><i class="fab fa-fw fa-github"></i></a>
-                <a class="btn btn-outline-light btn-social mx-1" target="_blank" href="//www.linkedin.com/in/tylernathanreed"><i class="fab fa-fw fa-linkedin-in"></i></a>
-                <a class="btn btn-outline-light btn-social mx-1" target="_blank" href="//https://codepen.io/tylernathanreed"><i class="fab fa-fw fa-codepen"></i></a>
-                <a class="btn btn-outline-light btn-social mx-1" target="_blank" href="{{ url('/') }}"><i class="fas fa-fw fa-globe"></i></a>
+                <a class="btn btn-outline-light btn-social mx-1" target="_blank" href="//www.github.com/tylernathanreed" rel="noreferrer" aria-label="GitHub">
+                    <i class="fab fa-fw fa-github"></i>
+                </a>
+
+                <a class="btn btn-outline-light btn-social mx-1" target="_blank" href="//www.linkedin.com/in/tylernathanreed" rel="noreferrer" aria-label="Linked In">
+                    <i class="fab fa-fw fa-linkedin-in"></i>
+                </a>
+
+                <a class="btn btn-outline-light btn-social mx-1" target="_blank" href="//https://codepen.io/tylernathanreed" rel="noreferrer" aria-label="Code Pen">
+                    <i class="fab fa-fw fa-codepen"></i>
+                </a>
+
+                <a class="btn btn-outline-light btn-social mx-1" target="_blank" href="{{ url('/') }}" rel="noreferrer" aria-label="Website">
+                    <i class="fas fa-fw fa-globe"></i>
+                </a>
             </div>
 
             <!-- Footer About Text -->
@@ -36,7 +47,7 @@
                 <div class="d-flex justify-content-center">
                     <p class="lead mb-0" style="max-width: 300px">
                         Reedware is my package namespace all of my recreational projects. Visit my
-                        <a class="text-info" target="_blank" href="//www.github.com/tylernathanreed">GitHub Profile</a>
+                        <a class="text-info" target="_blank" href="//www.github.com/tylernathanreed" rel="noreferrer">GitHub Profile</a>
                         to see what I do.
                     </p>
                 </div>
