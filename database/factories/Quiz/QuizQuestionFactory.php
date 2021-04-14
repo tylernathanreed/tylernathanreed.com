@@ -1,10 +1,11 @@
 <?php
 
-namespace Database\Factories;
+namespace Database\Factories\Quiz;
 
-use Cache;
 use App\Models\Quiz\QuizQuestion;
 use App\Models\Quiz\QuizTemplate;
+use Cache;
+use Database\Factories\Factory;
 use GuzzleHttp\Client;
 
 class QuizQuestionFactory extends Factory
@@ -65,7 +66,7 @@ class QuizQuestionFactory extends Factory
      */
     public function configure()
     {
-        return $this->afterMaking(QuizQuestion::class, function(QuizQuestion $question) {
+        return $this->afterMaking(function(QuizQuestion $question) {
             $this->generatePrompt($question);
         });
     }
@@ -102,7 +103,7 @@ class QuizQuestionFactory extends Factory
         // Assign the prompt
         $question->prompt = array_filter([
             'question' => $prompt->question,
-            'incorrect' => $parameters['type'] == 'multiple' ? $prompt->incorrect_answers : null
+            'incorrect' => $question->type == 'multiple_choice' ? $prompt->incorrect_answers : null
         ]);
 
         // Assign the answer key

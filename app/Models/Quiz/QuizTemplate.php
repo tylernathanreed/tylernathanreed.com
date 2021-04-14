@@ -30,6 +30,13 @@ class QuizTemplate extends Model
                 $quiz->questions()->delete();
             }
 
+            // Delete the rankings
+            if($quiz->forceDeleting) {
+                $quiz->rankings()->forceDelete();
+            } else {
+                $quiz->rankings()->delete();
+            }
+
         });
     }
 

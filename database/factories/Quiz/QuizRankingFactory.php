@@ -1,9 +1,10 @@
 <?php
 
-namespace Database\Factories;
+namespace Database\Factories\Quiz;
 
 use App\Models\Quiz\QuizRanking;
 use App\Models\Quiz\QuizTemplate;
+use Database\Factories\Factory;
 
 class QuizRankingFactory extends Factory
 {

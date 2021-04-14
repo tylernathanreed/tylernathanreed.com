@@ -1,8 +1,9 @@
 <?php
 
-namespace Database\Factories;
+namespace Database\Factories\Quiz;
 
 use App\Models\Quiz\QuizTemplate;
+use Database\Factories\Factory;
 
 class QuizTemplateFactory extends Factory
 {
