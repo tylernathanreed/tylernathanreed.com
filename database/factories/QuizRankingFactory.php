@@ -1,28 +1,41 @@
 <?php
 
-/** @var \Illuminate\Database\Eloquent\Factory $factory */
+namespace Database\Factories;
 
 use App\Models\Quiz\QuizRanking;
 use App\Models\Quiz\QuizTemplate;
-use Faker\Generator as Faker;
 
-$factory->define(QuizRanking::class, function (Faker $faker) {
+class QuizRankingFactory extends Factory
+{
+    /**
+     * The name of the factory's corresponding model.
+     *
+     * @var string
+     */
+    protected $model = QuizRanking::class;
 
-    return [
-        'quiz_id' => factory(QuizTemplate::class),
-        'score' => $score = rand(0, 100)
-    ];
-
-});
-
-$factory->afterMaking(QuizRanking::class, function(QuizRanking $ranking, Faker $faker) {
-
-    // If a count was provided, leave it alone
-    if(!is_null($ranking->count)) {
-        return;
+    /**
+     * Define the model's default state.
+     *
+     * @return array
+     */
+    public function definition()
+    {
+        return [
+            'quiz_id' => QuizTemplate::factory(),
+            'score' => $score = rand(0, 100)
+        ];
     }
 
-    // Add a count
-    $ranking->count = rand(0, 100 / ($ranking->score + 1));
-
-});
+    /**
+     * Configures this model factory.
+     *
+     * @return $this
+     */
+    public function configure()
+    {
+        return $this->afterMaking(QuizRanking::class, function(QuizRanking $ranking) {
+            $ranking->count = $ranking->count ?? rand(0, 100 / ($ranking->score + 1));
+        });
+    }
+}
