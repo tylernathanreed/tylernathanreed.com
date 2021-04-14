@@ -4,13 +4,12 @@ namespace App\Models;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class User extends Authenticatable
 {
-    use Notifiable;
-
-    use Concerns\HasResource;
+    use HasFactory, Notifiable;
 
     /**
      * The attributes that are mass assignable.
@@ -38,26 +37,4 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
-
-    /**
-     * Returns the avatar field for this model.
-     *
-     * @return \Nova\Fields\Field
-     */
-    public function getAvatarField()
-    {
-        return tap($this->resource->getAvatarField(), function($field) {
-            $field->resolve($this);
-        });
-    }
-
-    /**
-     * Returns the avatar url for this user.
-     *
-     * @return string
-     */
-    public function getAvatarUrl()
-    {
-        return $this->getAvatarField()->resolveThumbnailUrl();
-    }
 }
