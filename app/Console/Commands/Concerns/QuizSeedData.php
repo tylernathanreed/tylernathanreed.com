@@ -11,6 +11,6 @@ trait QuizSeedData
      */
     public function getSeedDataPath()
     {
-        return database_path('seeds/data/quizzes.json');
+        return database_path('seeders/data/quizzes.json');
     }
 }
