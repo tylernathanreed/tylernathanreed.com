@@ -18,21 +18,29 @@
     <!-- Styles -->
     <link href="{{ mix('css/app.css') }}" rel="stylesheet"/>
 
+    <!-- Chartist -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+    <script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+
+    <!-- Config -->
+    @config
+
+    <!-- Routes -->
+    @routes
+
 @endpush
 
 @section('body')
 
-    <div id="app">
-        @yield('content')
-    </div>
+    @inertia
 
+    <!-- Scripts -->
     <div id="tail">
-
-        <!-- Scripts -->
-        <script src="{{ asset('js/app.js') }}"></script>
+        <script src="{{ mix('js/manifest.js') }}"></script>
+        <script src="{{ mix('js/vendor.js') }}"></script>
+        <script src="{{ mix('js/app.js') }}"></script>
 
         @stack('tail')
-
     </div>
 
 @endsection

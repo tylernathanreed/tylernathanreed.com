@@ -19,7 +19,7 @@ class QuizzesController extends Controller
         $quizzes = QuizTemplate::withCount('questions')->get();
 
         // Return the response
-        return view('models.quizzes.index', compact('quizzes'));
+        return inertia('models/quizzes/Index', compact('quizzes'));
     }
 
     /**
@@ -31,7 +31,13 @@ class QuizzesController extends Controller
      */
     public function show(QuizTemplate $quizTemplate)
     {
-        return view('models.quizzes.show', compact('quizTemplate'));
+        return inertia('models/quizzes/Show', ['quiz' => array_merge($quizTemplate->toArray(), [
+            'questions' => $quizTemplate->questions->map(function($question) {
+                return array_merge($question->toArray(), [
+                    'view_template' => $question->getViewTemplate()
+                ]);
+            })
+        ])]);
     }
 
     /**
@@ -96,6 +102,11 @@ class QuizzesController extends Controller
         }
 
         // Return the results
-        return view('models.quizzes.results', compact('quizTemplate', 'results'));
+        return inertia('models/quizzes/Results', [
+            'quiz' => array_merge($quizTemplate->toArray(), [
+                'breakdown' => $quizTemplate->getRankingBreakdown()
+            ]),
+            'results' => $results
+        ]);
     }
 }

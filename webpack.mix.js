@@ -1,4 +1,5 @@
-const mix = require('laravel-mix');
+const path = require('path')
+const mix = require('laravel-mix')
 
 /*
  |--------------------------------------------------------------------------
@@ -11,11 +12,28 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js')
-   .sass('resources/sass/app.scss', 'public/css')
-   .sourceMaps()
-   .options({
+mix
+    .sass('resources/sass/app.scss', 'public/css')
+    .js('resources/js/app.js', 'public/js')
+    .extract([
+        'lodash',
+        'popper.js',
+        'portal-vue',
+        'vue',
+    ])
+    .vue()
+    .sourceMaps()
+    .options({
         terser: {
             extractComments: false
         }
-   })
+    })
+    .webpackConfig({
+        output: { chunkFilename: 'js/[name].js?id=[chunkhash]' },
+        resolve: {
+            alias: {
+                vue$: 'vue/dist/vue.runtime.esm.js',
+                '@': path.resolve('resources/js'),
+            },
+        },
+    })

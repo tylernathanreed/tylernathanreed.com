@@ -128,7 +128,7 @@ class QuizQuestion extends Model
      */
     public function getViewTemplate()
     {
-        return 'models.quizzes.questions.' . str_replace('_', '-', $this->type);
+        return 'question-' . str_replace('_', '-', $this->type);
     }
 
     /**

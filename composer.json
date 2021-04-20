@@ -14,11 +14,13 @@
         "fideloper/proxy": "^4.0",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.3",
+        "inertiajs/inertia-laravel": "^0.4.1",
         "laravel/framework": "^8.0",
         "laravel/tinker": "^2.0",
         "laravelcollective/html": "^6.0",
         "reedware/carbon-helper": "^1.0",
-        "reedware/laravel-blueprints": "^1.0"
+        "reedware/laravel-blueprints": "^1.0",
+        "tightenco/ziggy": "^0.8.0"
     },
     "require-dev": {
         "beyondcode/laravel-dump-server": "^1.0",

@@ -13,7 +13,7 @@ class PagesController extends Controller
      */
     public function index()
     {
-        return view('pages.index');
+        return inertia('Index');
     }
 
     /**
@@ -23,7 +23,7 @@ class PagesController extends Controller
      */
     public function about()
     {
-        return view('pages.about');
+        return inertia('About');
     }
 
     /**
@@ -33,7 +33,7 @@ class PagesController extends Controller
      */
     public function contact()
     {
-        return view('pages.contact');
+        return inertia('Contact');
     }
 
     /**
@@ -43,7 +43,7 @@ class PagesController extends Controller
      */
     public function projects()
     {
-        return view('pages.projects');
+        return inertia('Projects');
     }
 
     /**
@@ -53,6 +53,6 @@ class PagesController extends Controller
      */
     public function resume()
     {
-        return view('pages.resume');
+        return inertia('Resume');
     }
 }
