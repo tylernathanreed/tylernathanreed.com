@@ -5,7 +5,7 @@
                 <div class="checkbox d-inline-block">
                     <label class="cursor-pointer">
                         <input type="radio" :name="`answers[${number}]`" :value="option"/>
-                        <strong v-text="letter(index)"/>
+                        <strong v-text="`${letter(index)})`"/>
                         <span v-html="option"/>
                     </label>
                 </div>
