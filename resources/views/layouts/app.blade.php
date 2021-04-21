@@ -22,6 +22,13 @@
     <link rel="preload" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
     <script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js" defer></script>
 
+    @if(request()->is('/'))
+
+        <!-- Preloaded Assets -->
+        <link rel="preload" as="image" href="/images/avatar.webp"/>
+
+    @endif
+
     <!-- Config -->
     @config
 
