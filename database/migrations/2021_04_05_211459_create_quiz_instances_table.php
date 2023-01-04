@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
 
 class CreateQuizInstancesTable extends Migration
 {
@@ -18,8 +19,8 @@ class CreateQuizInstancesTable extends Migration
             $table->bigIncrements('id');
 
             // Relationships
-            $table->bigBelongsTo('quiz_templates', 'quiz_id');
-            $table->bigBelongsTo('users');
+            $table->foreignId('quiz_id')->references('id')->on('quiz_templates');
+            $table->foreignId('user_id')->references('id')->on('users');
             $table->decimal('score', 4, 2)->nullable();
 
             // Revision tracking

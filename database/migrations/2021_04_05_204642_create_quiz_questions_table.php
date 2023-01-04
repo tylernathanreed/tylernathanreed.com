@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
 
 class CreateQuizQuestionsTable extends Migration
 {
@@ -18,7 +19,7 @@ class CreateQuizQuestionsTable extends Migration
             $table->bigIncrements('id');
 
             // Relationships
-            $table->bigBelongsTo('quiz_templates', 'quiz_id');
+            $table->foreignId('quiz_id')->references('id')->on('quiz_templates')->index();
 
             // Attributes
             $table->string('type', 20);

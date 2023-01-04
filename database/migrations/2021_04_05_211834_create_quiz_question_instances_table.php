@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
 
 class CreateQuizQuestionInstancesTable extends Migration
 {
@@ -18,7 +19,7 @@ class CreateQuizQuestionInstancesTable extends Migration
             $table->bigIncrements('id');
 
             // Relationships
-            $table->bigBelongsTo('quiz_instances');
+            $table->foreignId('quiz_instance_id')->references('id')->on('quiz_instances')->index();
 
             // Attributes
             $table->text('answer_provided');

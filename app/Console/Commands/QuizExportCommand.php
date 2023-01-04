@@ -3,8 +3,8 @@
 namespace App\Console\Commands;
 
 use App\Models\Quiz\QuizTemplate;
-use File;
 use Illuminate\Console\Command;
+use Illuminate\Support\Facades\File;
 
 class QuizExportCommand extends Command
 {
