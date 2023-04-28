@@ -21,7 +21,7 @@ class QuizTemplate extends Model
         parent::boot();
 
         // When this model is being deleted...
-        static::deleting(function($quiz) {
+        static::deleting(function ($quiz) {
 
             // Delete the questions
             if($quiz->forceDeleting) {
@@ -54,7 +54,7 @@ class QuizTemplate extends Model
         $totalAvailable = 0;
 
         // Iterate through each question
-        foreach($this->questions as $question) {
+        foreach ($this->questions as $question) {
 
             // Determine the corresponding answer
             $answer = $answers[$question->default_order - 1] ?? null;
@@ -120,7 +120,7 @@ class QuizTemplate extends Model
         $available = $this->questions()->sum('points_available');
 
         // Determine every possible score
-        $scores = array_map(function($points) use ($available) {
+        $scores = array_map(function ($points) use ($available) {
             return round($points / $available * 100);
         }, range(0, $available));
 
@@ -128,7 +128,7 @@ class QuizTemplate extends Model
         $rankings = $this->rankings()->pluck('count', 'score')->all();
 
         // Build a breakdown from the scores and rankings
-        return array_combine($scores, array_map(function($score) use ($rankings) {
+        return array_combine($scores, array_map(function ($score) use ($rankings) {
             return $rankings[$score] ?? 0;
         }, $scores));
     }

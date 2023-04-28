@@ -28,7 +28,7 @@ class AppServiceProvider extends ServiceProvider
         Blade::withoutComponentTags();
 
         // Expose a subset of the configuration to the front-end
-        Blade::directive('config', function() {
+        Blade::directive('config', function () {
             return $this->getConfigFunction();
         });
     }
@@ -44,7 +44,7 @@ class AppServiceProvider extends ServiceProvider
             'app.name'
         ];
 
-        $config = json_encode(array_combine($keys, array_map(function($key) {
+        $config = json_encode(array_combine($keys, array_map(function ($key) {
             return config($key);
         }, $keys)));
 

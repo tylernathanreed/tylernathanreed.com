@@ -38,7 +38,7 @@ class ViewServiceProvider extends ServiceProvider
         $composers = $this->app->config->get('view.composers', []);
 
         // Register each composer
-        foreach($composers as $composer) {
+        foreach ($composers as $composer) {
             $this->bindViewComposer($composer);
         }
     }
@@ -56,7 +56,7 @@ class ViewServiceProvider extends ServiceProvider
         $instance = $this->app->make($composer);
 
         // Bind the instance as a composer
-        $this->app->view->composer($instance->composes(), function($view) use ($instance) {
+        $this->app->view->composer($instance->composes(), function ($view) use ($instance) {
             $instance->compose($view);
         });
     }

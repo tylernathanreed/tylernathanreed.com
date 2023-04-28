@@ -35,7 +35,7 @@ class AuthComposer extends Composer
      */
     public function compose(View $view)
     {
-    	$view->with('auth', $this->auth->user());
+        $view->with('auth', $this->auth->user());
     }
 
     /**
@@ -45,6 +45,6 @@ class AuthComposer extends Composer
      */
     public function composes()
     {
-    	return ['*'];
+        return ['*'];
     }
 }

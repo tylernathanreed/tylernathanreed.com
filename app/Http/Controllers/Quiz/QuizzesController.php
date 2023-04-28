@@ -32,7 +32,7 @@ class QuizzesController extends Controller
     public function show(QuizTemplate $quizTemplate)
     {
         return inertia('models/quizzes/Show', ['quiz' => array_merge($quizTemplate->toArray(), [
-            'questions' => $quizTemplate->questions->map(function($question) {
+            'questions' => $quizTemplate->questions->map(function ($question) {
                 return array_merge($question->toArray(), [
                     'view_template' => $question->getViewTemplate()
                 ]);
@@ -57,7 +57,7 @@ class QuizzesController extends Controller
         ]);
 
         // Determine the ordered answeres
-        foreach($request->orders as $slide => $order) {
+        foreach ($request->orders as $slide => $order) {
             $answers[$order - 1] = $request->answers[$slide];
         }
 
@@ -97,7 +97,7 @@ class QuizzesController extends Controller
         $results = $request->session()->get("quiz.{$quizTemplate->id}.results");
 
         // If no results are found, go to the index page
-        if(empty($results)) {
+        if (empty($results)) {
             return redirect()->route('quiz.index');
         }
 

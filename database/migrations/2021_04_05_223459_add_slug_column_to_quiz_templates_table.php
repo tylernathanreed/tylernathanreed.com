@@ -28,7 +28,7 @@ class AddSlugColumnToQuizTemplatesTable extends Migration
         });
 
         // Fill in the column
-        DB::table('quiz_templates')->cursor()->each(function($quiz) {
+        DB::table('quiz_templates')->cursor()->each(function ($quiz) {
             DB::table('quiz_templates')->where('id', $quiz->id)->update(['name' => Str::slug($quiz->name)]);
         });
 

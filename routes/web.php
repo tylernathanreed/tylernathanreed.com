@@ -11,6 +11,8 @@
 |
 */
 
+use Illuminate\Support\Facades\Route;
+
 Route::get('/', [
     'as' => 'pages.index',
     'uses' => 'PagesController@index'
@@ -36,7 +38,7 @@ Route::get('resume', [
     'uses' => 'PagesController@resume'
 ]);
 
-Route::group(['prefix' => 'projects/quiz', 'namespace' => 'Quiz'], function() {
+Route::group(['prefix' => 'projects/quiz', 'namespace' => 'Quiz'], function () {
 
     // Index
     Route::get('/', [

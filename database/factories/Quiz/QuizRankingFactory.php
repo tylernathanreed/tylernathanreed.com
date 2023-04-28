@@ -35,7 +35,7 @@ class QuizRankingFactory extends Factory
      */
     public function configure()
     {
-        return $this->afterMaking(QuizRanking::class, function(QuizRanking $ranking) {
+        return $this->afterMaking(function (QuizRanking $ranking) {
             $ranking->count = $ranking->count ?? rand(0, 100 / ($ranking->score + 1));
         });
     }

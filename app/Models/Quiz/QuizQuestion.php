@@ -3,7 +3,6 @@
 namespace App\Models\Quiz;
 
 use App\Models\Model;
-use App\Models\Concerns\Sluggable;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 class QuizQuestion extends Model
@@ -15,7 +14,7 @@ class QuizQuestion extends Model
      *
      * @var string
      */
-    const TYPE_MULTIPLE_CHOICE = 'multiple_choice';
+    public const TYPE_MULTIPLE_CHOICE = 'multiple_choice';
 
     /**
      * The attributes that should be casted.
@@ -38,7 +37,7 @@ class QuizQuestion extends Model
         parent::boot();
 
         // Ensure that the question has a default order
-        static::saving(function($question) {
+        static::saving(function ($question) {
             $question->ensureDefaultOrder();
         });
     }
@@ -51,12 +50,12 @@ class QuizQuestion extends Model
     public function ensureDefaultOrder()
     {
         // If a default order is populated, don't bother
-        if(!is_null($this->default_order)) {
+        if (!is_null($this->default_order)) {
             return $this;
         }
 
         // If a quiz hasn't been associated, don't bother
-        if(is_null($this->quiz_id) || is_null($this->quiz)) {
+        if (is_null($this->quiz_id) || is_null($this->quiz)) {
             return $this;
         }
 
@@ -90,12 +89,12 @@ class QuizQuestion extends Model
     public function score($answer)
     {
         // If no answer was provided, no points are awarded
-        if(is_null($answer)) {
+        if (is_null($answer)) {
             return 0;
         }
 
         // Check for an exact match
-        if($this->isExactMatch($answer)) {
+        if ($this->isExactMatch($answer)) {
             return $this->points_available;
         }
 
@@ -113,7 +112,7 @@ class QuizQuestion extends Model
     protected function isExactMatch($answer)
     {
         // Make sure an exact match is available
-        if(is_null($exact = ($this->answer_key['exact'] ?? null))) {
+        if (is_null($exact = ($this->answer_key['exact'] ?? null))) {
             return false;
         }
 

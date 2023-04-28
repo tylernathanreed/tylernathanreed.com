@@ -15,7 +15,7 @@ abstract class Composer
      */
     public function compose(View $view)
     {
-    	//
+        //
     }
 
     /**
@@ -25,6 +25,6 @@ abstract class Composer
      */
     public function composes()
     {
-    	return [];
+        return [];
     }
 }

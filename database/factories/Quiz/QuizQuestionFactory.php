@@ -4,9 +4,9 @@ namespace Database\Factories\Quiz;
 
 use App\Models\Quiz\QuizQuestion;
 use App\Models\Quiz\QuizTemplate;
-use Cache;
 use Database\Factories\Factory;
 use GuzzleHttp\Client;
+use Illuminate\Support\Facades\Cache;
 
 class QuizQuestionFactory extends Factory
 {
@@ -36,7 +36,7 @@ class QuizQuestionFactory extends Factory
      */
     public function multipleChoice()
     {
-        return $this->state(function(array $attributes) {
+        return $this->state(function (array $attributes) {
             return [
                 'type' => 'multiple_choice',
                 'points_available' => 1
@@ -51,7 +51,7 @@ class QuizQuestionFactory extends Factory
      */
     public function trueFalse()
     {
-        return $this->state(function(array $attributes) {
+        return $this->state(function (array $attributes) {
             return [
                 'type' => 'true_false',
                 'points_available' => 1
@@ -66,7 +66,7 @@ class QuizQuestionFactory extends Factory
      */
     public function configure()
     {
-        return $this->afterMaking(function(QuizQuestion $question) {
+        return $this->afterMaking(function (QuizQuestion $question) {
             $this->generatePrompt($question);
         });
     }
@@ -135,7 +135,7 @@ class QuizQuestionFactory extends Factory
         $key = json_encode($parameters);
 
         // Request a random set of questions
-        $questions = $cache->remember("{$key}.response", 0, function() use ($parameters) {
+        $questions = $cache->remember("{$key}.response", 0, function () use ($parameters) {
 
             // Determine the response
             $client = new Client;
@@ -167,5 +167,5 @@ class QuizQuestionFactory extends Factory
 
         // Return the current question
         return $questions[$index];
-    } 
+    }
 }

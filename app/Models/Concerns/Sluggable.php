@@ -15,7 +15,7 @@ trait Sluggable
     public static function bootSluggable()
     {
         // Ensure that a slug is always present
-        static::saving(function($model) {
+        static::saving(function ($model) {
             $model->ensureSlug();
         });
     }
@@ -37,7 +37,7 @@ trait Sluggable
         $query->where((new static)->getSlugName(), '=', $slug);
 
         // If an exemption key was provided, omit it
-        if(!is_null($exceptKey)) {
+        if (!is_null($exceptKey)) {
             $query->whereKeyNot($exceptKey);
         }
 
@@ -55,7 +55,7 @@ trait Sluggable
     public function ensureSlug()
     {
         // Make sure the model doesn't already have a slug
-        if(!is_null($this->getRouteKey())) {
+        if (!is_null($this->getRouteKey())) {
             return $this;
         }
 
@@ -63,12 +63,12 @@ trait Sluggable
         $slug = $this->resolveSlug();
 
         // Ensure that a slug was resolved
-        if(is_null($slug)) {
+        if (is_null($slug)) {
             throw new RuntimeException('Slug for [' . static::class . ', ' . ($this->getKey() ?: 'null') . '] could not be resolved.');
         }
 
         // Ensure that the slug is unique
-        if(static::slugExists($slug, $this->getKey())) {
+        if (static::slugExists($slug, $this->getKey())) {
             throw new RuntimeException("Slug [{$slug}] for [" . static::class . ', ' . ($this->getKey() ?: 'null') . '] is not unique.');
         }
 

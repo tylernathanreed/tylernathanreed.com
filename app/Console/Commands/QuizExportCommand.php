@@ -3,8 +3,8 @@
 namespace App\Console\Commands;
 
 use App\Models\Quiz\QuizTemplate;
-use File;
 use Illuminate\Console\Command;
+use Illuminate\Support\Facades\File;
 
 class QuizExportCommand extends Command
 {
@@ -66,7 +66,7 @@ class QuizExportCommand extends Command
      */
     public function toJsonable($quizzes)
     {
-        return $quizzes->map(function($quiz) {
+        return $quizzes->map(function ($quiz) {
 
             // Extract the attributes
             $attributes = $quiz->toArray();
@@ -78,7 +78,7 @@ class QuizExportCommand extends Command
             unset($attributes[$quiz->getDeletedAtColumn()]);
 
             // Include the questions
-            $attributes['questions'] = $quiz->questions->map(function($question) {
+            $attributes['questions'] = $quiz->questions->map(function ($question) {
 
                 // Extract the attributes
                 $attributes = $question->toArray();
