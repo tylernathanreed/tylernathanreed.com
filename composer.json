@@ -19,8 +19,9 @@
         "tightenco/ziggy": "^0.8.0"
     },
     "require-dev": {
-        "filp/whoops": "^2.0",
         "fakerphp/faker": "^1.21",
+        "filp/whoops": "^2.0",
+        "laravel/pint": "^1.10",
         "laravel/sail": "^1.5",
         "mockery/mockery": "^1.5.1",
         "phpunit/phpunit": "^10.0"

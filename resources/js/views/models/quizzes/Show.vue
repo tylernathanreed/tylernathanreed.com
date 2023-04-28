@@ -65,14 +65,12 @@
                 </div>
 
                 <v-form ref="quiz-form" method="post">
-                    <div id="quiz" ref="quiz" class="carousel slide text-xl" data-wrap="false" data-interval="false">
+                    <div id="quiz" ref="quiz" class="carousel slide text-xl" data-bs-ride="carousel" data-wrap="false" data-interval="false">
                         <div class="carousel-inner">
-
                             <div v-for="(question, number) in questions" :key="number" :class="`carousel-item${number == 0 ? ' active' : ''}`">
                                 <component :is="question.view_template" :number="number" :question="question"/>
                                 <input type="hidden" :name="`orders[${number}]`" :value="question.default_order"/>
                             </div>
-
                         </div>
 
                         <div ref="quiz-validation" class="text-md text-danger text-center mb-2" style="display: none;">
@@ -80,11 +78,11 @@
                         </div>
 
                         <div class="d-flex justify-content-between">
-                            <a class="btn btn-lg btn-primary disabled" href="#quiz" role="button" data-slide="prev" ref="back">
+                            <a class="btn btn-lg btn-primary disabled" href="#quiz" role="button" data-bs-slide="prev" ref="back">
                                 <span>&laquo; Back</span>
                             </a>
 
-                            <a class="btn btn-lg btn-primary" href="#quiz" role="button" data-slide="next" ref="next">
+                            <a class="btn btn-lg btn-primary" href="#quiz" role="button" data-bs-slide="next" ref="next">
                                 <span>Next &raquo;</span>
                             </a>
 

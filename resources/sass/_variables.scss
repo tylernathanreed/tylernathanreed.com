@@ -7,6 +7,8 @@ $font-size-base: 0.9rem;
 $line-height-base: 1.6;
 
 // Colors
+$min-contrast-ratio: 3;
+
 $blue: #3490dc;
 $indigo: #6574cd;
 $purple: #9561e2;
@@ -18,7 +20,115 @@ $green: #38c172;
 $teal: #4dc0b5;
 $cyan: #6cb2eb;
 
+$white: #fff;
+$gray: #6c757d;
+$gray-dark: #343a40;
+$light: #6cb2eb;
+$dark: #6cb2eb;
+$light: #f8f9fa;
+$dark: #343a40;
+
+$primary: #3490dc;
+$secondary: #6c757d;
+$success: #38c172;
+$info: #6cb2eb;
+$warning: #f0ad4e;
+$danger: #e3342f;
+
+$theme-colors: (
+    "primary": $primary,
+    "secondary": $secondary,
+    "success": $success,
+    "info": $info,
+    "warning": $warning,
+    "danger": $danger,
+    "light": $light,
+    "dark": $dark
+);
+
 // Buttons
 $btn-border-radius:    9999px;
 $btn-border-radius-sm: 9999px;
 $btn-border-radius-lg: 9999px;
+
+// Spacing
+$spacer: 1rem !default;
+$spacers: (
+    0: 0,
+    1: $spacer * .25,
+    2: $spacer * .5,
+    3: $spacer,
+    4: $spacer * 1.5,
+    5: $spacer * 3,
+) !default;
+
+// Position Values
+$position-values: (
+    0: 0,
+    50: 50%,
+    100: 100%
+) !default;
+
+$prefix: "";
+
+// Utilities
+$utilities: (
+    "start": (
+        property: left,
+        class: left,
+        values: $position-values
+    ),
+    "end": (
+        property: right,
+        class: right,
+        values: $position-values
+    ),
+    "border-end": (
+        property: border-right,
+        class: border-right,
+        values: (null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
+            0: 0,
+        )
+    ),
+    "border-start": (
+        property: border-left,
+        class: border-left,
+        values: (null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
+            0: 0,
+        )
+    ),
+    "margin-end": (
+        responsive: true,
+        property: margin-right,
+        class: mr,
+        values: map-merge($spacers, (auto: auto))
+    ),
+    "margin-start": (
+        responsive: true,
+        property: margin-left,
+        class: ml,
+        values: map-merge($spacers, (auto: auto))
+    ),
+    "padding-end": (
+        responsive: true,
+        property: padding-right,
+        class: pr,
+        values: $spacers
+    ),
+    "padding-start": (
+        responsive: true,
+        property: padding-left,
+        class: pl,
+        values: $spacers
+    ),
+    "rounded-end": (
+        property: border-top-right-radius border-bottom-right-radius,
+        class: rounded-right,
+        values: (null: var(--#{$prefix}border-radius))
+    ),
+    "rounded-start": (
+        property: border-bottom-left-radius border-top-left-radius,
+        class: rounded-left,
+        values: (null: var(--#{$prefix}border-radius))
+    )
+);
