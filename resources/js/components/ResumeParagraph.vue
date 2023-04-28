@@ -12,7 +12,7 @@
 
             <p class="mt-2" v-html="content"/>
 
-            <p v-if="footer" class="mt-2" v-html="footer"/>
+            <p v-if="footer" class="small mt-2" v-html="footer"/>
 
             <small v-if="meta" class="block mt-3">
                 <span v-html="meta"/>

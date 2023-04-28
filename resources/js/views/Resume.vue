@@ -94,12 +94,21 @@
 
                     <div class="row">
                         <resume-paragraph
+                            title="PWCC Marketplace"
+                            subtitle="Lead Sr. Software Developer"
+                            link="https://www.pwccmarketplace.com/"
+                            content="Built a robust auction platform. Broke up a monolithic code base into scalable microservices that used event streaming. Lead multiple teams, including offshore."
+                            footer="<b>Skills:</b> Laravel 7.x - 9.x, PHP 8.1, JavaScript, MySql, Vue, Twilio, SendGrid, Laravel Octane, Node.js, Java, Microservices, Redis"
+                            meta="April 2021 - April 2023"
+                        />
+
+                        <resume-paragraph
                             title="Transworld Systems Inc."
                             subtitle="Senior Software Developer"
                             link="https://www.tsico.com/"
                             content="Continued developing software from Halo Co. Responsibilities expanded into leading a team on optimization, bulk imports, data extraction, and more."
-                            footer="<b>Skills:</b> Laravel 5.1 - 6.0, PHP 7.2, JavaScript, MSSQL, SSO, Tailwind, Unit Testing, JIRA, NPM, NoSQL"
-                            meta="March 2018 - <b>Current</b>"
+                            footer="<b>Skills:</b> Laravel 5.1 - 6.x, PHP 7.2, JavaScript, MSSQL, SSO, Tailwind, Unit Testing, JIRA, NPM, NoSQL"
+                            meta="March 2018 - April 2021"
                         />
 
                         <resume-paragraph
@@ -138,6 +147,7 @@
                             meta="June 2013 - August 2013, June 2014 - August 2014"
                         />
 
+                        <!--
                         <resume-paragraph
                             title="GM: Studio / CS Private Tutor"
                             subtitle="Private Tutor for GM: Studio and other CS topics"
@@ -146,6 +156,7 @@
                             footer="<b>Skills:</b> Communication, Teaching, Modularity, Documentation, SOLID, OOP, DRY, KISS"
                             meta="August 2014 - January 2015"
                         />
+                        -->
                     </div>
                 </section>
 
@@ -158,16 +169,24 @@
                             title="Laravel | Personal Website"
                             link="http://www.tylernathanreed.com/"
                             content="My personal website, home to all of my various projects, packages, and other programming toys. Always uses latest software and principals."
-                            footer="<b>Skills:</b> Laravel 5.1 to 6.08, Tailwind, Composer, NPM, Yarn"
+                            footer="<b>Skills:</b> Laravel 5.1 to 8.x, Tailwind, Composer, NPM, Yarn"
                             meta="November 2014 - Current"
                         />
 
                         <resume-paragraph
-                            title="C++ | Internet Simulation"
-                            link="https://github.com/tylernathanreed/Academic-Projects/tree/master/C%20%26%20C%2B%2B/Internet%20Simulation"
-                            content="Simulates a network by having files as network channels. Realistically matches an actual network where nodes use different OSI Layers."
-                            footer="<b>Skills:</b> Modularity, SRP, C/C++, Vim, Software Design"
-                            meta="May 2014"
+                            title="Laravel | One Time Secrets"
+                            link="https://onetime.tylernathanreed.com"
+                            content="A small passion project that throws everything I know about performance into one project. Page speeds are as low as ~1.8 <i>milliseconds</i>."
+                            footer="<b>Skills:</b> Laravel 8.x, Laravel Octane"
+                            meta="April 2021"
+                        />
+
+                        <resume-paragraph
+                            title="Laravel | Relation Joins"
+                            link="https://github.com/tylernathanreed/laravel-relation-joins"
+                            content="Created a composer package adds the ability to join on a relationship by name. Currently has over 250k downloads. Supports latest Laravel & PHP versions."
+                            footer="<b>Skills:</b> Laravel, Composer, GitHub Actions, Style CI, Code Coverage"
+                            meta="August 2019 - Current"
                         />
 
                         <resume-paragraph
@@ -178,6 +197,17 @@
                             meta="March 2019 - December 2020"
                         />
 
+                        <!--
+                        <resume-paragraph
+                            title="C++ | Internet Simulation"
+                            link="https://github.com/tylernathanreed/Academic-Projects/tree/master/C%20%26%20C%2B%2B/Internet%20Simulation"
+                            content="Simulates a network by having files as network channels. Realistically matches an actual network where nodes use different OSI Layers."
+                            footer="<b>Skills:</b> Modularity, SRP, C/C++, Vim, Software Design"
+                            meta="May 2014"
+                        />
+                        -->
+
+                        <!--
                         <resume-paragraph
                             title="C# | Contact Manager"
                             link="https://github.com/tylernathanreed/Academic-Projects/tree/master/C%23%20%26%20.NET"
@@ -185,6 +215,7 @@
                             footer="<b>Skills:</b> C#, MSSQL, Waterfall, SRS, Visual Studio"
                             meta="September 2013 - December 2013"
                         />
+                        -->
 
                         <!--
                         <resume-paragraph
@@ -219,20 +250,30 @@
 
                     <div class="row">
                         <resume-paragraph
+                            title="r/laravel Moderator"
+                            link="https://www.reddit.com/r/laravel/"
+                            content="Actively maintained the Laravel subreddit as an official Moderator, and stayed on top of latest trends. Informed community of new releases and products."
+                            footer="<b>Skills:</b> Leadership, Content Management, Ban Hammering"
+                            meta="November 2022 - Current"
+                        />
+
+                        <resume-paragraph
                             title="Community Moderator"
                             content="Learned Agile-Programming, Version Control Systems, and programmed games using a wide spectrum of languages and tools."
                             footer="<b>Skills:</b> Leadership, Project Management, Git, Bitbucket"
                             meta="August 2014 - August 2018"
                         />
 
+                        <!--
                         <resume-paragraph
                             title="Habitat for Humanity"
                             link="http://www.habitat.org/"
                             content="Worked in large groups to construct homes for those in need. Learned the value of teamwork. Project planning was observed."
                             footer="<b>Skills:</b> Leadership, Teamwork"
-                            meta="August 2010 - May 2012'"
+                            meta="August 2010 - May 2012"
                             aside="60 Hours of Volunteer Work"
                         />
+                        -->
                     </div>
                 </section>
 
@@ -246,26 +287,35 @@
         </div>
 
         <!-- For the Road Section -->
-        <banner-buttons :slots="2">
+        <banner-buttons :slots="3">
             <template v-slot:heading>
                 For the Road
             </template>
 
             <template v-slot:button-1>
-                <banner-button link="http://bit.ly/treed-resume-2020">
+                <banner-button link="https://bit.ly/treed-resume-2023">
                     <template v-slot:button>
-                        <i class="far fa-file-word mr-2"></i> Google Docs
+                        <i class="fab fa-google-drive mr-2"></i> Google Docs
                     </template>
                     If you need an electronic copy that you can save and modify as needed, please refer to my Resume listed on Google Docs.
                 </banner-button>
             </template>
 
             <template v-slot:button-2>
-               <banner-button link="/files/Resume - 2020.pdf">
+               <banner-button link="/files/Resume - 2023.pdf">
                     <template v-slot:button>
                         <i class="far fa-file-pdf mr-2"></i> Download PDF
                     </template>
                     If you need a printed copy to take with you, please download the PDF version of my Resume.
+                </banner-button>
+            </template>
+
+            <template v-slot:button-3>
+                <banner-button link="/files/Resume - 2023.docx">
+                    <template v-slot:button>
+                        <i class="far fa-file-word mr-2"></i> Download Word
+                    </template>
+                    Don't want to convert the Google Doc to a Word Doc yourself? Download this version of my Resume.
                 </banner-button>
             </template>
         </banner-buttons>
@@ -290,41 +340,54 @@
         computed: {
             skills() {
                 return {
-                    'Languages & Technologies': [
-                        {skill: 'PHP 7+',       year: 2015},
-                        {skill: 'PHP 5.3+',     year: 2014},
-                        {skill: 'JavaScript 5', year: 2013},
-                        {skill: 'JavaScript 6', year: 2015},
+                    'Languages & Frameworks': [
+                        {skill: 'PHP',          year: 2014},
+                        {skill: 'JavaScript',   year: 2013},
+                        {skill: 'HTML/CSS',     year: 2014},
+                        {skill: 'jQuery',       year: 2014},
                         {skill: 'MySQL',        year: 2012},
                         {skill: 'MSSQL',        year: 2013},
                         {skill: 'Sqlite',       year: 2017},
-                        {skill: 'Eloquent',     year: 2014},
-                        {skill: 'jQuery',       year: 2014},
                         {skill: 'NodeJS',       year: 2015},
-                        {skill: 'Style CI',     year: 2017},
-                        {skill: 'Travis CI',    year: 2017},
-                        {skill: 'Blade',        year: 2014},
-                        {skill: 'Sass',         year: 2015},
-                        {skill: 'HTML 5',       year: 2014},
-                        {skill: 'CSS 3',        year: 2014}
+                        {skill: 'Laravel',      year: 2014},
+                        {skill: 'Lumen',        year: 2016},
+                        {skill: 'Nova',         year: 2019},
+                        {skill: 'Dusk',         year: 2018},
+                        {skill: 'Octane',       year: 2021},
+                        {skill: 'Vue',          year: 2016},
+                        {skill: 'Tailwind',     year: 2018},
+                        {skill: 'Bootstrap',    year: 2014},
+                        
+                        // {skill: 'Style CI',     year: 2017},
+                        // {skill: 'Travis CI',    year: 2017},
+                        // {skill: 'Sass',         year: 2015},
                     ],
-                    'Paradigms & Principles': [
-                        {skill: 'Caching',      year: 2015},
-                        {skill: 'Optimization', year: 2016},
-                        {skill: 'NoSQL',        year: 2017},
-                        {skill: 'Memoize',      year: 2019},
-                        {skill: 'SOLID',        year: 2015},
-                        {skill: 'CI/CD',        year: 2017},
-                        {skill: 'APIs',         year: 2015},
-                        {skill: 'MVC',          year: 2014},
-                        {skill: 'RESTful',      year: 2014},
-                        {skill: 'CRUD',         year: 2013},
-                        {skill: 'KISS',         year: 2014},
-                        {skill: 'DRY',          year: 2012},
-                        {skill: 'Delegation',   year: 2017},
-                        {skill: 'TDD',          year: 2017},
-                        {skill: 'LAMP',         year: 2014},
-                        {skill: 'WAMP',         year: 2014},
+                    'Patterns & Principles': [
+                        {skill: 'TDD',             year: 2017},
+                        {skill: 'BDD',             year: 2021},
+                        {skill: 'SOLID',           year: 2015},
+                        {skill: 'CI/CD',           year: 2017},
+                        {skill: 'Microservices',   year: 2018},
+                        {skill: 'APIs',            year: 2015},
+                        {skill: 'MVC',             year: 2014},
+                        {skill: 'DRY',             year: 2012},
+                        {skill: 'Parallelization', year: 2014},
+                        {skill: 'Strangler',       year: 2016},
+                        {skill: 'Delegation',      year: 2017},
+                        {skill: 'Strategy',        year: 2016},
+                        {skill: 'Feature Flags',   year: 2021},
+                        {skill: 'Singleton',       year: 2016},
+                        {skill: 'Optimization',    year: 2016},
+                        {skill: 'Layering',        year: 2016},
+
+                        // {skill: 'Caching',        year: 2015},
+                        // {skill: 'NoSQL',           year: 2017},
+                        // {skill: 'Memoize',         year: 2019},
+                        // {skill: 'RESTful',         year: 2014},
+                        // {skill: 'CRUD',            year: 2013},
+                        // {skill: 'KISS',            year: 2014},
+                        // {skill: 'LAMP',            year: 2014},
+                        // {skill: 'WAMP',            year: 2014},
                     ],
                     'Tools & Services': [
                         {skill: 'Git',        year: 2012},
@@ -339,28 +402,44 @@
                         {skill: 'Redis',      year: 2017},
                         {skill: 'Mailgun',    year: 2015},
                         {skill: 'Twilio',     year: 2016},
-                        {skill: 'PHP Storm',  year: 2017},
-                        {skill: 'VS Code',    year: 2017},
-                        {skill: 'Sublime',    year: 2014},
-                        {skill: 'Vim',        year: 2012},
+                        {skill: 'Docker',     year: 2021},
+                        {skill: 'Forge',      year: 2021},
+                        {skill: 'Sail',       year: 2021},
+                        {skill: 'Sendgrid',   year: 2020},
                     ],
-                    'Frameworks & Standards': [
-                        {skill: 'Laravel 6.x+', year: 2019},
-                        {skill: 'Laravel 5.5',  year: 2017},
-                        {skill: 'Laravel 5.1',  year: 2015},
-                        {skill: 'Laravel 4.2',  year: 2014},
-                        {skill: 'Lumen',        year: 2016},
-                        {skill: 'Nova',         year: 2019},
-                        {skill: 'Dusk',         year: 2018},
-                        {skill: 'Telescope',    year: 2019},
-                        {skill: 'Vue',          year: 2016},
-                        {skill: 'Tailwind',     year: 2018},
-                        {skill: 'Bootstrap 3',  year: 2014},
-                        {skill: 'Bootstrap 4',  year: 2018},
-                        {skill: 'PCI',          year: 2016},
-                        {skill: 'PSR-12',       year: 2019},
-                        {skill: 'Socialite',    year: 2019},
-                        {skill: 'SSO',          year: 2019},
+                    'Processes & Responsibilities': [
+                        {skill: 'Agile',         year: 2016},
+                        {skill: 'Scrum',         year: 2016},
+                        {skill: 'Kanban',        year: 2016},
+                        {skill: 'GitFlow',       year: 2020},
+                        {skill: 'QA Automation', year: 2018},
+                        {skill: 'LEAN',          year: 2020},
+                        {skill: 'VCS',           year: 2012},
+                        {skill: 'Waterfall',     year: 2012},
+                        {skill: 'Scrum Master',  year: 2021},
+                        {skill: 'Estimation',    year: 2012},
+                        {skill: 'Architect',     year: 2018},
+                        {skill: 'Training',      year: 2016},
+                        {skill: 'Code Review',   year: 2016},
+                        {skill: 'Dev Lead',      year: 2018},
+                        {skill: 'Senior Dev',    year: 2016},
+                        {skill: 'Full Stack',    year: 2015},
+                        // {skill: 'Laravel 6.x+', year: 2019},
+                        // {skill: 'Laravel 5.5',  year: 2017},
+                        // {skill: 'Laravel 5.1',  year: 2015},
+                        // {skill: 'Laravel 4.2',  year: 2014},
+                        // {skill: 'Lumen',        year: 2016},
+                        // {skill: 'Nova',         year: 2019},
+                        // {skill: 'Dusk',         year: 2018},
+                        // {skill: 'Telescope',    year: 2019},
+                        // {skill: 'Vue',          year: 2016},
+                        // {skill: 'Tailwind',     year: 2018},
+                        // {skill: 'Bootstrap 3',  year: 2014},
+                        // {skill: 'Bootstrap 4',  year: 2018},
+                        // {skill: 'PCI',          year: 2016},
+                        // {skill: 'PSR-12',       year: 2019},
+                        // {skill: 'Socialite',    year: 2019},
+                        // {skill: 'SSO',          year: 2019},
                     ]
                 }
             }

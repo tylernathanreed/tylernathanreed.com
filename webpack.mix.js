@@ -29,7 +29,19 @@ mix
         }
     })
     .webpackConfig({
-        output: { chunkFilename: 'js/[name].js?id=[chunkhash]' },
+        output: {
+            chunkFilename: (pathData) => {
+                return (
+                    'js/' +
+                    pathData.chunk.id
+                        .replace(/resources_js_/g, '')
+                        .replace(/_/g, '/')
+                        .replace(/\/vue/, '') +
+                    '.js?id=' +
+                    pathData.chunk.hash
+                );
+            }
+        },
         resolve: {
             alias: {
                 vue$: 'vue/dist/vue.runtime.esm.js',

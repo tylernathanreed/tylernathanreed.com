@@ -16,7 +16,7 @@
 
             <!-- Section Content -->
             <div class="row justify-content-center">
-                <div v-for="i in slots" :key="i" :class="'col-lg-4' + (i == slots - 1 ? ' mb-16 mb-lg-0' : '')" style="max-width: 400px">
+                <div v-for="i in slots" :key="i" class="col-lg-4 mb-16" style="max-width: 400px">
                     <slot :name="`button-${i}`"/>
                 </div>
             </div>
