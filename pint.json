@@ -5,6 +5,7 @@
         "not_operator_with_successor_space": true,
         "ordered_imports": true,
         "phpdoc_scalar": true,
+        "phpdoc_separation": true,
         "single_trait_insert_per_statement": false
     }
 }
