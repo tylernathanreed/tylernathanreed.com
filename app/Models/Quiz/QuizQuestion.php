@@ -50,7 +50,7 @@ class QuizQuestion extends Model
     public function ensureDefaultOrder()
     {
         // If a default order is populated, don't bother
-        if (!is_null($this->default_order)) {
+        if (! is_null($this->default_order)) {
             return $this;
         }
 

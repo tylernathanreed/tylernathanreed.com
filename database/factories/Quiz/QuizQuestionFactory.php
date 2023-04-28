@@ -81,12 +81,12 @@ class QuizQuestionFactory extends Factory
     protected function generatePrompt(QuizQuestion $question)
     {
         // If a prompt was provided, leave it alone
-        if(!is_null($question->prompt)) {
+        if(! is_null($question->prompt)) {
             return $this;
         }
 
         // If the type isn't generateable, leave it alone
-        if(!in_array($question->type, ['multiple_choice', 'true_false'])) {
+        if(! in_array($question->type, ['multiple_choice', 'true_false'])) {
             return $this;
         }
 

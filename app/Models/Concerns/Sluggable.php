@@ -37,7 +37,7 @@ trait Sluggable
         $query->where((new static)->getSlugName(), '=', $slug);
 
         // If an exemption key was provided, omit it
-        if (!is_null($exceptKey)) {
+        if (! is_null($exceptKey)) {
             $query->whereKeyNot($exceptKey);
         }
 
@@ -55,7 +55,7 @@ trait Sluggable
     public function ensureSlug()
     {
         // Make sure the model doesn't already have a slug
-        if (!is_null($this->getRouteKey())) {
+        if (! is_null($this->getRouteKey())) {
             return $this;
         }
 

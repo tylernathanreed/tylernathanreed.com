@@ -2,6 +2,7 @@
     "preset": "psr12",
     "rules": {
         "new_with_braces": false,
+        "not_operator_with_successor_space": true,
         "ordered_imports": true,
         "single_trait_insert_per_statement": false
     }
