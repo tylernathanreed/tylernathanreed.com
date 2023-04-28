@@ -2,8 +2,8 @@
 
 namespace App\Http\View\Composers;
 
-use Illuminate\View\View;
 use Illuminate\Contracts\Auth\Factory as Auth;
+use Illuminate\View\View;
 
 class AuthComposer extends Composer
 {

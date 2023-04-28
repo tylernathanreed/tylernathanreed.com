@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers\Quiz;
 
-use Illuminate\Http\Request;
-use App\Models\Quiz\QuizTemplate;
 use App\Http\Controllers\Controller;
+use App\Models\Quiz\QuizTemplate;
+use Illuminate\Http\Request;
 
 class QuizzesController extends Controller
 {

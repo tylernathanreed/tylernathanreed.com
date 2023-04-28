@@ -2,8 +2,8 @@
 
 namespace App\Models\Concerns;
 
-use RuntimeException;
 use Illuminate\Support\Str;
+use RuntimeException;
 
 trait Sluggable
 {
