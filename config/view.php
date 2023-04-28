@@ -14,7 +14,7 @@ return [
     */
 
     'paths' => [
-        resource_path('views'),
+        resource_path('views')
     ],
 
     /*
@@ -45,8 +45,6 @@ return [
     */
 
     'composers' => [
-
         \App\Http\View\Composers\AuthComposer::class
-
     ]
 ];

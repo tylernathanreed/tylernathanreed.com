@@ -17,8 +17,6 @@ class AuthComposer extends Composer
     /**
      * Create a new profile composer.
      *
-     * @param  \Illuminate\Contracts\Auth\Factory  $auth
-     *
      * @return void
      */
     public function __construct(Auth $auth)
@@ -28,8 +26,6 @@ class AuthComposer extends Composer
 
     /**
      * Binds the composer data to the specified view.
-     *
-     * @param  \Illuminate\View\View  $view
      *
      * @return void
      */

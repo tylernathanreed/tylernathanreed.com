@@ -74,8 +74,6 @@ class QuizQuestionFactory extends Factory
     /**
      * Generates the prompt for the specified question.
      *
-     * @param  \App\Models\Quiz\QuizQuestion  $question
-     *
      * @return $this
      */
     protected function generatePrompt(QuizQuestion $question)
@@ -117,8 +115,6 @@ class QuizQuestionFactory extends Factory
 
     /**
      * Returns a random prompt based on the specified parameters.
-     *
-     * @param  array  $parameters
      *
      * @return \stdClass
      */

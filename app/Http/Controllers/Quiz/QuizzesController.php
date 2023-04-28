@@ -25,8 +25,6 @@ class QuizzesController extends Controller
     /**
      * Shows the details of the specified resource.
      *
-     * @param  \App\Models\Quiz\QuizTemplate  $quizTemplate
-     *
      * @return \Illuminate\Contracts\Support\Renderable
      */
     public function show(QuizTemplate $quizTemplate)
@@ -42,9 +40,6 @@ class QuizzesController extends Controller
 
     /**
      * Handles the quiz submission.
-     *
-     * @param  \Illuminate\Http\Request       $request
-     * @param  \App\Models\Quiz\QuizTemplate  $quizTemplate
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
@@ -85,9 +80,6 @@ class QuizzesController extends Controller
 
     /**
      * Displays the quiz results.
-     *
-     * @param  \Illuminate\Http\Request       $request
-     * @param  \App\Models\Quiz\QuizTemplate  $quizTemplate
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
