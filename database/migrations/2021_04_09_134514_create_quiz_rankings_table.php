@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
 
 class CreateQuizRankingsTable extends Migration
 {
@@ -18,7 +19,7 @@ class CreateQuizRankingsTable extends Migration
             $table->bigIncrements('id');
 
             // Relationships
-            $table->bigBelongsTo('quiz_templates', 'quiz_id')->index();
+            $table->bigInteger('quiz_id')->unsigned()->references('id')->on('quiz_templates')->index();
             $table->tinyInteger('score')->unsigned();
             $table->integer('count')->unsigned();
 
