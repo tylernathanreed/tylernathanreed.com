@@ -91,6 +91,15 @@
                         demo: route('quiz.index'),
                         source: 'https://github.com/tylernathanreed/tylernathanreed.com',
                         inertia: true
+                    },
+                    {
+                        name: 'One Time Secrets',
+                        description: 'A secret sharing application fine tuned for performance.',
+                        color: 'dark',
+                        icon: 'fas fa-user-secret',
+                        demo: 'https://onetime.tylernathanreed.com/',
+                        source: 'https://github.com/tylernathanreed/onetime',
+                        inertia: false
                     }
                 ]
             }
