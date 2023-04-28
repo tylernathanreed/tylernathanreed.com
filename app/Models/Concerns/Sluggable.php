@@ -23,7 +23,7 @@ trait Sluggable
     /**
      * Returns whether or not the specified slug exists.
      *
-     * @param  string        $slug
+     * @param  string  $slug
      * @param  int|null  $exceptKey
      *
      * @return bool
