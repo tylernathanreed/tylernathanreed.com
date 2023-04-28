@@ -24,9 +24,9 @@ trait Sluggable
      * Returns whether or not the specified slug exists.
      *
      * @param  string        $slug
-     * @param  integer|null  $exceptKey
+     * @param  int|null  $exceptKey
      *
-     * @return boolean
+     * @return bool
      */
     public static function slugExists($slug, $exceptKey = null)
     {

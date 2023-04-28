@@ -90,7 +90,7 @@ class QuizTemplate extends Model
     /**
      * Adds the specified score to the ranking for this quiz.
      *
-     * @param  integer  $score
+     * @param  int  $score
      *
      * @return \App\Models\Quiz\QuizRanking
      */

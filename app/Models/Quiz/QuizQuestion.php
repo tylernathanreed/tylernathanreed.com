@@ -72,7 +72,7 @@ class QuizQuestion extends Model
     /**
      * Resolves the default order for this question.
      *
-     * @return integer
+     * @return int
      */
     public function resolveDefaultOrder()
     {
@@ -84,7 +84,7 @@ class QuizQuestion extends Model
      *
      * @param  string  $answer
      *
-     * @return integer
+     * @return int
      */
     public function score($answer)
     {
@@ -107,7 +107,7 @@ class QuizQuestion extends Model
      *
      * @param  string  $answer
      *
-     * @return boolean
+     * @return bool
      */
     protected function isExactMatch($answer)
     {
