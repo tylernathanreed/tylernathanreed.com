@@ -65,7 +65,7 @@
                 </div>
 
                 <v-form ref="quiz-form" method="post">
-                    <div id="quiz" ref="quiz" class="carousel slide text-xl" data-bs-ride="carousel" data-wrap="false" data-interval="false">
+                    <div id="quiz" ref="quiz" class="carousel slide text-xl" data-bs-ride="false" data-bs-wrap="false" data-bs-interval="false">
                         <div class="carousel-inner">
                             <div v-for="(question, number) in questions" :key="number" :class="`carousel-item${number == 0 ? ' active' : ''}`">
                                 <component :is="question.view_template" :number="number" :question="question"/>
@@ -120,10 +120,41 @@
             // Returns whether or not an answer has been provided on the given question
             answerProvided(slideNumber) {
 
-                let answer = _.find($(this.$refs['quiz-form'].$el).serializeArray(), {name: 'answers[' + slideNumber + ']'})
+                let answer = _.find(this.serializeArray(this.$refs['quiz-form'].$el), {
+                    name: 'answers[' + slideNumber + ']'
+                });
 
                 return !!answer && !!answer.value;
 
+            },
+
+            serializeArray(form) {
+                var arr = [];
+
+                Array.prototype.slice.call(form.elements).forEach(function (field) {
+                    if (! field.name) {
+                        return;
+                    }
+                    
+                    if (field.disabled) {
+                        return;
+                    }
+
+                    if (['file', 'reset', 'submit', 'button'].indexOf(field.type) > -1) {
+                        return;
+                    }
+
+                    if (['checkbox', 'radio'].indexOf(field.type) > -1 && ! field.checked) {
+                        return;
+                    }
+
+                    arr.push({
+                        name: field.name,
+                        value: field.value
+                    });
+                });
+
+                return arr;
             }
 
         },
@@ -147,7 +178,7 @@
             let self = this
 
             // When the carousel sliding begins...
-            $(this.$refs['quiz']).on('slide.bs.carousel', function(e) {
+            this.$refs['quiz'].addEventListener('slide.bs.carousel', function(e) {
 
                 // Make sure an answer has been provided
                 if(e.direction == 'left' && !self.answerProvided(e.from)) {
@@ -156,7 +187,7 @@
                     e.preventDefault();
 
                     // Display a validation error
-                    $(self.$refs['quiz-validation']).show();
+                    self.$refs['quiz-validation'].style.display = 'block';
 
                     // Stop here
                     return;
@@ -164,20 +195,19 @@
                 }
 
                 // Hide any validation errors
-                $(self.$refs['quiz-validation']).hide();
+                self.$refs['quiz-validation'].style.display = 'none';
 
                 // Update the question counter
-                $(self.$refs['quiz-counter']).text(e.to + 1);
+                self.$refs['quiz-counter'].textContent = e.to + 1;
 
                 // Update the quiz progress
-                $(self.$refs['quiz-progress-bar'])
-                    .attr('aria-valuenow', e.to + 1)
-                    .width(Math.round((e.to) / self.questionsCount * 100) + '%');
+                self.$refs['quiz-progress-bar'].setAttribute('aria-valuenow', e.to + 1);
+                self.$refs['quiz-progress-bar'].setAttribute('width', Math.round((e.to) / self.questionsCount * 100) + '%');
 
             });
 
             // When the carousel sliding ends
-            $(this.$refs['quiz']).on('slid.bs.carousel', function(e) {
+            this.$refs['quiz'].addEventListener('slid.bs.carousel', function(e) {
 
                 // Make sure an answer has been provided
                 if(e.direction == 'left' && !self.answerProvided(e.from)) {
@@ -192,21 +222,21 @@
 
                 // Toggle the back button status
                 if(e.to != 0) {
-                    $(self.$refs['back']).removeClass('disabled');
+                    self.$refs['back'].classList.remove('disabled');
                 } else {
-                    $(self.$refs['back']).addClass('disabled');
+                    self.$refs['back'].classList.add('disabled');
                 }
 
                 // Toggle the next/submit button visibility
                 if(e.to == self.questionsCount - 1) {
 
-                    $(self.$refs['next']).hide();
-                    $(self.$refs['submit']).show();
+                    self.$refs['next'].style.display = 'none';
+                    self.$refs['submit'].style.display = 'block';
 
                 } else {
 
-                    $(self.$refs['next']).show();
-                    $(self.$refs['submit']).hide();
+                    self.$refs['next'].style.display = 'block';
+                    self.$refs['submit'].style.display = 'none';
 
                 }
 
