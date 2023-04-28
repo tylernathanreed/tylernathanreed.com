@@ -81,12 +81,12 @@ class QuizQuestionFactory extends Factory
     protected function generatePrompt(QuizQuestion $question)
     {
         // If a prompt was provided, leave it alone
-        if(! is_null($question->prompt)) {
+        if (! is_null($question->prompt)) {
             return $this;
         }
 
         // If the type isn't generateable, leave it alone
-        if(! in_array($question->type, ['multiple_choice', 'true_false'])) {
+        if (! in_array($question->type, ['multiple_choice', 'true_false'])) {
             return $this;
         }
 
@@ -150,7 +150,7 @@ class QuizQuestionFactory extends Factory
         $index = $cache->get("{$key}.index") ?? 0;
 
         // If the next pull won't have new questions, bust the cache
-        if($index >= 9) {
+        if ($index >= 9) {
 
             // Forget the response
             $cache->forget("{$key}.response");

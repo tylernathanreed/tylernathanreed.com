@@ -3,9 +3,9 @@
 namespace App\Console\Commands;
 
 use App\Models\Quiz\QuizTemplate;
-use File;
 use Illuminate\Console\Command;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\File;
 
 class QuizImportCommand extends Command
 {
@@ -55,7 +55,7 @@ class QuizImportCommand extends Command
         Model::unguard();
 
         // Iterate through each quiz record
-        foreach($data as $record) {
+        foreach ($data as $record) {
 
             // Extract the questions
             $questions = $record['questions'];

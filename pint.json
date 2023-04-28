@@ -6,6 +6,7 @@
         "ordered_imports": true,
         "phpdoc_scalar": true,
         "phpdoc_separation": true,
+        "single_space_around_construct": true,
         "single_trait_insert_per_statement": false
     }
 }

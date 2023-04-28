@@ -24,14 +24,14 @@ class QuizTemplate extends Model
         static::deleting(function ($quiz) {
 
             // Delete the questions
-            if($quiz->forceDeleting) {
+            if ($quiz->forceDeleting) {
                 $quiz->questions()->forceDelete();
             } else {
                 $quiz->questions()->delete();
             }
 
             // Delete the rankings
-            if($quiz->forceDeleting) {
+            if ($quiz->forceDeleting) {
                 $quiz->rankings()->forceDelete();
             } else {
                 $quiz->rankings()->delete();

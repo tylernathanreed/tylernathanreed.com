@@ -16,7 +16,7 @@ class AddSlugColumnToQuizTemplatesTable extends Migration
     public function up()
     {
         // Drop the column if it already exists
-        if(Schema::hasColumn('quiz_templates', 'slug')) {
+        if (Schema::hasColumn('quiz_templates', 'slug')) {
             Schema::table('quiz_templates', function (Blueprint $table) {
                 $table->dropColumn('slug');
             });
