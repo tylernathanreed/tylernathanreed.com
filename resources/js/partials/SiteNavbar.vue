@@ -11,7 +11,7 @@
                 </li>
             </ul>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-toggle" aria-controls="navbar-toggle" aria-expanded="false" aria-label="Toggle Navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggle" aria-controls="navbar-toggle" aria-expanded="false" aria-label="Toggle Navigation">
                 <i class="fas fa-bars text-white"></i>
             </button>
 
