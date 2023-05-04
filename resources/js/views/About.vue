@@ -45,7 +45,7 @@
                 <!-- Portfolio Grid Items -->
                 <div class="row justify-content-center">
                     <div v-for="(item, key) in qualities" :key="key" class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" :data-target="`#portfolio-modal-${key}`">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" :data-bs-target="`#portfolio-modal-${key}`">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white">Read More</div>
                             </div>
@@ -83,7 +83,7 @@
                 <!-- Portfolio Grid Items -->
                 <div class="row justify-content-center">
                     <div v-for="(item, key) in practices" class="col-md-12 mb-4">
-                        <div class="portfolio-item bg-white mx-auto w-100" data-toggle="modal" :data-target="`#portfolio-modal-${key}`">
+                        <div class="portfolio-item bg-white mx-auto w-100" data-bs-toggle="modal" :data-bs-target="`#portfolio-modal-${key}`">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white">Read More</div>
                             </div>

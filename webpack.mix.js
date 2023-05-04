@@ -32,8 +32,8 @@ mix
         output: {
             chunkFilename: (pathData) => {
                 return (
-                    'js/' +
-                    pathData.chunk.id
+                    'js/compiled/' +
+                    (pathData.chunk.id + '')
                         .replace(/resources_js_/g, '')
                         .replace(/_/g, '/')
                         .replace(/\/vue/, '') +
