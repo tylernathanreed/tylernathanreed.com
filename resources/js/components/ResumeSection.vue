@@ -25,11 +25,11 @@
                                 <div>
                                     <h3 v-text="item.title" class="fs-6 fw-bold mb-0"></h3>
                                     <small>
-                                        <a v-if="item.url" :href="item.url" v-text="item.company"
+                                        <a v-if="item.url" :href="item.url" target="_blank" v-text="item.company"
                                             class="text-decoration-none" />
                                         <span v-else class="text-body-tertiary" v-text="item.company" />
                                     </small>
-                                    <small v-if="item.type" class="text-body-tertiary">
+                                    <small v-if="item.type" class="text-body-tertiary d-md-inline d-none">
                                         <span class="opacity-50">&bull;</span> {{ item.type }}
                                     </small>
                                 </div>
@@ -41,7 +41,7 @@
                                     <small v-if="item.start && item.end">{{ item.start }} - {{ item.end }}</small>
                                     <small v-else-if="item.start">{{ item.start }} - <b>Present</b></small>
                                     <small v-else-if="item.end">{{ item.end }}</small>
-                                    <small v-if="duration(item)">
+                                    <small v-if="duration(item)" class="d-md-inline d-none">
                                         <span class="opacity-50">&bull;</span>
                                         <span>{{ duration(item) }}</span>
                                     </small>

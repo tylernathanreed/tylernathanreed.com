@@ -22,7 +22,8 @@
                                 <h5 class="mb-0">
                                     <small class="text-black text-start w-100">
                                         <span>{{ link.name }}:</span>
-                                        <a :href="link.href" class="text-decoration-none" v-text="link.label"></a>
+                                        <a :href="link.href" target="_blank" class="text-decoration-none"
+                                            v-text="link.label"></a>
                                     </small>
                                 </h5>
                             </div>
