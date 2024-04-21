@@ -6,7 +6,7 @@
                 <div class="row">
                     <small v-for="item in skills"
                         class="col-md-2 col-3 d-flex align-items-center justify-content-center text-center border border-white"
-                        :class="`bg-${calc(age(item.year))} text-white py-2 px-1`">
+                        :class="`bg-${calc(age(item.year))} text-white py-2 px-1`" :title="`${age(item.year)} years`">
                         {{ item.skill }}
                     </small>
                 </div>
