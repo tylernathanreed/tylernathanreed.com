@@ -8,24 +8,31 @@
                     <div class="row">
                         <!-- Logo -->
                         <div class="col-1 d-none d-md-flex align-items-center justify-content-center">
-                            <img :src="`/images/resume-logos/${item.logo}.png`" class="rounded"
-                                style="width: 2rem; height: 2rem;" />
+                            <img :src="`/images/resume-logos/${item.logo}.png`" :alt="`${item.title} - ${item.company}`"
+                                class="rounded" style="width: 2rem; height: 2rem;" />
                         </div>
 
                         <!-- Header -->
                         <div class="col-md-11 col-12 d-flex align-items-center justify-content-between"
                             style="line-height: 0.8">
-                            <!-- Title -->
-                            <div>
-                                <h3 v-text="item.title" class="fs-6 fw-bold mb-0"></h3>
-                                <small>
-                                    <a v-if="item.url" :href="item.url" v-text="item.company"
-                                        class="text-decoration-none" />
-                                    <span v-else class="text-body-tertiary" v-text="item.company" />
-                                </small>
-                                <small v-if="item.type" class="text-body-tertiary">
-                                    <span class="opacity-50">&bull;</span> {{ item.type }}
-                                </small>
+                            <!-- Title & Mobile Logo -->
+                            <div class="d-flex gap-2">
+                                <div class="d-flex d-md-none align-items-center justify-content-center">
+                                    <img :src="`/images/resume-logos/${item.logo}.png`"
+                                        :alt="`${item.title} - ${item.company}`" class="rounded" style="width: 2rem;
+                                        height: 2rem;" />
+                                </div>
+                                <div>
+                                    <h3 v-text="item.title" class="fs-6 fw-bold mb-0"></h3>
+                                    <small>
+                                        <a v-if="item.url" :href="item.url" v-text="item.company"
+                                            class="text-decoration-none" />
+                                        <span v-else class="text-body-tertiary" v-text="item.company" />
+                                    </small>
+                                    <small v-if="item.type" class="text-body-tertiary">
+                                        <span class="opacity-50">&bull;</span> {{ item.type }}
+                                    </small>
+                                </div>
                             </div>
 
                             <!-- Time & Location -->
