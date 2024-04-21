@@ -14,7 +14,7 @@
         "@inertiajs/inertia-vue": "^0.5.5",
         "@inertiajs/progress": "^0.2.4",
         "@popperjs/core": "^2.11.7",
-        "bootstrap": "^5.2",
+        "bootstrap": "^5.3",
         "cross-env": "^7.0",
         "laravel-mix": "^6.0.19",
         "lodash": "^4.17.21",

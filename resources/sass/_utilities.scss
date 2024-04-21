@@ -22,16 +22,45 @@
     line-height: 2;
 }
 
-.bg-blue { background-color: var(--blue); }
-.bg-cyan { background-color: var(--cyan); }
-.bg-gray { background-color: var(--gray); }
-.bg-green { background-color: var(--green); }
-.bg-indigo { background-color: var(--indigo); }
-.bg-orange { background-color: var(--orange); }
-.bg-pink { background-color: var(--pink); }
-.bg-purple { background-color: var(--purple); }
-.bg-red { background-color: var(--red); }
-.bg-yellow { background-color: var(--yellow); }
+.bg-blue {
+    background-color: var(--blue);
+}
+
+.bg-cyan {
+    background-color: var(--cyan);
+}
+
+.bg-gray {
+    background-color: var(--gray);
+}
+
+.bg-green {
+    background-color: var(--green);
+}
+
+.bg-indigo {
+    background-color: var(--indigo);
+}
+
+.bg-orange {
+    background-color: var(--orange);
+}
+
+.bg-pink {
+    background-color: var(--pink);
+}
+
+.bg-purple {
+    background-color: var(--purple);
+}
+
+.bg-red {
+    background-color: var(--red);
+}
+
+.bg-yellow {
+    background-color: var(--yellow);
+}
 
 .text-md {
     font-size: $font-size-base;
@@ -70,4 +99,10 @@
 
 .pin-r {
     right: 0;
+}
+
+@include media-breakpoint-up(md) {
+    .md\:mr-20 {
+        margin-right: 5rem;
+    }
 }
